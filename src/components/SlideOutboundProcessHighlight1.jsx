@@ -10,8 +10,8 @@ const steps = [
     detail: 'platform bid / LinkedIn DM / email',
   },
   {
-    title: 'Make a clear offer',
-    detail: 'problem + solution + proof + rate',
+    title: 'Familiarization/Screening Call',
+    detail: null,
   },
   {
     title: 'Follow up',
@@ -49,7 +49,9 @@ const SlideOutboundProcessHighlight1 = () => (
               <div className="text-premium-gold text-base tracking-[0.3em]">{index + 1}</div>
               <div className="space-y-1">
                 <p className="font-semibold text-white text-base md:text-lg">{step.title}</p>
-                <p className="text-white/70 text-sm md:text-base">→ {step.detail}</p>
+                {step.detail ? (
+                  <p className="text-white/70 text-sm md:text-base">→ {step.detail}</p>
+                ) : null}
               </div>
             </div>
           );
