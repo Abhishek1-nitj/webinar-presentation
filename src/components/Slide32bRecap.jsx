@@ -37,12 +37,12 @@ const Slide32bRecap = () => (
           <div className={`${focusBox} p-8 space-y-4`}>
             <div className="absolute inset-0 bg-gradient-to-br from-transparent via-premium-gold/10 to-transparent blur-3xl opacity-70" />
             <div className="text-premium-gold text-sm uppercase tracking-[0.4em] text-center">
-              How to Get the Job
+              Freelancing Using Excel
             </div>
           </div>
           <div className={`${mutedBox} p-8 space-y-4`}>
             <div className="text-premium-gold text-sm uppercase tracking-[0.4em] text-center">
-              Freelancing Using Excel
+              How to Get the Job
             </div>
           </div>
           <div className={`${mutedBox} p-8 space-y-4 text-center`}>

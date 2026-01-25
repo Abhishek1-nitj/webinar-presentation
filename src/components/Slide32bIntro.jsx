@@ -34,12 +34,12 @@ const Slide32bIntro = () => (
           </div>
           <div className={`${boxBase} p-8 space-y-4`}>
             <div className="text-premium-gold text-sm uppercase tracking-[0.4em] text-center">
-              How to Get the Job
+              Freelancing Using Excel
             </div>
           </div>
           <div className={`${boxBase} p-8 space-y-4`}>
             <div className="text-premium-gold text-sm uppercase tracking-[0.4em] text-center">
-              Freelancing Using Excel
+              How to Get the Job
             </div>
           </div>
           <div className={`${boxBase} p-8 space-y-4 text-center`}>

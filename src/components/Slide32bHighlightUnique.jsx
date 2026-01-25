@@ -8,8 +8,8 @@ const mutedBox = `${boxBase} opacity-50`;
 
 const options = [
   { key: 'learn', label: 'Learn Excel' },
-  { key: 'job', label: 'How to Get the Job' },
-  { key: 'freelance', label: 'Freelancing Using Excel' },
+  { key: 'job', label: 'Freelancing Using Excel' },
+  { key: 'freelance', label: 'How to Get the Job' },
   { key: 'ai', label: 'AI Tools' },
 ];
 

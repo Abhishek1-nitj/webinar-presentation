@@ -262,42 +262,6 @@ const App = () => {
       <SlideDashboardCodex />
       <Slide32k visibleSteps={7} />
       <Slide32bRecap />
-      <Slide32bFlowIntro />
-      <Slide32bFlowResumeUnique />
-      <Slide50ATS />
-      <Slide50JD />
-      <Slide50Handshake />
-      <Slide51ATSFriendly />
-      <Slide51ResumeSections />
-      <Slide51Step1 />
-      <Slide51Step2 />
-      <Slide51Step3 />
-      <Slide51Step4 />
-      <Slide51Step4Example />
-      <Slide51Step5 />
-      <Slide51Step5Example />
-      <Slide51Beautify />
-      <Slide170 />
-      <Slide171 />
-      <Slide172 />
-      <Slide173 />
-      <Slide174 />
-      <Slide175 />
-      <Slide176 />
-      <Slide177 />
-      <Slide178 />
-      <Slide51StepsSummary />
-      <Slide51NoExperience />
-      <Slide32bFlowProjectsOne />
-      <Slide32bPortfolioLook />
-      <Slide32cProjects />
-      <Slide32bFlowProjectsTwo />
-      <Slide52JobApplications />
-      <Slide52LinkedInGuides />
-      <Slide32bFlowJobApplicationsUnique />
-      <Slide52InterviewTypes />
-      <Slide52TechnicalRound />
-      <Slide32bIntroFreelance />
       <Slide32bFlowFreelance />
       <Slide32bFlowFreelanceHighlight />
       <SlideFreelancingPlatforms />
@@ -333,6 +297,42 @@ const App = () => {
       <SlideGoodReviews />
       <SlideNegotiationTips />
       <SlideOutboundProcessHighlightFollowUp />
+      <Slide32bIntroFreelance />
+      <Slide32bFlowIntro />
+      <Slide32bFlowResumeUnique />
+      <Slide50ATS />
+      <Slide50JD />
+      <Slide50Handshake />
+      <Slide51ATSFriendly />
+      <Slide51ResumeSections />
+      <Slide51Step1 />
+      <Slide51Step2 />
+      <Slide51Step3 />
+      <Slide51Step4 />
+      <Slide51Step4Example />
+      <Slide51Step5 />
+      <Slide51Step5Example />
+      <Slide51Beautify />
+      <Slide170 />
+      <Slide171 />
+      <Slide172 />
+      <Slide173 />
+      <Slide174 />
+      <Slide175 />
+      <Slide176 />
+      <Slide177 />
+      <Slide178 />
+      <Slide51StepsSummary />
+      <Slide51NoExperience />
+      <Slide32bFlowProjectsOne />
+      <Slide32bPortfolioLook />
+      <Slide32cProjects />
+      <Slide32bFlowProjectsTwo />
+      <Slide52JobApplications />
+      <Slide52LinkedInGuides />
+      <Slide32bFlowJobApplicationsUnique />
+      <Slide52InterviewTypes />
+      <Slide52TechnicalRound />
       <SlideProductSet1 />
       <SlideProductSet2 />
       <SlideProductSet3 />
