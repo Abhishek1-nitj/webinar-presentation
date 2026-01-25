@@ -1,0 +1,17 @@
+2026/01/11-16:11:18.620 dfc400 Creating DB /Users/abhishekkumar/Downloads/VS Code/Webinar PPT/3 copy/.chromium-profile-slides/Default/WebStorage/1/IndexedDB/indexeddb.leveldb since it was missing.
+2026/01/11-16:11:18.623 dfc400 Reusing MANIFEST /Users/abhishekkumar/Downloads/VS Code/Webinar PPT/3 copy/.chromium-profile-slides/Default/WebStorage/1/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2026/01/11-16:11:24.163 dfc402 Level-0 table #5: started
+2026/01/11-16:11:24.166 dfc402 Level-0 table #5: 13225 bytes OK
+2026/01/11-16:11:24.168 dfc402 Delete type=0 #3
+2026/01/11-16:11:24.170 dfc402 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/01/11-16:11:24.171 dfc402 Level-0 table #7: started
+2026/01/11-16:11:24.172 dfc402 Level-0 table #7: 765 bytes OK
+2026/01/11-16:11:24.173 dfc402 Delete type=0 #4
+2026/01/11-16:11:24.174 dfc402 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/01/11-16:11:24.174 dfc422 Manual compaction at level-1 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at '\x00\x03\x00\x00\xc8\x11\x00L\x00o\x00g\x00s\x00R\x00e\x00q\x00u\x00e\x00s\x00t\x00s\x00S\x00t\x00o\x00r\x00e' @ 301 : 0
+2026/01/11-16:11:24.174 dfc422 Compacting 1@1 + 1@2 files
+2026/01/11-16:11:24.175 dfc422 Generated table #8@1: 19 keys, 551 bytes
+2026/01/11-16:11:24.175 dfc422 Compacted 1@1 + 1@2 files => 551 bytes
+2026/01/11-16:11:24.176 dfc422 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/01/11-16:11:24.177 dfc422 Delete type=2 #7
+2026/01/11-16:11:24.177 dfc402 Manual compaction at level-1 from '\x00\x03\x00\x00\xc8\x11\x00L\x00o\x00g\x00s\x00R\x00e\x00q\x00u\x00e\x00s\x00t\x00s\x00S\x00t\x00o\x00r\x00e' @ 301 : 0 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
