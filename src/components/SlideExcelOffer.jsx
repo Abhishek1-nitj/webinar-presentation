@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 
 const productOne = new URL('../../Product /xyzimage.png', import.meta.url).href;
 const productTwo = new URL('../../Product /image.png', import.meta.url).href;
-const refundLogo = new URL('../../DB logos/image.png', import.meta.url).href;
 
 const SlideExcelOffer = () => (
   <section className="slide-section min-h-screen w-full flex items-center justify-center px-8 md:px-16 lg:px-24 relative overflow-hidden">
@@ -12,19 +11,6 @@ const SlideExcelOffer = () => (
 
     <div className="relative z-10 w-full max-w-6xl space-y-10">
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8">
-        <motion.div
-          className="pointer-events-none absolute left-[39%] top-16 z-20 hidden -translate-x-1/2 md:block"
-          initial={{ opacity: 0, scale: 0.85 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <img
-            src={refundLogo}
-            alt="Refund guarantee"
-            className="w-48 lg:w-64 drop-shadow-[0_16px_36px_rgba(0,0,0,0.45)]"
-          />
-        </motion.div>
         <motion.div
           className="rounded-[2.5rem] border border-white/10 bg-white/5 p-6 md:p-8 shadow-2xl"
           initial={{ opacity: 0, y: 30 }}
@@ -93,7 +79,7 @@ const SlideExcelOffer = () => (
           </span>
         </div>
         <div className="rounded-full border border-premium-gold/40 bg-premium-gold/15 px-8 py-4 text-center text-3xl md:text-4xl font-bold text-premium-gold">
-          Special Webinar Price Rs 2,000
+          Special Webinar Price Rs 2,500
         </div>
       </motion.div>
 

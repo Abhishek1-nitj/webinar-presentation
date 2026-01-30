@@ -31,7 +31,7 @@ const Slide83 = () => (
       <p className="text-lg text-white/70">
         Actual Value: ₹<span className="font-bold text-red-500 text-3xl line-through">5,000</span>
       </p>
-      <p className="text-3xl font-bold text-premium-gold">Special Webinar Price: ₹2000 only</p>
+      <p className="text-3xl font-bold text-premium-gold">Special Webinar Price: ₹2,500 only</p>
     </div>
   </section>
 );

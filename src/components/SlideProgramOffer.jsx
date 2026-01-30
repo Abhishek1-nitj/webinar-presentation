@@ -49,7 +49,7 @@ const SlideProgramOffer = () => (
           Actual Value: ₹
           <span className="font-bold text-red-500 text-4xl line-through">5,000</span>
         </p>
-        <p className="text-4xl font-bold text-premium-gold">Special Webinar Price: ₹2000 only</p>
+        <p className="text-4xl font-bold text-premium-gold">Special Webinar Price: ₹2,500 only</p>
       </div>
     </motion.div>
   </section>
