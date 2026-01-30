@@ -122,6 +122,8 @@ import SlideProductSet2 from './components/SlideProductSet2';
 import SlideProductSet3 from './components/SlideProductSet3';
 import SlideProductSet4 from './components/SlideProductSet4';
 import SlideProductAll from './components/SlideProductAll';
+import Slide179 from './components/Slide179';
+import Slide180 from './components/Slide180';
 
 const App = () => {
   const [targetSlide, setTargetSlide] = useState('');
@@ -224,6 +226,8 @@ const App = () => {
       <Slide32k visibleSteps={2} />
       <Slide32n />
       <Slide32o />
+      <Slide179 />
+      <Slide180 />
       <Slide32t />
       <Slide32u />
       <Slide32p />
