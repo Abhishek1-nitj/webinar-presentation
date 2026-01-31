@@ -56,7 +56,7 @@ const SlideProductAll = () => (
       <p className="text-3xl font-display font-semibold text-emerald-200">
         Special Webinar Price: ₹
         <span className="text-4xl font-bold text-emerald-100 drop-shadow-[0_0_12px_rgba(16,185,129,0.6)]">
-          2,500
+          2,000
         </span>{' '}
         only
       </p>
