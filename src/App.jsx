@@ -19,15 +19,12 @@ import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
 import Slide32bRecap from './components/Slide32bRecap';
 import Slide32j from './components/Slide32j';
 import Slide32k from './components/Slide32k';
+import Slide32kStep1 from './components/Slide32kStep1';
+import Slide32kStep2 from './components/Slide32kStep2';
 import Slide32jDataCollectionHighlight from './components/Slide32jDataCollectionHighlight';
 import Slide32n from './components/Slide32n';
 import Slide32o from './components/Slide32o';
-import Slide32t from './components/Slide32t';
-import Slide32u from './components/Slide32u';
 import Slide32p from './components/Slide32p';
-import Slide32q from './components/Slide32q';
-import Slide32s from './components/Slide32s';
-import Slide32r from './components/Slide32r';
 import Slide32sGenAITools from './components/Slide32sGenAITools';
 import Slide32m from './components/Slide32m';
 import Slide32wDataConnection from './components/Slide32wDataConnection';
@@ -215,25 +212,20 @@ const App = () => {
       <Slide32bHighlightUnique />
       <SlideExcelNotFormulas />
       <Slide32j />
-      <Slide32k visibleSteps={1} />
-      <Slide32k visibleSteps={2} />
+      <Slide32kStep1 />
+      <Slide32kStep2 />
       <Slide32k visibleSteps={3} />
       <Slide32k visibleSteps={4} />
       <Slide32k visibleSteps={5} />
       <Slide32k visibleSteps={6} />
       <Slide32k visibleSteps={7} />
       <Slide32jDataCollectionHighlight />
-      <Slide32k visibleSteps={2} />
+      <Slide32kStep2 />
       <Slide32n />
       <Slide32o />
       <Slide179 />
       <Slide180 />
-      <Slide32t />
-      <Slide32u />
       <Slide32p />
-      <Slide32q />
-      <Slide32s />
-      <Slide32r />
       <Slide32sGenAITools />
       <Slide32m />
       <Slide32k visibleSteps={3} />
