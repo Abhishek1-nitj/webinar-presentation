@@ -4,7 +4,7 @@ const productOne = new URL('../../Product /xyzimage.png', import.meta.url).href;
 const productTwo = new URL('../../Product /image.png', import.meta.url).href;
 const productThree = new URL('../../Product /image909090.png', import.meta.url).href;
 
-const SlideExcelOfferCopy = () => (
+const SlideExcelOfferFinal = () => (
   <section className="slide-section min-h-screen w-full flex items-center justify-center px-6 md:px-10 lg:px-16 relative overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-br from-premium-black via-[#0E0F12] to-subtle-gray" />
     <div className="absolute -top-32 right-[-10%] h-80 w-80 rounded-full bg-premium-gold/10 blur-3xl" />
@@ -112,4 +112,4 @@ const SlideExcelOfferCopy = () => (
   </section>
 );
 
-export default SlideExcelOfferCopy;
+export default SlideExcelOfferFinal;

@@ -16,17 +16,20 @@ const SlideProductSet1 = () => (
         <img
           src={product1}
           alt="Advanced Excel job-ready course"
-          className="w-full max-w-3xl max-h-[70vh] object-contain"
+          className="w-full max-w-2xl max-h-[58vh] object-contain"
           loading="lazy"
         />
       </motion.div>
     </div>
-    <div className="absolute bottom-6 left-1/2 w-[min(520px,90%)] -translate-x-1/2 rounded-[2rem] border border-emerald-200/25 bg-emerald-950/40 px-6 py-4 text-center space-y-1 shadow-[0_20px_45px_rgba(16,185,129,0.18)] backdrop-blur">
+    <div className="absolute bottom-4 left-1/2 w-[min(520px,88%)] -translate-x-1/2 rounded-[2rem] border border-emerald-200/25 bg-emerald-950/40 px-6 py-4 text-center space-y-1 shadow-[0_20px_45px_rgba(16,185,129,0.18)] backdrop-blur">
       <p className="text-lg text-white/70 font-display">
         Actual Value: ₹
         <span className="font-bold text-red-500 text-4xl line-through decoration-[3px]">
-          13,000
+          20,000
         </span>
+      </p>
+      <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200/80">
+        90% Discount
       </p>
       <p className="text-3xl font-display font-semibold text-emerald-200">
         Special Webinar Price: ₹

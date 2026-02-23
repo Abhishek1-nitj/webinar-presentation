@@ -50,8 +50,11 @@ const SlideProductAll = () => (
       <p className="text-lg text-white/70 font-display">
         Actual Value: ₹
         <span className="font-bold text-red-500 text-4xl line-through decoration-[3px]">
-          13,000
+          20,000
         </span>
+      </p>
+      <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200/80">
+        90% Discount
       </p>
       <p className="text-3xl font-display font-semibold text-emerald-200">
         Special Webinar Price: ₹

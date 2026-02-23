@@ -119,6 +119,7 @@ import SlideProductSet2 from './components/SlideProductSet2';
 import SlideProductSet3 from './components/SlideProductSet3';
 import SlideProductSet4 from './components/SlideProductSet4';
 import SlideProductAll from './components/SlideProductAll';
+import SlideExcelOfferFinal from './components/SlideExcelOfferFinal';
 import Slide179 from './components/Slide179';
 import Slide180 from './components/Slide180';
 
@@ -244,8 +245,8 @@ const App = () => {
       <SlideMicrosoft365Link />
       <SlideCompleteAdvancedExcelAI />
       <SlideBigTextPrice />
-      <SlideExcelOfferCopy />
       <SlideExcelOffer />
+      <SlideExcelOfferCopy />
       <Slide32k visibleSteps={4} />
       <Slide32k visibleSteps={5} />
       <Slide32x />
@@ -335,6 +336,7 @@ const App = () => {
       <SlideProductSet4 />
       <SlideProductAll />
       <SlideExcelOffer />
+      <SlideExcelOfferFinal />
     </div>
   );
 };
