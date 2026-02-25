@@ -104,7 +104,7 @@ const SlideExcelOfferFinal = () => (
           </span>
         </div>
         <div className="rounded-full border border-premium-gold/40 bg-premium-gold/15 px-6 py-3 text-center text-2xl md:text-3xl font-bold text-premium-gold">
-          Special Webinar Price Rs 2,000
+          Special Webinar Price Rs 2,500
         </div>
       </motion.div>
 
