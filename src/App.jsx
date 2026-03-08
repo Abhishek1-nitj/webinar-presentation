@@ -21,7 +21,6 @@ import Slide32j from './components/Slide32j';
 import Slide32k from './components/Slide32k';
 import Slide32kStep1 from './components/Slide32kStep1';
 import Slide32kStep2 from './components/Slide32kStep2';
-import Slide32jDataCollectionHighlight from './components/Slide32jDataCollectionHighlight';
 import Slide32n from './components/Slide32n';
 import Slide32o from './components/Slide32o';
 import Slide32p from './components/Slide32p';
@@ -119,6 +118,7 @@ import SlideProductSet2 from './components/SlideProductSet2';
 import SlideProductSet3 from './components/SlideProductSet3';
 import SlideProductSet4 from './components/SlideProductSet4';
 import SlideProductAll from './components/SlideProductAll';
+import SlideInstagramStoryShare from './components/SlideInstagramStoryShare';
 import SlideExcelOfferFinal from './components/SlideExcelOfferFinal';
 import Slide179 from './components/Slide179';
 import Slide180 from './components/Slide180';
@@ -220,7 +220,6 @@ const App = () => {
       <Slide32k visibleSteps={5} />
       <Slide32k visibleSteps={6} />
       <Slide32k visibleSteps={7} />
-      <Slide32jDataCollectionHighlight />
       <Slide32kStep2 />
       <Slide32n />
       <Slide32o />
@@ -335,6 +334,7 @@ const App = () => {
       <SlideProductSet3 />
       <SlideProductSet4 />
       <SlideProductAll />
+      <SlideInstagramStoryShare />
       <SlideExcelOffer />
       <SlideExcelOfferFinal />
     </div>
