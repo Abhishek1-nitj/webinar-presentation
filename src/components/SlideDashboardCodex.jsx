@@ -17,7 +17,7 @@ const SlideDashboardCodex = () => (
         transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
       >
         <a
-          href="https://chimerical-palmier-b581bc.netlify.app/"
+          href="https://sage-gnome-edd0b3.netlify.app/"
           target="_blank"
           rel="noreferrer"
           className="underline decoration-premium-gold/70 underline-offset-8 hover:text-premium-gold transition-colors"

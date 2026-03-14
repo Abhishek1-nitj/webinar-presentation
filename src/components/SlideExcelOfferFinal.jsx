@@ -27,7 +27,7 @@ const SlideExcelOfferFinal = () => (
           <div className="mt-6 space-y-2 text-center">
             <div className="text-lg md:text-xl font-semibold">Complete Excel Course</div>
             <div className="text-3xl md:text-4xl font-bold text-[#9CD96B]">
-              Rs 9,000
+              Rs 8,000
             </div>
             <ul className="mt-2 text-xs md:text-sm text-white/70 list-disc list-inside">
               <li>Lifetime access</li>
@@ -90,12 +90,12 @@ const SlideExcelOfferFinal = () => (
         transition={{ duration: 0.9, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
       >
         <div className="rounded-full border border-emerald-300/40 bg-emerald-300/10 px-5 py-2 text-xs md:text-sm font-semibold uppercase tracking-[0.25em] text-emerald-100">
-          Flat 85% Discount
+          Flat 90% Discount
         </div>
         <div className="flex items-center gap-3 text-xs md:text-sm uppercase tracking-[0.35em] text-white/60">
           <span className="relative inline-block px-6 py-2">
             <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-white/90 bg-white/10 px-4 py-2 rounded-full shadow-[0_0_18px_rgba(255,255,255,0.18)] line-through">
-              21,000
+              20,000
             </span>
             <span className="pointer-events-none absolute inset-0">
               <span className="absolute left-0 top-1/2 h-1 w-full bg-red-500 -rotate-12 shadow-[0_0_12px_rgba(239,68,68,0.6)]" />
@@ -104,7 +104,7 @@ const SlideExcelOfferFinal = () => (
           </span>
         </div>
         <div className="rounded-full border border-premium-gold/40 bg-premium-gold/15 px-6 py-3 text-center text-2xl md:text-3xl font-bold text-premium-gold">
-          Special Webinar Price Rs 2,999
+          Special Webinar Price Rs 2000
         </div>
       </motion.div>
 

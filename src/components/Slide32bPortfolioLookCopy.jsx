@@ -15,7 +15,7 @@ const Slide32bPortfolioLookCopy = () => (
           How Does a Portfolio Look like?
         </h2>
         <a
-          href="https://glittery-madeleine-73be6e.netlify.app/"
+          href="https://delightful-unicorn-f0f695.netlify.app/"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center justify-center rounded-full border border-premium-gold/50 bg-premium-gold/10 px-8 py-3 text-lg font-semibold text-premium-gold shadow-[0_20px_50px_rgba(255,215,0,0.2)] transition hover:bg-premium-gold/20"

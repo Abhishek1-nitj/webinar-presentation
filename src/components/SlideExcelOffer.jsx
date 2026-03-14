@@ -27,7 +27,7 @@ const SlideExcelOffer = () => (
           <div className="mt-6 space-y-2 text-center">
             <div className="text-lg md:text-xl font-semibold">Complete Excel Course</div>
             <div className="text-3xl md:text-4xl font-bold text-[#9CD96B]">
-              Rs 9,000
+              Rs 8,000
             </div>
             <ul className="mt-2 text-xs md:text-sm text-white/70 list-disc list-inside">
               <li>Lifetime access</li>
@@ -92,7 +92,7 @@ const SlideExcelOffer = () => (
         <div className="flex items-center gap-3 text-xs md:text-sm uppercase tracking-[0.35em] text-white/60">
           <span className="relative inline-block px-6 py-2">
             <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-white/90 bg-white/10 px-4 py-2 rounded-full shadow-[0_0_18px_rgba(255,255,255,0.18)]">
-              21,000
+              20,000
             </span>
           </span>
         </div>
