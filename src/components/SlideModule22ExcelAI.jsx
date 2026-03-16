@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 import vsCodexLogo from '../../DB logos/Visual Studio Code + Codex Extension.svg.png';
-import googleAntiGravityLogo from '../../DB logos/Google Anti-Gravity.jpeg';
+import googleAntiGravityLogo from '../../Logos/Antigravity.webp';
 
 const SlideModule22ExcelAI = () => (
   <section className="slide-section min-h-screen w-full flex items-center justify-center px-8 md:px-16 lg:px-24 relative overflow-hidden">
@@ -10,11 +10,20 @@ const SlideModule22ExcelAI = () => (
     <div className="absolute -bottom-24 left-[-5%] h-72 w-72 rounded-full bg-white/5 blur-3xl" />
 
     <div className="relative z-10 w-full max-w-4xl text-center space-y-6">
-      <motion.h2
+      <motion.p
         initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+        className="text-xl md:text-2xl lg:text-3xl font-medium text-white/80"
+      >
+        Use of IDEs (Integrated Development environment)
+      </motion.p>
+      <motion.h2
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
         className="font-display text-4xl md:text-6xl lg:text-7xl leading-tight text-white"
       >
         Module 22: Excel + AI
@@ -23,19 +32,10 @@ const SlideModule22ExcelAI = () => (
         initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         className="text-2xl md:text-3xl lg:text-4xl font-semibold text-cyan-200"
       >
         Use of most Advanced AI tools
-      </motion.p>
-      <motion.p
-        initial={{ opacity: 0, y: 25 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-        className="text-lg md:text-xl lg:text-2xl text-red-400"
-      >
-        (Visual Studio Code + Codex and Google Anti Gravity are taught nowhere)
       </motion.p>
 
       <motion.div
@@ -45,19 +45,29 @@ const SlideModule22ExcelAI = () => (
         transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         className="flex flex-col md:flex-row items-center justify-center gap-6 pt-2"
       >
-        <div className="w-28 h-28 md:w-32 md:h-32 rounded-2xl overflow-hidden flex items-center justify-center bg-white/5 border border-white/10 shadow-[0_18px_40px_rgba(0,0,0,0.35)]">
-          <img
-            src={vsCodexLogo}
-            alt="Visual Studio Code + Codex Extension logo"
-            className="w-full h-full object-contain"
-          />
+        <div className="flex flex-col items-center gap-3">
+          <div className="w-28 h-28 md:w-32 md:h-32 rounded-2xl overflow-hidden flex items-center justify-center bg-white/5 border border-white/10 shadow-[0_18px_40px_rgba(0,0,0,0.35)]">
+            <img
+              src={vsCodexLogo}
+              alt="Visual Studio Code + Codex Extension logo"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <p className="text-base md:text-lg font-medium text-white">
+            VS Code + Codex
+          </p>
         </div>
-        <div className="w-28 h-28 md:w-32 md:h-32 rounded-2xl overflow-hidden flex items-center justify-center bg-white/5 border border-white/10 shadow-[0_18px_40px_rgba(0,0,0,0.35)]">
-          <img
-            src={googleAntiGravityLogo}
-            alt="Google Anti-Gravity logo"
-            className="w-full h-full object-contain"
-          />
+        <div className="flex flex-col items-center gap-3">
+          <div className="w-28 h-28 md:w-32 md:h-32 rounded-2xl overflow-hidden flex items-center justify-center bg-white/5 border border-white/10 shadow-[0_18px_40px_rgba(0,0,0,0.35)]">
+            <img
+              src={googleAntiGravityLogo}
+              alt="Google Anti-Gravity logo"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <p className="text-base md:text-lg font-medium text-white">
+            Google Antigravity
+          </p>
         </div>
       </motion.div>
     </div>
