@@ -107,7 +107,6 @@ import Slide51NoExperience from './components/Slide51NoExperience';
 import Slide32bFlowProjectsOne from './components/Slide32bFlowProjectsOne';
 import Slide32bPortfolioLook from './components/Slide32bPortfolioLook';
 import Slide32cProjects from './components/Slide32cProjects';
-import Slide52JobApplications from './components/Slide52JobApplications';
 import Slide52LinkedInGuides from './components/Slide52LinkedInGuides';
 import Slide32bFlowJobApplicationsUnique from './components/Slide32bFlowJobApplicationsUnique';
 import Slide32bFlowProjectsTwo from './components/Slide32bFlowProjectsTwo';
@@ -122,6 +121,9 @@ import SlideInstagramStoryShare from './components/SlideInstagramStoryShare';
 import SlideExcelOfferFinal from './components/SlideExcelOfferFinal';
 import Slide179 from './components/Slide179';
 import Slide180 from './components/Slide180';
+import Slide181 from './components/Slide181';
+import Slide183 from './components/Slide183';
+import Slide185 from './components/Slide185';
 
 const App = () => {
   const [targetSlide, setTargetSlide] = useState('');
@@ -324,7 +326,9 @@ const App = () => {
       <Slide32bPortfolioLook />
       <Slide32cProjects />
       <Slide32bFlowProjectsTwo />
-      <Slide52JobApplications />
+      <Slide181 />
+      <Slide183 />
+      <Slide185 />
       <Slide52LinkedInGuides />
       <Slide32bFlowJobApplicationsUnique />
       <Slide52InterviewTypes />
