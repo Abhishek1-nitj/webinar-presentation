@@ -240,8 +240,8 @@ const App = () => {
       <SlidePracticePracticePractice />
       <SlideModule22ExcelAI />
       <SlideModule23InterviewPreparation />
-      <SlideReadyMadeProjects />
       <Slide32bPortfolioLookCopy />
+      <SlideReadyMadeProjects />
       <SlideFreelanceProjectCategories />
       <SlideMicrosoft365Link />
       <SlideCompleteAdvancedExcelAI />
