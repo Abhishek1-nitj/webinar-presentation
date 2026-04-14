@@ -16,6 +16,8 @@ import SlideReadyMadeProjects from './components/SlideReadyMadeProjects';
 import SlideCompleteAdvancedExcelAI from './components/SlideCompleteAdvancedExcelAI';
 import SlideBigTextPrice from './components/SlideBigTextPrice';
 import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
+import SlideCoursePrice from './components/SlideCoursePrice';
+import SlideDiscount90 from './components/SlideDiscount90';
 import Slide32bRecap from './components/Slide32bRecap';
 import Slide32j from './components/Slide32j';
 import Slide32k from './components/Slide32k';
@@ -247,6 +249,8 @@ const App = () => {
       <SlideCompleteAdvancedExcelAI />
       <SlideBigTextPrice />
       <SlideExcelOffer />
+      <SlideCoursePrice />
+      <SlideDiscount90 />
       <SlideExcelOfferCopy />
       <Slide32k visibleSteps={4} />
       <Slide32k visibleSteps={5} />
