@@ -114,6 +114,8 @@ import Slide32bFlowJobApplicationsUnique from './components/Slide32bFlowJobAppli
 import Slide32bFlowProjectsTwo from './components/Slide32bFlowProjectsTwo';
 import Slide52InterviewTypes from './components/Slide52InterviewTypes';
 import Slide52TechnicalRound from './components/Slide52TechnicalRound';
+import Slide52WhyLayoffsTechnical from './components/Slide52WhyLayoffsTechnical';
+import Slide52WhyLayoffs from './components/Slide52WhyLayoffs';
 import SlideProductSet1 from './components/SlideProductSet1';
 import SlideProductSet2 from './components/SlideProductSet2';
 import SlideProductSet3 from './components/SlideProductSet3';
@@ -229,6 +231,7 @@ const App = () => {
       <Slide32o />
       <Slide179 />
       <Slide180 />
+      <Slide52WhyLayoffs />
       <Slide32p />
       <Slide32sGenAITools />
       <Slide32m />
@@ -337,6 +340,7 @@ const App = () => {
       <Slide32bFlowJobApplicationsUnique />
       <Slide52InterviewTypes />
       <Slide52TechnicalRound />
+      <Slide52WhyLayoffsTechnical />
       <SlideProductSet1 />
       <SlideProductSet2 />
       <SlideProductSet3 />
