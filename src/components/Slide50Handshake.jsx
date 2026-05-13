@@ -30,7 +30,7 @@ const Slide50Handshake = () => (
         <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-white/10 border border-white/15 flex items-center justify-center shadow-[0_35px_90px_rgba(0,0,0,0.45)] overflow-visible">
           <img src={handshakeImg} alt="Handshake" className="w-full h-full object-contain" />
         </div>
-        <div className={`${boxClass} text-premium-gold/80`}>Resume</div>
+        <div className={`${boxClass} text-premium-gold/80`}>Experience Section</div>
       </motion.div>
     </div>
   </section>

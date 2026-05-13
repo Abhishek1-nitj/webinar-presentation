@@ -10,7 +10,7 @@ const workflowSteps = [
     tools: 'TRIM, CLEAN, LEFT, RIGHT, MID, FIND, UPPER, LOWER, PROPER, TEXTBEFORE, TEXTAFTER, TEXTJOIN',
   },
   {
-    label: 'Data Connection',
+    label: 'Data Connection/Data Modeling',
     tools: 'XLOOKUP, VLOOKUP, INDEX + MATCH, XMATCH, FILTER, CHOOSECOLS, VSTACK, HSTACK',
   },
   {

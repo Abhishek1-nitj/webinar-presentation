@@ -8,7 +8,7 @@ const steps = [
       'TRIM, CLEAN, LEFT, RIGHT, MID, FIND UPPER, LOWER, PROPER, TEXTBEFORE, TEXT AFTER, TEXTJOIN',
   },
   {
-    step: '3. Data Connection',
+    step: '3. Data Connection/Data Modeling',
     tools: 'XLOOKUP, VLOOKUP, INDEX + MATCH, XMATCH, FILTER, CHOOSECOLS, VSTACK, HSTACK',
   },
   {

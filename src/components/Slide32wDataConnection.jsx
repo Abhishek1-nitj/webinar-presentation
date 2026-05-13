@@ -12,7 +12,7 @@ const Slide32wDataConnection = () => (
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
       >
-        Data Connection
+        Data Connection/Data Modeling
       </motion.h2>
       <motion.div
         className="rounded-[2rem] border border-white/10 bg-white/5 p-4 md:p-6"
@@ -23,7 +23,7 @@ const Slide32wDataConnection = () => (
       >
         <img
           src={dataConnectionImage}
-          alt="Data Connection"
+          alt="Data Connection/Data Modeling"
           className="w-full max-h-[65vh] object-contain"
           loading="lazy"
         />

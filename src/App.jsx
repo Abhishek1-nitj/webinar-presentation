@@ -16,7 +16,6 @@ import SlideReadyMadeProjects from './components/SlideReadyMadeProjects';
 import SlideCompleteAdvancedExcelAI from './components/SlideCompleteAdvancedExcelAI';
 import SlideBigTextPrice from './components/SlideBigTextPrice';
 import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
-import SlideCoursePrice from './components/SlideCoursePrice';
 import SlideDiscount90 from './components/SlideDiscount90';
 import Slide32bRecap from './components/Slide32bRecap';
 import Slide32j from './components/Slide32j';
@@ -27,9 +26,9 @@ import Slide32n from './components/Slide32n';
 import Slide32o from './components/Slide32o';
 import Slide32p from './components/Slide32p';
 import Slide32sGenAITools from './components/Slide32sGenAITools';
+import Slide32sPromptingIntro from './components/Slide32sPromptingIntro';
 import Slide32m from './components/Slide32m';
 import Slide32wDataConnection from './components/Slide32wDataConnection';
-import Slide32w from './components/Slide32w';
 import SlideLearnExcelSources from './components/SlideLearnExcelSources';
 import SlideExcelOffer from './components/SlideExcelOffer';
 import SlideMicrosoft365Link from './components/SlideMicrosoft365Link';
@@ -73,10 +72,8 @@ import SlidePeoplePerHourPlatform from './components/SlidePeoplePerHourPlatform'
 import SlideToptalPlatform from './components/SlideToptalPlatform';
 import SlideOutboundProcessHighlightFollowUp from './components/SlideOutboundProcessHighlightFollowUp';
 import SlideFreelanceProjectsProcess from './components/SlideFreelanceProjectsProcess';
-import SlideOutboundProcess from './components/SlideOutboundProcess';
 import SlideOutboundProcessHighlight1 from './components/SlideOutboundProcessHighlight1';
 import SlideOutboundProcessHighlight2 from './components/SlideOutboundProcessHighlight2';
-import SlideSampleUpworkPosting from './components/SlideSampleUpworkPosting';
 import SlideHowToBid from './components/SlideHowToBid';
 import SlideSampleBid from './components/SlideSampleBid';
 import SlideOutboundProcessHighlight4 from './components/SlideOutboundProcessHighlight4';
@@ -114,8 +111,6 @@ import Slide32bFlowJobApplicationsUnique from './components/Slide32bFlowJobAppli
 import Slide32bFlowProjectsTwo from './components/Slide32bFlowProjectsTwo';
 import Slide52InterviewTypes from './components/Slide52InterviewTypes';
 import Slide52TechnicalRound from './components/Slide52TechnicalRound';
-import Slide52WhyLayoffsTechnical from './components/Slide52WhyLayoffsTechnical';
-import Slide52WhyLayoffs from './components/Slide52WhyLayoffs';
 import SlideProductSet1 from './components/SlideProductSet1';
 import SlideProductSet2 from './components/SlideProductSet2';
 import SlideProductSet3 from './components/SlideProductSet3';
@@ -231,14 +226,13 @@ const App = () => {
       <Slide32o />
       <Slide179 />
       <Slide180 />
-      <Slide52WhyLayoffs />
       <Slide32p />
       <Slide32sGenAITools />
+      <Slide32sPromptingIntro />
       <Slide32m />
       <Slide32k visibleSteps={3} />
       <Slide32wDataConnection />
       <Slide32k visibleSteps={4} />
-      <Slide32w />
       <SlideLearnExcelSources />
       <SlideWhereToLearnAllThis />
       <Slide32j />
@@ -252,7 +246,6 @@ const App = () => {
       <SlideCompleteAdvancedExcelAI />
       <SlideBigTextPrice />
       <SlideExcelOffer />
-      <SlideCoursePrice />
       <SlideDiscount90 />
       <SlideExcelOfferCopy />
       <Slide32k visibleSteps={4} />
@@ -287,11 +280,9 @@ const App = () => {
       <SlideFreelanceProjectCategories />
       <Slide32bFlowFreelanceProcessHighlight />
       <SlideFreelanceProjectsProcess />
-      <SlideOutboundProcess />
       <SlideOutboundProcessHighlight1 />
       <SlideRequirementDocument />
       <SlideOutboundProcessHighlight2 />
-      <SlideSampleUpworkPosting />
       <SlideHowToBid />
       <SlideSampleBid />
       <SlideOutboundProcessHighlight4 />
@@ -340,7 +331,6 @@ const App = () => {
       <Slide32bFlowJobApplicationsUnique />
       <Slide52InterviewTypes />
       <Slide52TechnicalRound />
-      <Slide52WhyLayoffsTechnical />
       <SlideProductSet1 />
       <SlideProductSet2 />
       <SlideProductSet3 />
