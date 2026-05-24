@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 const productOne = new URL('../../Product /xyzimage.png', import.meta.url).href;
 const productTwo = new URL('../../Product /image.png', import.meta.url).href;
 const productThree = new URL('../../Product /image909090.png', import.meta.url).href;
+const moneyBackGuarantee = new URL(
+  '../../MOney back/1000_F_283059468_fmVlgJFin7W6sABjVBj6xHUTsVNr0kXW-removebg-preview.png',
+  import.meta.url,
+).href;
 
 const SlideExcelOfferCopy = () => (
   <section className="slide-section min-h-screen w-full flex items-center justify-center px-6 md:px-10 lg:px-16 relative overflow-hidden">
@@ -84,28 +88,43 @@ const SlideExcelOfferCopy = () => (
       </div>
 
       <motion.div
-        className="flex flex-col items-center gap-3"
+        className="grid gap-4 lg:grid-cols-[max-content_280px] lg:justify-center lg:items-stretch"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.9, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
       >
-        <div className="rounded-full border border-emerald-300/40 bg-emerald-300/10 px-5 py-2 text-xs md:text-sm font-semibold uppercase tracking-[0.25em] text-emerald-100">
-          Flat 90% Discount
+        <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] px-5 py-5 md:px-7 md:py-6 shadow-[0_25px_80px_rgba(0,0,0,0.32)] backdrop-blur-sm">
+          <div className="flex flex-col items-center gap-3 text-center">
+            <div className="rounded-full border border-emerald-300/40 bg-emerald-300/10 px-5 py-2 text-xs md:text-sm font-semibold uppercase tracking-[0.25em] text-emerald-100">
+              Flat 90% Discount
+            </div>
+            <div className="flex items-center gap-3 text-xs md:text-sm uppercase tracking-[0.35em] text-white/60">
+              <span className="relative inline-block px-4 py-2">
+                <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-white/90 bg-white/10 px-4 py-2 rounded-full shadow-[0_0_18px_rgba(255,255,255,0.18)] line-through">
+                  20,000
+                </span>
+                <span className="pointer-events-none absolute inset-0">
+                  <span className="absolute left-0 top-1/2 h-1 w-full bg-red-500 -rotate-12 shadow-[0_0_12px_rgba(239,68,68,0.6)]" />
+                  <span className="absolute left-0 top-1/2 h-1 w-full bg-red-500 rotate-12 shadow-[0_0_12px_rgba(239,68,68,0.6)]" />
+                </span>
+              </span>
+            </div>
+            <div className="rounded-[1.5rem] border border-premium-gold/40 bg-premium-gold/15 px-6 py-3 text-center text-2xl md:text-3xl font-bold text-premium-gold shadow-[0_18px_50px_rgba(222,174,67,0.18)]">
+              Special Webinar Price Rs 2500
+            </div>
+          </div>
         </div>
-        <div className="flex items-center gap-3 text-xs md:text-sm uppercase tracking-[0.35em] text-white/60">
-          <span className="relative inline-block px-6 py-2">
-            <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-white/90 bg-white/10 px-4 py-2 rounded-full shadow-[0_0_18px_rgba(255,255,255,0.18)] line-through">
-              20,000
-            </span>
-            <span className="pointer-events-none absolute inset-0">
-              <span className="absolute left-0 top-1/2 h-1 w-full bg-red-500 -rotate-12 shadow-[0_0_12px_rgba(239,68,68,0.6)]" />
-              <span className="absolute left-0 top-1/2 h-1 w-full bg-red-500 rotate-12 shadow-[0_0_12px_rgba(239,68,68,0.6)]" />
-            </span>
-          </span>
-        </div>
-        <div className="rounded-full border border-premium-gold/40 bg-premium-gold/15 px-6 py-3 text-center text-2xl md:text-3xl font-bold text-premium-gold">
-          Special Webinar Price Rs 2000
+
+        <div className="flex justify-center lg:justify-end">
+          <div className="group relative flex h-full min-h-[220px] w-full max-w-[280px] items-center justify-center overflow-hidden rounded-[2rem] border border-[#F3C96A]/35 bg-[radial-gradient(circle_at_top,_rgba(243,201,106,0.2),_rgba(255,255,255,0.04)_48%,_rgba(255,255,255,0.02)_100%)] p-2 shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
+            <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[#F3C96A]/70 to-transparent" />
+            <img
+              src={moneyBackGuarantee}
+              alt="30 day money back guarantee badge"
+              className="max-h-full w-full object-contain drop-shadow-[0_18px_30px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:scale-[1.03]"
+            />
+          </div>
         </div>
       </motion.div>
 

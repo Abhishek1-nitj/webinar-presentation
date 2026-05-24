@@ -31,7 +31,7 @@ const SlideProgramPrompt = () => (
       <div className="rounded-[2rem] border border-premium-gold/40 bg-premium-gold/10 px-6 py-6 text-center space-y-2 shadow-[0_20px_50px_rgba(255,215,0,0.2)]">
         <p className="text-xl text-text-muted">Pricing</p>
         <p className="text-lg text-white/70 line-through">Actual Value: ₹5,000</p>
-        <p className="text-4xl font-bold text-premium-gold">Special Webinar Price: ₹2,000 only</p>
+        <p className="text-4xl font-bold text-premium-gold">Special Webinar Price: ₹2500 only</p>
       </div>
     </motion.div>
   </section>

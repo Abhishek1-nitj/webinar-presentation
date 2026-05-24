@@ -42,7 +42,7 @@ const Slide80 = () => (
                 Actual Value: ₹<span className="font-bold text-red-500 text-2xl line-through">5,000</span>
             </p>
             <p className="text-2xl md:text-3xl font-bold text-premium-gold">
-                Special Webinar Price: ₹2,000 only
+                Special Webinar Price: ₹2500 only
             </p>
         </div>
     </section>

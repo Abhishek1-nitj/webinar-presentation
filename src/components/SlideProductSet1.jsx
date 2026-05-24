@@ -29,12 +29,12 @@ const SlideProductSet1 = () => (
         </span>
       </p>
       <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200/80">
-        85% Discount
+        90% Discount
       </p>
       <p className="text-3xl font-display font-semibold text-emerald-200">
         Special Webinar Price: ₹
         <span className="text-4xl font-bold text-emerald-100 drop-shadow-[0_0_12px_rgba(16,185,129,0.6)]">
-          2000
+          2500
         </span>{' '}
         only
       </p>
