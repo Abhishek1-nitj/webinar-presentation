@@ -239,10 +239,11 @@ const App = () => {
       <Slide32j />
       <SlidePracticePracticePractice />
       <SlideModule22ExcelAI />
-      <SlideModule23InterviewPreparation />
+      <SlideDashboardCodex />
       <Slide32bPortfolioLookCopy />
       <SlideReadyMadeProjects />
       <SlideFreelanceProjectCategories />
+      <SlideModule23InterviewPreparation />
       <SlideMicrosoft365Link />
       <SlideCompleteAdvancedExcelAI />
       <SlideBigTextPrice />
