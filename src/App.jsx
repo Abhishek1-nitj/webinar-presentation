@@ -125,6 +125,7 @@ import Slide181 from './components/Slide181';
 import Slide183 from './components/Slide183';
 import Slide185 from './components/Slide185';
 import SlideFAQs from './components/SlideFAQs';
+import SlideFinalMagic from './components/SlideFinalMagic';
 
 const App = () => {
   const [targetSlide, setTargetSlide] = useState('');
@@ -237,6 +238,7 @@ const App = () => {
       <Slide32k visibleSteps={4} />
       <SlideLearnExcelSources />
       <SlideWhereToLearnAllThis />
+      <SlideFinalMagic />
       <Slide32j />
       <SlidePracticePracticePractice />
       <SlideModule22ExcelAI />
