@@ -1,19 +1,20 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const tools = [
-  { label: 'ChatGPT', logo: '/Gen AI Tools/ChatGPT (OpenAI).png' },
-  { label: 'Google Gemini', logo: '/Gen AI Tools/Google Gemini.webp' },
-  { label: 'Claude AI', logo: '/Gen AI Tools/Claude (Anthropic).png' },
-  { label: 'Perplexity AI', logo: '/Gen AI Tools/perplexity.webp' },
-  { label: 'DeepSeek AI', logo: '/Gen AI Tools/Deepseek-.svg.png' },
+  { label: 'ChatGPT', logo: assetPath('Gen AI Tools/ChatGPT (OpenAI).png') },
+  { label: 'Google Gemini', logo: assetPath('Gen AI Tools/Google Gemini.webp') },
+  { label: 'Claude AI', logo: assetPath('Gen AI Tools/Claude (Anthropic).png') },
+  { label: 'Perplexity AI', logo: assetPath('Gen AI Tools/perplexity.webp') },
+  { label: 'DeepSeek AI', logo: assetPath('Gen AI Tools/Deepseek-.svg.png') },
 ];
 
 const specializedTools = [
-  { label: 'Julius AI', logo: '/AI Tools/Julius AI.webp' },
-  { label: 'Quadratic: The AI Spreadsheet', logo: '/AI Tools/Quadratic The AI Spreadsheet.webp' },
-  { label: 'Bricks AI', logo: '/AI Tools/Bricks AI.jpeg' },
-  { label: 'DataSquirrel.ai', logo: '/AI Tools/datasquirrel-ai.webp' },
-  { label: 'Shortcut AI', logo: '/AI Tools/Shortcut AI.svg' },
+  { label: 'Julius AI', logo: assetPath('images/ai-tools/Julius AI.webp') },
+  { label: 'Quadratic: The AI Spreadsheet', logo: assetPath('images/ai-tools/Quadratic The AI Spreadsheet.webp') },
+  { label: 'Bricks AI', logo: assetPath('images/ai-tools/Bricks AI.jpeg') },
+  { label: 'DataSquirrel.ai', logo: assetPath('images/ai-tools/datasquirrel-ai.webp') },
+  { label: 'Shortcut AI', logo: assetPath('images/ai-tools/Shortcut AI.svg') },
 ];
 
 const Slide32sGenAITools = () => (
