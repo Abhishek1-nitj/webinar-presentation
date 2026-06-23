@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const partyImages = [
-    '/images/personal/party/party1.jpg',
-    '/images/personal/party/party2.jpg',
-    '/images/personal/party/party3.jpg',
-    '/images/personal/party/party4.jpg',
+    assetPath('images/personal/party/party1.jpg'),
+    assetPath('images/personal/party/party2.jpg'),
+    assetPath('images/personal/party/party3.jpg'),
+    assetPath('images/personal/party/party4.jpg'),
 ];
 
 const Slide26 = () => {

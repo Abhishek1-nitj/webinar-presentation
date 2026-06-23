@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const collegeImages = [
-    '/images/college/College1.jpg',
-    '/images/college/College2.jpg',
-    '/images/college/College3.jpg',
+    assetPath('images/college/College1.jpg'),
+    assetPath('images/college/College2.jpg'),
+    assetPath('images/college/College3.jpg'),
 ];
 
 const Slide21 = () => {

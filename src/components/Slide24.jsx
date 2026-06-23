@@ -1,24 +1,25 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const blinkitImages = [
     {
-        src: '/images/work/blinkit/Blinkit1.jpg',
+        src: assetPath('images/work/blinkit/Blinkit1.jpg'),
         className: 'lg:col-span-7 lg:row-span-2',
     },
     {
-        src: '/images/work/blinkit/Blinkit2.jpg',
+        src: assetPath('images/work/blinkit/Blinkit2.jpg'),
         className: 'lg:col-span-5 lg:row-span-1',
     },
     {
-        src: '/images/work/blinkit/Blinkit3.jpg',
+        src: assetPath('images/work/blinkit/Blinkit3.jpg'),
         className: 'lg:col-span-5 lg:row-span-1',
     },
     {
-        src: '/images/work/blinkit/Blinkit4.jpg',
+        src: assetPath('images/work/blinkit/Blinkit4.jpg'),
         className: 'lg:col-span-4 lg:row-span-1',
     },
     {
-        src: '/images/work/blinkit/Blinkit5.jpg',
+        src: assetPath('images/work/blinkit/Blinkit5.jpg'),
         className: 'lg:col-span-8 lg:row-span-1',
     },
 ];

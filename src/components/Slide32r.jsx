@@ -1,33 +1,34 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const tools = [
   {
     name: 'ChatGPT',
-    image: '/images/ai-tools/ChatGPT (OpenAI).png',
+    image: assetPath('images/ai-tools/ChatGPT (OpenAI).png'),
     useWhen: 'Excel formulas, VBA, cleaning logic, SQL/Python drafts',
     avoidWhen: 'Don’t trust blindly; verify edge cases; no sensitive data',
   },
   {
     name: 'Google Gemini',
-    image: '/images/ai-tools/Google Gemini.webp',
+    image: assetPath('images/ai-tools/Google Gemini.webp'),
     useWhen: 'Google ecosystem tasks, quick drafts/summaries',
     avoidWhen: 'Advanced Excel/VBA accuracy can be inconsistent',
   },
   {
     name: 'Claude',
-    image: '/images/ai-tools/Claude (Anthropic).png',
+    image: assetPath('images/ai-tools/Claude (Anthropic).png'),
     useWhen: 'Long, complex problem-solving + structured plans',
     avoidWhen: 'Still validate outputs; avoid sensitive data',
   },
   {
     name: 'Microsoft Copilot',
-    image: '/images/ai-tools/Microsoft Copilot.png',
+    image: assetPath('images/ai-tools/Microsoft Copilot.png'),
     useWhen: 'Inside Excel/M365: quick insights, pivots, summaries',
     avoidWhen: 'Weak for messy cleaning + heavy automation',
   },
   {
     name: 'VS Code + Codex',
-    image: '/images/ai-tools/Visual Studio Code + Codex Extension.svg.png',
+    image: assetPath('images/ai-tools/Visual Studio Code + Codex Extension.svg.png'),
     useWhen: 'Serious automation: scripts, pipelines, version control',
     avoidWhen: 'Overkill for small tasks; needs coding comfort',
   },

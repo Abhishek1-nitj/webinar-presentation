@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const images = [
-  { src: '/images/logos/bistro-blinkit.png', alt: 'Blinkit brand visual' },
-  { src: '/images/logos/bistro-zomato.png', alt: 'Zomato branding' },
-  { src: '/images/logos/bistro-screenshot.png', alt: 'Bistro planning snapshot' },
+  { src: assetPath('images/logos/bistro-blinkit.png'), alt: 'Blinkit brand visual' },
+  { src: assetPath('images/logos/bistro-zomato.png'), alt: 'Zomato branding' },
+  { src: assetPath('images/logos/bistro-screenshot.png'), alt: 'Bistro planning snapshot' },
 ];
 
 const Slide32h = () => (

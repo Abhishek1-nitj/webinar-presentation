@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const Slide52 = () => (
     <section className="slide-section min-h-screen w-full flex items-center justify-center px-8 md:px-16 lg:px-24 relative overflow-hidden">
@@ -28,10 +29,10 @@ const Slide52 = () => (
                 className="grid grid-cols-1 md:grid-cols-2 gap-6"
             >
                 <div className="rounded-[2.5rem] border border-white/10 bg-white/5 p-10 flex items-center justify-center">
-                    <img src="/images/logos/zomato.png" alt="Zomato" className="h-40 object-contain" />
+                    <img src={assetPath('images/logos/zomato.png')} alt="Zomato" className="h-40 object-contain" />
                 </div>
                 <div className="rounded-[2.5rem] border border-white/10 bg-white/5 p-10 flex items-center justify-center">
-                    <img src="/images/logos/blinkit.png" alt="Blinkit" className="h-40 object-contain" />
+                    <img src={assetPath('images/logos/blinkit.png')} alt="Blinkit" className="h-40 object-contain" />
                 </div>
             </motion.div>
         </div>

@@ -1,33 +1,34 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const tools = [
   {
     name: 'Julius AI',
-    image: '/images/ai-tools/Julius AI.webp',
+    image: assetPath('images/ai-tools/Julius AI.webp'),
     useWhen: 'Fast exploratory analysis + quick charts',
     avoidWhen: 'Not fully auditable; verify calculations; careful with uploads',
   },
   {
     name: 'Quadratic',
-    image: '/images/ai-tools/Quadratic The AI Spreadsheet.webp',
+    image: assetPath('images/ai-tools/Quadratic The AI Spreadsheet.webp'),
     useWhen: 'AI spreadsheet-style quick analysis',
     avoidWhen: 'Excel compatibility/features may not match',
   },
   {
     name: 'Bricks AI',
-    image: '/images/ai-tools/Bricks AI.jpeg',
+    image: assetPath('images/ai-tools/Bricks AI.jpeg'),
     useWhen: 'Quick dashboards + reporting visuals',
     avoidWhen: 'Not ideal for deep cleaning/modeling; verify numbers',
   },
   {
     name: 'DataSquirrel.ai',
-    image: '/images/ai-tools/datasquirrel-ai.webp',
+    image: assetPath('images/ai-tools/datasquirrel-ai.webp'),
     useWhen: 'Speed up data prep + lightweight analysis',
     avoidWhen: 'Check transparency/exports; avoid sensitive uploads',
   },
   {
     name: 'Shortcut AI',
-    image: '/images/ai-tools/Shortcut AI.svg',
+    image: assetPath('images/ai-tools/Shortcut AI.svg'),
     useWhen: 'Turn notes → checklists/SOPs/plans',
     avoidWhen: 'Not for calculations, formulas, or numeric accuracy',
   },

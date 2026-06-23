@@ -1,16 +1,17 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const tools = [
-  { name: 'ChatGPT (OpenAI)', image: '/images/ai-tools/ChatGPT (OpenAI).png' },
-  { name: 'Google Gemini', image: '/images/ai-tools/Google Gemini.webp' },
-  { name: 'Claude (Anthropic)', image: '/images/ai-tools/Claude (Anthropic).png' },
-  { name: 'Microsoft Copilot', image: '/images/ai-tools/Microsoft Copilot.png' },
-  { name: 'VS Code + Codex Extension', image: '/images/ai-tools/Visual Studio Code + Codex Extension.svg.png' },
-  { name: 'Julius AI', image: '/images/ai-tools/Julius AI.webp' },
-  { name: 'Quadratic: The AI Spreadsheet', image: '/images/ai-tools/Quadratic The AI Spreadsheet.webp' },
-  { name: 'Bricks AI', image: '/images/ai-tools/Bricks AI.jpeg' },
-  { name: 'DataSquirrel.ai', image: '/images/ai-tools/datasquirrel-ai.webp' },
-  { name: 'Shortcut AI', image: '/images/ai-tools/Shortcut AI.svg' },
+  { name: 'ChatGPT (OpenAI)', image: assetPath('images/ai-tools/ChatGPT (OpenAI).png') },
+  { name: 'Google Gemini', image: assetPath('images/ai-tools/Google Gemini.webp') },
+  { name: 'Claude (Anthropic)', image: assetPath('images/ai-tools/Claude (Anthropic).png') },
+  { name: 'Microsoft Copilot', image: assetPath('images/ai-tools/Microsoft Copilot.png') },
+  { name: 'VS Code + Codex Extension', image: assetPath('images/ai-tools/Visual Studio Code + Codex Extension.svg.png') },
+  { name: 'Julius AI', image: assetPath('images/ai-tools/Julius AI.webp') },
+  { name: 'Quadratic: The AI Spreadsheet', image: assetPath('images/ai-tools/Quadratic The AI Spreadsheet.webp') },
+  { name: 'Bricks AI', image: assetPath('images/ai-tools/Bricks AI.jpeg') },
+  { name: 'DataSquirrel.ai', image: assetPath('images/ai-tools/datasquirrel-ai.webp') },
+  { name: 'Shortcut AI', image: assetPath('images/ai-tools/Shortcut AI.svg') },
 ];
 
 const Slide32q = () => (

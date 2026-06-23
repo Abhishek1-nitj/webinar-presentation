@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const Slide149 = () => (
   <section className="slide-section min-h-screen w/full flex items-center justify-center px-8 md:px-16 lg:px-24 relative overflow-hidden">
@@ -13,7 +14,7 @@ const Slide149 = () => (
         </motion.div>
       </div>
       <motion.div className="rounded-[2.5rem] border border-white/10 bg-white/5 p-6 flex items-center justify-center" initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}>
-        <img src="/images/logos/rnt.avif" alt="Decision paths" className="w-full h-full object-cover rounded-[2rem]" />
+        <img src={assetPath('images/logos/rnt.avif')} alt="Decision paths" className="w-full h-full object-cover rounded-[2rem]" />
       </motion.div>
     </div>
   </section>

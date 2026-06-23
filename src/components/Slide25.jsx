@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const friendImages = [
-    '/images/personal/friends/friend1.jpg',
-    '/images/personal/friends/friend2.jpg',
-    '/images/personal/friends/friend3.jpg',
+    assetPath('images/personal/friends/friend1.jpg'),
+    assetPath('images/personal/friends/friend2.jpg'),
+    assetPath('images/personal/friends/friend3.jpg'),
 ];
 
 const Slide25 = () => {

@@ -11,14 +11,11 @@ const SlideFinalMagic = () => (
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-      className="relative z-10 max-w-6xl text-center"
+      className="relative z-10 max-w-[1700px] text-center"
     >
-      <p className="mb-8 text-xs uppercase tracking-[0.6em] text-white/45">
-        Final Thought
-      </p>
-      <h2 className="font-display text-4xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.05] font-extrabold text-white">
-        Asli magic teacher ke sab kuch kar paane mein nahi hai;
-        <span className="block text-premium-gold">asli magic tab hai jab students bhi yeh sab kar paayen</span>
+      <h2 className="font-display text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[1.08] font-extrabold tracking-[-0.03em] text-white">
+        <span className="block whitespace-nowrap">Asli magic teacher ke sab kuch kar paane mein nahi hai</span>
+        <span className="block whitespace-nowrap text-premium-gold">asli magic tab hai jab students bhi yeh sab kar paayen</span>
       </h2>
     </motion.div>
   </section>

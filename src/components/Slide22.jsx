@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const mbaImages = [
-    '/images/mba/MBA1.png',
-    '/images/mba/MBA2.png',
-    '/images/mba/IMG_20251221_130915.jpg',
-    '/images/mba/SONU7135.jpg',
+    assetPath('images/mba/MBA1.png'),
+    assetPath('images/mba/MBA2.png'),
+    assetPath('images/mba/IMG_20251221_130915.jpg'),
+    assetPath('images/mba/SONU7135.jpg'),
 ];
 
 const mbaTiles = [
@@ -37,7 +38,7 @@ const Slide22 = () => {
                     </div>
                     <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-black/20 p-2 md:p-3">
                         <img
-                            src="/images/mba/SONU7135.jpg"
+                            src={assetPath('images/mba/SONU7135.jpg')}
                             alt="MBA portrait"
                             className="w-full max-h-[240px] md:max-h-[260px] lg:max-h-[280px] object-contain"
                             loading="lazy"

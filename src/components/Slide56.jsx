@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const Slide56 = () => (
     <section className="slide-section min-h-screen w-full flex items-center justify-center px-8 md:px-16 lg:px-24 relative overflow-hidden">
@@ -22,7 +23,7 @@ const Slide56 = () => (
                 transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                 className="rounded-[3rem] border border-white/10 bg-white/5 p-8 flex items-center justify-center"
             >
-                <img src="/images/logos/lunchtime/lunch.jpg" alt="Lunch data" className="w-full max-w-3xl rounded-[2rem] object-cover" />
+                <img src={assetPath('images/logos/lunchtime/lunch.jpg')} alt="Lunch data" className="w-full max-w-3xl rounded-[2rem] object-cover" />
             </motion.div>
         </div>
     </section>

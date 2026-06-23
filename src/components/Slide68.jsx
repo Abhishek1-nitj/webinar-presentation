@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const planning = [
     'Project planning ke liye',
@@ -41,7 +42,7 @@ const Slide68 = () => (
                     👉 “Excel ka Real Corporate Use”
                 </h2>
                 <img
-                    src="/images/logos/excel-logo.png"
+                    src={assetPath('images/logos/excel-logo.png')}
                     alt="Excel logo"
                     className="w-24 h-24 object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
                 />

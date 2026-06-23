@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 
 const Slide23 = () => {
     return (
@@ -40,7 +41,7 @@ const Slide23 = () => {
                     </div>
                     <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
                         <img
-                            src="/images/work/byjus/BYJUS.jpg"
+                            src={assetPath('images/work/byjus/BYJUS.jpg')}
                             alt="BYJU's journey"
                             className="h-[26rem] w-full object-cover"
                             loading="lazy"
