@@ -4,7 +4,7 @@ const productOne = new URL('../../Product /xyzimage.png', import.meta.url).href;
 const productTwo = new URL('../../Product /image.png', import.meta.url).href;
 const productThree = new URL('../../Product /image909090.png', import.meta.url).href;
 const moneyBackGuarantee = new URL(
-  '../../MOney back/1000_F_283059468_fmVlgJFin7W6sABjVBj6xHUTsVNr0kXW-removebg-preview.png',
+  '../../MOney back/image.png',
   import.meta.url,
 ).href;
 
