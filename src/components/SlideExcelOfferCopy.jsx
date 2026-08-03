@@ -3,10 +3,6 @@ import { motion } from 'framer-motion';
 const productOne = new URL('../../Product /xyzimage.png', import.meta.url).href;
 const productTwo = new URL('../../Product /image.png', import.meta.url).href;
 const productThree = new URL('../../Product /image909090.png', import.meta.url).href;
-const moneyBackGuarantee = new URL(
-  '../../MOney back/image.png',
-  import.meta.url,
-).href;
 
 const SlideExcelOfferCopy = () => (
   <section className="slide-section min-h-screen w-full flex items-center justify-center px-6 md:px-10 lg:px-16 relative overflow-hidden">
@@ -88,7 +84,7 @@ const SlideExcelOfferCopy = () => (
       </div>
 
       <motion.div
-        className="grid gap-4 lg:grid-cols-[max-content_280px] lg:justify-center lg:items-stretch"
+        className="grid gap-4 lg:justify-center lg:items-stretch"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -113,17 +109,6 @@ const SlideExcelOfferCopy = () => (
             <div className="rounded-[1.5rem] border border-premium-gold/40 bg-premium-gold/15 px-6 py-3 text-center text-2xl md:text-3xl font-bold text-premium-gold shadow-[0_18px_50px_rgba(222,174,67,0.18)]">
               Special Webinar Price Rs 2500
             </div>
-          </div>
-        </div>
-
-        <div className="flex justify-center lg:justify-end">
-          <div className="group relative flex h-full min-h-[220px] w-full max-w-[280px] items-center justify-center overflow-hidden rounded-[2rem] border border-[#F3C96A]/35 bg-[radial-gradient(circle_at_top,_rgba(243,201,106,0.2),_rgba(255,255,255,0.04)_48%,_rgba(255,255,255,0.02)_100%)] p-2 shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
-            <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[#F3C96A]/70 to-transparent" />
-            <img
-              src={moneyBackGuarantee}
-              alt="30 day money back guarantee badge"
-              className="max-h-full w-full object-contain drop-shadow-[0_18px_30px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:scale-[1.03]"
-            />
           </div>
         </div>
       </motion.div>
