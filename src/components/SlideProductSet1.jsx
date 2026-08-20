@@ -25,16 +25,16 @@ const SlideProductSet1 = () => (
       <p className="text-lg text-white/70 font-display">
         Actual Value: ₹
         <span className="font-bold text-red-500 text-4xl line-through decoration-[3px]">
-          20,000
+          25,000
         </span>
       </p>
       <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200/80">
-        90% Discount
+        85% Discount
       </p>
       <p className="text-3xl font-display font-semibold text-emerald-200">
         Special Webinar Price: ₹
         <span className="text-4xl font-bold text-emerald-100 drop-shadow-[0_0_12px_rgba(16,185,129,0.6)]">
-          2500
+          3000
         </span>{' '}
         only
       </p>
