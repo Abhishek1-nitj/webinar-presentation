@@ -3,8 +3,7 @@ import { useCallback, useState } from 'react';
 
 const points = [
   'Questions & Answers',
-  'No Recordings: Attend whole masterclass Live',
-  'Switch Off All Other Devices',
+  'The way I address my Students',
 ];
 
 const SlideGuidelines = () => {

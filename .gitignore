@@ -26,3 +26,15 @@ dist-ssr
 # Chromium profile caches
 .chromium-profile/
 .chromium-profile-*/
+
+# Secrets and credentials
+*service-account*.json
+Google Sheet jason/
+*.pem
+*.key
+
+# Temporary artifacts
+output/
+outputs/
+tmp/
+screenshots-final/

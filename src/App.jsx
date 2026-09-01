@@ -5,6 +5,7 @@ import Slide22 from './components/Slide22';
 import Slide23 from './components/Slide23';
 import Slide24 from './components/Slide24';
 import Slide32bIntro from './components/Slide32bIntro';
+import SlideWhatYouGet from './components/SlideWhatYouGet';
 import Slide32bIntroFreelance from './components/Slide32bIntroFreelance';
 import Slide32bHighlightUnique from './components/Slide32bHighlightUnique';
 import SlideExcelNotFormulas from './components/SlideExcelNotFormulas';
@@ -12,6 +13,7 @@ import SlidePracticePracticePractice from './components/SlidePracticePracticePra
 import SlideModule22ExcelAI from './components/SlideModule22ExcelAI';
 import SlideModule23InterviewPreparation from './components/SlideModule23InterviewPreparation';
 import SlideReadyMadeProjects from './components/SlideReadyMadeProjects';
+import SlideJobAndFreelanceEcosystem from './components/SlideJobAndFreelanceEcosystem';
 import SlideCompleteAdvancedExcelAI from './components/SlideCompleteAdvancedExcelAI';
 import SlideBigTextPrice from './components/SlideBigTextPrice';
 import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
@@ -213,6 +215,7 @@ const App = () => {
       <Slide23 />
       <Slide24 />
       <Slide32bIntro />
+      <SlideWhatYouGet />
       <Slide32bHighlightUnique />
       <SlideExcelNotFormulas />
       <Slide32j />
@@ -230,6 +233,7 @@ const App = () => {
       <Slide180 />
       <Slide32p />
       <Slide32sGenAITools />
+      <Slide32sGenAITools highlightColumn={0} />
       <Slide32sPromptingIntro />
       <Slide32m />
       <Slide32k visibleSteps={3} />
@@ -246,13 +250,14 @@ const App = () => {
       <SlideFreelanceProjectCategories />
       <SlideModule23InterviewPreparation />
       <SlideMicrosoft365Link />
+      <SlideJobAndFreelanceEcosystem />
       <SlideCompleteAdvancedExcelAI />
       <SlideBigTextPrice />
       <SlideExcelOffer />
       <SlideDiscount90 />
       <SlideExcelOfferCopy />
-      <SlideStudentTestimonial />
       <SlideFAQs />
+      <SlideStudentTestimonial />
       <SlideExcelOfferCopy />
       <Slide32k visibleSteps={4} />
       <Slide32k visibleSteps={5} />

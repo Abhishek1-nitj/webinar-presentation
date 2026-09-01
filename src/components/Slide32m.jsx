@@ -6,13 +6,13 @@ const pillars = [
     description: 'Tell the AI who it should become. This changes the style, depth, and way of thinking.',
   },
   {
+    title: 'C — Context',
+    description: 'Explain what problem you are trying to solve and why. This helps the AI understand the situation exactly like you.',
+  },
+  {
     title: 'I — Input',
     description:
       'List all the information you are giving. Whatever the AI needs to solve the task should be written here clearly.',
-  },
-  {
-    title: 'C — Context',
-    description: 'Explain what problem you are trying to solve and why. This helps the AI understand the situation exactly like you.',
   },
   {
     title: 'O — Output',
@@ -32,7 +32,7 @@ const Slide32m = () => (
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
       >
-        The right way of Prompting RICO
+        The right way of Prompting RCIO
       </motion.h2>
       <motion.div
         className="grid gap-6"
