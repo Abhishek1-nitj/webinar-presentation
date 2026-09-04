@@ -9,6 +9,7 @@ import SlideWhatYouGet from './components/SlideWhatYouGet';
 import Slide32bIntroFreelance from './components/Slide32bIntroFreelance';
 import Slide32bHighlightUnique from './components/Slide32bHighlightUnique';
 import SlideExcelNotFormulas from './components/SlideExcelNotFormulas';
+import SlideMasterclassFocus from './components/SlideMasterclassFocus';
 import SlidePracticePracticePractice from './components/SlidePracticePracticePractice';
 import SlideModule22ExcelAI from './components/SlideModule22ExcelAI';
 import SlideModule23InterviewPreparation from './components/SlideModule23InterviewPreparation';
@@ -24,13 +25,14 @@ import Slide32j from './components/Slide32j';
 import Slide32k from './components/Slide32k';
 import Slide32kStep1 from './components/Slide32kStep1';
 import Slide32kStep2 from './components/Slide32kStep2';
-import Slide32n from './components/Slide32n';
-import Slide32o from './components/Slide32o';
-import Slide32p from './components/Slide32p';
+import SlideAIHypeReality from './components/SlideAIHypeReality';
 import Slide32sGenAITools from './components/Slide32sGenAITools';
 import Slide32sPromptingIntro from './components/Slide32sPromptingIntro';
+import SlidePromptQualityScale from './components/SlidePromptQualityScale';
+import SlidePromptTwoPillars from './components/SlidePromptTwoPillars';
 import Slide32m from './components/Slide32m';
-import Slide32wDataConnection from './components/Slide32wDataConnection';
+import SlideDataCleaningLearningOutcome from './components/SlideDataCleaningLearningOutcome';
+import SlideDataConnectionLearningOutcome from './components/SlideDataConnectionLearningOutcome';
 import SlideLearnExcelSources from './components/SlideLearnExcelSources';
 import SlideExcelOffer from './components/SlideExcelOffer';
 import SlideMicrosoft365Link from './components/SlideMicrosoft365Link';
@@ -120,8 +122,6 @@ import SlideProductSet4 from './components/SlideProductSet4';
 import SlideProductAll from './components/SlideProductAll';
 import SlideInstagramStoryShare from './components/SlideInstagramStoryShare';
 import SlideExcelOfferFinal from './components/SlideExcelOfferFinal';
-import Slide179 from './components/Slide179';
-import Slide180 from './components/Slide180';
 import Slide181 from './components/Slide181';
 import Slide183 from './components/Slide183';
 import Slide185 from './components/Slide185';
@@ -226,23 +226,24 @@ const App = () => {
       <Slide32k visibleSteps={5} />
       <Slide32k visibleSteps={6} />
       <Slide32k visibleSteps={7} />
+      <SlideMasterclassFocus />
       <Slide32kStep2 />
-      <Slide32n />
-      <Slide32o />
-      <Slide179 />
-      <Slide180 />
-      <Slide32p />
+      <SlideAIHypeReality />
       <Slide32sGenAITools />
       <Slide32sGenAITools highlightColumn={0} />
       <Slide32sPromptingIntro />
+      <SlidePromptQualityScale />
+      <SlidePromptTwoPillars />
       <Slide32m />
+      <SlideDataCleaningLearningOutcome />
       <Slide32k visibleSteps={3} />
-      <Slide32wDataConnection />
+      <SlideDataConnectionLearningOutcome />
       <Slide32k visibleSteps={4} />
       <SlideLearnExcelSources />
       <SlideFinalMagic />
       <Slide32j />
       <SlidePracticePracticePractice />
+      <Slide32sGenAITools />
       <SlideModule22ExcelAI />
       <SlideDashboardCodex />
       <Slide32bPortfolioLookCopy />

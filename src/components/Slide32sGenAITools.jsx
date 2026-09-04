@@ -54,7 +54,7 @@ const Slide32sGenAITools = ({ highlightColumn = null } = {}) => (
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
       >
-        Top AI Tools for Data Work
+        Master these 3 Catrgories of AI Tools
       </motion.h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
         {columns.map((column, columnIndex) => {

@@ -36,9 +36,9 @@ const SlideExcelNotFormulas = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-        className="font-display text-4xl md:text-6xl lg:text-7xl leading-tight font-semibold text-emerald-300 flex items-center justify-center gap-4 whitespace-nowrap"
+        className="font-display text-3xl md:text-5xl lg:text-6xl leading-tight font-semibold text-emerald-300 flex items-center justify-center gap-4"
       >
-        <span className="inline-flex items-center gap-3">
+        <span className="inline-flex max-w-5xl items-center justify-center gap-3">
           <span className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-emerald-200/40 bg-emerald-500/15 shadow-[0_0_20px_rgba(16,185,129,0.35)]">
             <svg
               viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ const SlideExcelNotFormulas = () => (
               <path d="M5 13l4 4L19 7" />
             </svg>
           </span>
-          Excel = Solving Business Problems
+          Excel = Solving Data Related Business Problems
         </span>
       </motion.p>
     </div>
