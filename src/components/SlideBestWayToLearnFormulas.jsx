@@ -41,8 +41,8 @@ const SlideBestWayToLearnFormulas = () => (
         transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
         className="w-full mx-auto"
       >
-        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-[42px] xl:text-[46px] font-extrabold text-white tracking-tight leading-normal whitespace-normal lg:whitespace-nowrap">
-          What is the best way to learn the fundamentals and all the formulas?
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-[42px] xl:text-[48px] font-extrabold text-white tracking-tight leading-normal whitespace-normal lg:whitespace-nowrap">
+          What is the best way to learn the formulas?
         </h2>
       </motion.div>
 
