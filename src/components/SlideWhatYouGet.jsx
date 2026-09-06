@@ -43,13 +43,9 @@ const SlideWhatYouGet = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.9, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-        className="mx-auto max-w-4xl text-center text-lg md:text-xl leading-relaxed text-white/85"
+        className="mx-auto max-w-4xl text-center"
       >
-        <span className="font-bold text-white">No need to practice live.</span>
-        <br />
-        Focus on learning now — practice later at your own pace.
-        <br />
-        <span className="mt-6 block text-3xl md:text-4xl font-black text-premium-gold">
+        <span className="block text-2xl md:text-3xl lg:text-4xl font-black text-premium-gold leading-relaxed">
           All 3 benefits are available only to participants who stay till the end. One random surprise attendance.
         </span>
       </motion.p>
