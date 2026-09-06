@@ -29,7 +29,6 @@ const SlideFAQs = () => (
         {[
           "What is the access duration of this course?",
           "How can I clear my doubts if I have any?",
-          "When will I get access to the course?",
           "How much time does it take to finish this course?",
           "Is placement support available?",
           "Will I get the Certificate?"

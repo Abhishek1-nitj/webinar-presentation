@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
+import { TimerProvider } from './context/TimerContext';
+import GlobalTimerOverlay from './components/GlobalTimerOverlay';
 import SlideGuidelines from './components/SlideGuidelines';
 import Slide21 from './components/Slide21';
 import Slide22 from './components/Slide22';
@@ -16,9 +18,11 @@ import SlideModule23InterviewPreparation from './components/SlideModule23Intervi
 import SlideReadyMadeProjects from './components/SlideReadyMadeProjects';
 import SlideJobAndFreelanceEcosystem from './components/SlideJobAndFreelanceEcosystem';
 import SlideCompleteAdvancedExcelAI from './components/SlideCompleteAdvancedExcelAI';
+import SlideOnly30StudentLicenses from './components/SlideOnly30StudentLicenses';
 import SlideBigTextPrice from './components/SlideBigTextPrice';
 import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
 import SlideStudentTestimonial from './components/SlideStudentTestimonial';
+import SlideCountdownTimer from './components/SlideCountdownTimer';
 import SlideDiscount90 from './components/SlideDiscount90';
 import Slide32bRecap from './components/Slide32bRecap';
 import Slide32j from './components/Slide32j';
@@ -127,6 +131,7 @@ import Slide183 from './components/Slide183';
 import Slide185 from './components/Slide185';
 import SlideFAQs from './components/SlideFAQs';
 import SlideFinalMagic from './components/SlideFinalMagic';
+import SlideAttendanceRecordingAccess from './components/SlideAttendanceRecordingAccess';
 
 const App = () => {
   const [targetSlide, setTargetSlide] = useState('');
@@ -134,16 +139,13 @@ const App = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
 
   useEffect(() => {
-    const sections = document.querySelectorAll('.slide-section');
-    setTotalSlides(sections.length);
-    setCurrentSlide(1);
-  }, []);
-
-  useEffect(() => {
     let rafId = 0;
     const updateCurrentSlide = () => {
       const sections = Array.from(document.querySelectorAll('.slide-section'));
       if (!sections.length) return;
+      
+      setTotalSlides(prevTotal => (prevTotal !== sections.length ? sections.length : prevTotal));
+
       const offset = window.innerHeight * 0.35;
       let closestIndex = 0;
       let closestDistance = Number.POSITIVE_INFINITY;
@@ -167,9 +169,11 @@ const App = () => {
     };
 
     updateCurrentSlide();
+    const timeoutId = setTimeout(updateCurrentSlide, 300);
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll);
     return () => {
+      clearTimeout(timeoutId);
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onScroll);
       if (rafId) window.cancelAnimationFrame(rafId);
@@ -192,23 +196,25 @@ const App = () => {
   );
 
   return (
-    <div>
-      <form
-        onSubmit={handleJump}
-        className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-2 rounded-full border border-white/10 bg-premium-black/70 px-2 py-3 text-[10px] backdrop-blur"
-      >
-        <input
-          type="number"
-          min="1"
-          max={totalSlides || undefined}
-          value={targetSlide}
-          onChange={event => setTargetSlide(event.target.value)}
-          className="no-spinner w-10 rounded-xl border border-white/15 bg-transparent px-1 py-1 text-center text-xs font-semibold text-white placeholder:text-white/40 focus:border-premium-gold focus:outline-none"
-        />
-      </form>
-      <div className="fixed bottom-4 left-4 z-40 select-text rounded-full border border-white/10 bg-premium-black/60 px-3 py-1 text-[11px] font-semibold text-white/70 backdrop-blur">
-        Slide {currentSlide}/{totalSlides || '?'}
-      </div>
+    <TimerProvider>
+      <GlobalTimerOverlay />
+      <div>
+        <form
+          onSubmit={handleJump}
+          className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-2 rounded-full border border-white/10 bg-premium-black/70 px-2 py-3 text-[10px] backdrop-blur"
+        >
+          <input
+            type="number"
+            min="1"
+            max={totalSlides || undefined}
+            value={targetSlide}
+            onChange={event => setTargetSlide(event.target.value)}
+            className="no-spinner w-10 rounded-xl border border-white/15 bg-transparent px-1 py-1 text-center text-xs font-semibold text-white placeholder:text-white/40 focus:border-premium-gold focus:outline-none"
+          />
+        </form>
+        <div className="fixed bottom-4 left-4 z-40 select-text rounded-full border border-white/10 bg-premium-black/60 px-3 py-1 text-[11px] font-semibold text-white/70 backdrop-blur">
+          Slide {currentSlide}/{totalSlides || '?'}
+        </div>
       <SlideGuidelines />
       <Slide21 />
       <Slide22 />
@@ -255,8 +261,10 @@ const App = () => {
       <SlideCompleteAdvancedExcelAI />
       <SlideBigTextPrice />
       <SlideExcelOffer />
+      <SlideOnly30StudentLicenses />
       <SlideDiscount90 />
       <SlideExcelOfferCopy />
+      <SlideCountdownTimer />
       <SlideFAQs />
       <SlideStudentTestimonial />
       <SlideExcelOfferCopy />
@@ -351,7 +359,9 @@ const App = () => {
       <SlideInstagramStoryShare />
       <SlideExcelOffer />
       <SlideExcelOfferFinal />
+      <SlideAttendanceRecordingAccess />
     </div>
+    </TimerProvider>
   );
 };
 

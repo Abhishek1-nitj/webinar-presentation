@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const points = [
   {
     title: 'No live practice or notes needed',
-    text: 'Recordings, datasets, and all webinar files will be shared (BUT only with participants who stay till the end).',
+    text: 'Recordings, datasets, and all webinar files will be shared (BUT only with participants who stay till the end). One random surprise attendance.',
   },
   {
     title: 'No need to worry about formulas',
@@ -19,6 +19,18 @@ const SlideMasterclassFocus = () => (
   <section className="slide-section min-h-screen w-full flex items-center justify-center px-8 md:px-16 lg:px-24 relative overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-br from-premium-black via-premium-black to-subtle-gray" />
     <div className="relative z-10 max-w-6xl w-full space-y-10 text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+        className="text-center"
+      >
+        <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight font-bold text-white">
+          3 Important Instructions Before We Start
+        </h2>
+      </motion.div>
+
       <motion.div
         className="grid gap-6"
         initial="hidden"

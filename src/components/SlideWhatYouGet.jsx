@@ -50,7 +50,7 @@ const SlideWhatYouGet = () => (
         Focus on learning now — practice later at your own pace.
         <br />
         <span className="mt-6 block text-3xl md:text-4xl font-black text-premium-gold">
-          All 3 benefits are available only to participants who stay till the end.
+          All 3 benefits are available only to participants who stay till the end. One random surprise attendance.
         </span>
       </motion.p>
     </div>
