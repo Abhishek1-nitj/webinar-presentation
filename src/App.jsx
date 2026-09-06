@@ -37,6 +37,7 @@ import SlidePromptTwoPillars from './components/SlidePromptTwoPillars';
 import Slide32m from './components/Slide32m';
 import SlideDataCleaningLearningOutcome from './components/SlideDataCleaningLearningOutcome';
 import SlideDataConnectionLearningOutcome from './components/SlideDataConnectionLearningOutcome';
+import SlideBestWayToLearnFormulas from './components/SlideBestWayToLearnFormulas';
 import SlideLearnExcelSources from './components/SlideLearnExcelSources';
 import SlideExcelOffer from './components/SlideExcelOffer';
 import SlideMicrosoft365Link from './components/SlideMicrosoft365Link';
@@ -245,6 +246,7 @@ const App = () => {
       <Slide32k visibleSteps={3} />
       <SlideDataConnectionLearningOutcome />
       <Slide32k visibleSteps={4} />
+      <SlideBestWayToLearnFormulas />
       <SlideLearnExcelSources />
       <SlideFinalMagic />
       <Slide32j />
