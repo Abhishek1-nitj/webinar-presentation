@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTimer } from '../context/TimerContext';
 
@@ -13,6 +14,36 @@ const GlobalTimerOverlay = () => {
     formatTime,
   } = useTimer();
 
+  const [isPastTimerSlide, setIsPastTimerSlide] = useState(false);
+
+  useEffect(() => {
+    let rafId = 0;
+    const checkPosition = () => {
+      const timerEl = document.getElementById('slide-countdown-timer');
+      if (!timerEl) return;
+      const rect = timerEl.getBoundingClientRect();
+      // Only true once the user has scrolled to or past the countdown timer slide
+      setIsPastTimerSlide(rect.top <= window.innerHeight * 0.6);
+    };
+
+    const onScroll = () => {
+      if (rafId) return;
+      rafId = window.requestAnimationFrame(() => {
+        rafId = 0;
+        checkPosition();
+      });
+    };
+
+    checkPosition();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (rafId) window.cancelAnimationFrame(rafId);
+    };
+  }, []);
+
   const scrollToTimerSlide = () => {
     const el = document.getElementById('slide-countdown-timer');
     if (el) {
@@ -20,72 +51,79 @@ const GlobalTimerOverlay = () => {
     }
   };
 
+  // Only show floating corner widget if:
+  // 1. User has reached or passed the countdown timer slide
+  // 2. AND timer is actively running (or alarm is sounding)
+  const showFloatingWidget = isPastTimerSlide && (isRunning || isAlarmPlaying);
+
   return (
     <>
-      {/* 1. Persistent Floating Corner Timer (always accessible across all slides) */}
-      <div className="fixed top-4 right-4 z-50 flex items-center gap-2">
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className={`flex items-center gap-2.5 px-3.5 py-2 rounded-2xl border backdrop-blur-md shadow-2xl transition-all duration-300 ${
-            isAlarmPlaying
-              ? 'border-red-500 bg-red-950/90 shadow-[0_0_35px_rgba(239,68,68,0.8)] animate-pulse'
-              : isRunning
-              ? 'border-premium-gold/50 bg-black/85 shadow-[0_0_20px_rgba(218,165,32,0.35)]'
-              : 'border-white/15 bg-black/60 opacity-80 hover:opacity-100'
-          }`}
-        >
-          {/* Status Indicator dot */}
-          <span
-            className={`h-2.5 w-2.5 rounded-full ${
-              isAlarmPlaying
-                ? 'bg-red-500 animate-ping'
-                : isRunning
-                ? 'bg-emerald-400 animate-pulse'
-                : 'bg-white/40'
-            }`}
-          />
-
-          {/* Time Display (clickable to scroll to full slide) */}
-          <button
-            onClick={scrollToTimerSlide}
-            title="Click to view full timer slide"
-            className="font-mono text-sm md:text-base font-black tracking-wider text-white hover:text-premium-gold transition-colors cursor-pointer"
-          >
-            {formatTime(timeLeft)}
-          </button>
-
-          {/* Mini Play / Pause button */}
-          {!isRunning ? (
-            <button
-              onClick={startTimer}
-              title="Start Timer"
-              className="h-6 w-6 rounded-lg bg-premium-gold/20 hover:bg-premium-gold/40 border border-premium-gold/40 flex items-center justify-center text-premium-gold text-xs font-bold transition-all cursor-pointer"
+      {/* 1. Floating Corner Timer (only appears from countdown slide onwards AND while running) */}
+      <AnimatePresence>
+        {showFloatingWidget && (
+          <div className="fixed top-4 right-4 z-50 flex items-center gap-2">
+            <motion.div
+              initial={{ opacity: 0, y: -20, scale: 0.9 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -20, scale: 0.9 }}
+              transition={{ duration: 0.3 }}
+              className={`flex items-center gap-2.5 px-3.5 py-2 rounded-2xl border backdrop-blur-md shadow-2xl transition-all duration-300 ${
+                isAlarmPlaying
+                  ? 'border-red-500 bg-red-950/90 shadow-[0_0_35px_rgba(239,68,68,0.8)] animate-pulse'
+                  : 'border-premium-gold/50 bg-black/85 shadow-[0_0_20px_rgba(218,165,32,0.35)]'
+              }`}
             >
-              ▶
-            </button>
-          ) : (
-            <button
-              onClick={stopTimer}
-              title="Pause Timer"
-              className="h-6 w-6 rounded-lg bg-amber-500/20 hover:bg-amber-500/40 border border-amber-500/40 flex items-center justify-center text-amber-300 text-xs font-bold transition-all cursor-pointer"
-            >
-              ⏸
-            </button>
-          )}
+              {/* Status Indicator dot */}
+              <span
+                className={`h-2.5 w-2.5 rounded-full ${
+                  isAlarmPlaying
+                    ? 'bg-red-500 animate-ping'
+                    : 'bg-emerald-400 animate-pulse'
+                }`}
+              />
 
-          {isAlarmPlaying && (
-            <button
-              onClick={stopAlarm}
-              className="px-2 py-0.5 rounded-lg bg-red-600 text-white text-xs font-bold animate-bounce cursor-pointer"
-            >
-              Mute
-            </button>
-          )}
-        </motion.div>
-      </div>
+              {/* Time Display (clickable to scroll to full slide) */}
+              <button
+                onClick={scrollToTimerSlide}
+                title="Click to view full timer slide"
+                className="font-mono text-sm md:text-base font-black tracking-wider text-white hover:text-premium-gold transition-colors cursor-pointer"
+              >
+                {formatTime(timeLeft)}
+              </button>
 
-      {/* 2. Fullscreen Alarming Red Flash Alert (Covers full screen of laptop with pulsating alarm sirens) */}
+              {/* Mini Play / Pause button */}
+              {!isRunning ? (
+                <button
+                  onClick={startTimer}
+                  title="Start Timer"
+                  className="h-6 w-6 rounded-lg bg-premium-gold/20 hover:bg-premium-gold/40 border border-premium-gold/40 flex items-center justify-center text-premium-gold text-xs font-bold transition-all cursor-pointer"
+                >
+                  ▶
+                </button>
+              ) : (
+                <button
+                  onClick={stopTimer}
+                  title="Pause Timer"
+                  className="h-6 w-6 rounded-lg bg-amber-500/20 hover:bg-amber-500/40 border border-amber-500/40 flex items-center justify-center text-amber-300 text-xs font-bold transition-all cursor-pointer"
+                >
+                  ⏸
+                </button>
+              )}
+
+              {isAlarmPlaying && (
+                <button
+                  onClick={stopAlarm}
+                  className="px-2 py-0.5 rounded-lg bg-red-600 text-white text-xs font-bold animate-bounce cursor-pointer"
+                >
+                  Mute
+                </button>
+              )}
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* 2. Fullscreen Alarming Red Flash Alert */}
       <AnimatePresence>
         {flashInfo.visible && (
           <motion.div
