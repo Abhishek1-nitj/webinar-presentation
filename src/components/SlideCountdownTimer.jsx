@@ -97,7 +97,7 @@ const SlideCountdownTimer = () => {
             <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-snug">
               Special Webinar Price{' '}
               <span className="text-premium-gold drop-shadow-[0_0_30px_rgba(218,165,32,0.6)]">
-                ₹2,999
+                ₹500
               </span>
             </h2>
             <div className="inline-block px-3.5 py-1 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-300 text-xs sm:text-sm font-bold tracking-wide">

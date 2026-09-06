@@ -13,7 +13,7 @@ const SlideDiscount90 = () => (
       className="relative z-10 text-center"
     >
       <h2 className="font-display text-5xl md:text-7xl lg:text-[6.5rem] font-bold tracking-tight text-[#9CD96B] drop-shadow-[0_0_28px_rgba(156,217,107,0.28)]">
-        Discount 85%
+        Discount 98%
       </h2>
     </motion.div>
   </section>
