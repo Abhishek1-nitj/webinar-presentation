@@ -90,6 +90,21 @@ const SlideBestWayToLearnFormulas = () => (
         </div>
       </motion.div>
 
+      {/* Summary Highlight */}
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
+        className="pt-2 flex justify-center"
+      >
+        <div className="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-500/10 via-premium-gold/15 to-amber-500/10 border border-premium-gold/40 shadow-[0_0_30px_rgba(218,165,32,0.18)] backdrop-blur-xl">
+          <p className="font-display text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-[#FFE58F] via-premium-gold to-[#FFA940]">
+            150 Excel Formulas = Advanced Level Mastery
+          </p>
+        </div>
+      </motion.div>
+
     </div>
   </section>
 );

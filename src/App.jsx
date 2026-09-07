@@ -18,7 +18,6 @@ import SlideModule23InterviewPreparation from './components/SlideModule23Intervi
 import SlideReadyMadeProjects from './components/SlideReadyMadeProjects';
 import SlideJobAndFreelanceEcosystem from './components/SlideJobAndFreelanceEcosystem';
 import SlideCompleteAdvancedExcelAI from './components/SlideCompleteAdvancedExcelAI';
-import SlideOnly30StudentLicenses from './components/SlideOnly30StudentLicenses';
 import SlideBigTextPrice from './components/SlideBigTextPrice';
 import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
 import SlideStudentTestimonial from './components/SlideStudentTestimonial';
@@ -263,7 +262,6 @@ const App = () => {
       <SlideCompleteAdvancedExcelAI />
       <SlideBigTextPrice />
       <SlideExcelOffer />
-      <SlideOnly30StudentLicenses />
       <SlideDiscount90 />
       <SlideExcelOfferCopy />
       <SlideCountdownTimer />
