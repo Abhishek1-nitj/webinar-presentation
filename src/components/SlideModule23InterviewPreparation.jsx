@@ -14,7 +14,7 @@ const SlideModule23InterviewPreparation = () => (
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         className="font-display text-4xl md:text-6xl lg:text-7xl leading-tight text-white whitespace-nowrap"
       >
-        Module 23: Interview Prepration
+        Interview Preparation
       </motion.h2>
 
       <motion.ul

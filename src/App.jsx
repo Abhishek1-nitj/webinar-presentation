@@ -13,11 +13,22 @@ import Slide32bHighlightUnique from './components/Slide32bHighlightUnique';
 import SlideExcelNotFormulas from './components/SlideExcelNotFormulas';
 import SlideMasterclassFocus from './components/SlideMasterclassFocus';
 import SlidePracticePracticePractice from './components/SlidePracticePracticePractice';
+import SlideAll150Formulas from './components/SlideAll150Formulas';
 import SlideModule22ExcelAI from './components/SlideModule22ExcelAI';
 import SlideModule23InterviewPreparation from './components/SlideModule23InterviewPreparation';
 import SlideReadyMadeProjects from './components/SlideReadyMadeProjects';
 import SlideJobAndFreelanceEcosystem from './components/SlideJobAndFreelanceEcosystem';
-import SlideCompleteAdvancedExcelAI from './components/SlideCompleteAdvancedExcelAI';
+import SlideWhatYouNeedToLearnJobReady from './components/SlideWhatYouNeedToLearnJobReady';
+import SlideStackCostBenchmark from './components/SlideStackCostBenchmark';
+import SlideCostOfLearningBig from './components/SlideCostOfLearningBig';
+import SlideDiscount75 from './components/SlideDiscount75';
+import SlidePricingBenchmarkImage from './components/SlidePricingBenchmarkImage';
+import SlideAllCoursePrices from './components/SlideAllCoursePrices';
+import SlideSpecialWebinarOffer30Students from './components/SlideSpecialWebinarOffer30Students';
+import SlideDiscount88 from './components/SlideDiscount88';
+import SlideOffer2999 from './components/SlideOffer2999';
+import SlideOffer2999Image from './components/SlideOffer2999Image';
+import SlideThankYou from './components/SlideThankYou';
 import SlideBigTextPrice from './components/SlideBigTextPrice';
 import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
 import SlideStudentTestimonial from './components/SlideStudentTestimonial';
@@ -34,12 +45,9 @@ import Slide32sPromptingIntro from './components/Slide32sPromptingIntro';
 import SlidePromptQualityScale from './components/SlidePromptQualityScale';
 import SlidePromptTwoPillars from './components/SlidePromptTwoPillars';
 import Slide32m from './components/Slide32m';
-import SlideDataCleaningLearningOutcome from './components/SlideDataCleaningLearningOutcome';
-import SlideDataConnectionLearningOutcome from './components/SlideDataConnectionLearningOutcome';
 import SlideBestWayToLearnFormulas from './components/SlideBestWayToLearnFormulas';
 import SlideLearnExcelSources from './components/SlideLearnExcelSources';
 import SlideExcelOffer from './components/SlideExcelOffer';
-import SlideMicrosoft365Link from './components/SlideMicrosoft365Link';
 import SlideClaudeInsights from './components/SlideClaudeInsights';
 import Slide32x from './components/Slide32x';
 import Slide32z from './components/Slide32z';
@@ -114,17 +122,10 @@ import Slide51NoExperience from './components/Slide51NoExperience';
 import Slide32bFlowProjectsOne from './components/Slide32bFlowProjectsOne';
 import Slide32bPortfolioLook from './components/Slide32bPortfolioLook';
 import Slide32cProjects from './components/Slide32cProjects';
-import Slide52LinkedInGuides from './components/Slide52LinkedInGuides';
 import Slide32bFlowJobApplicationsUnique from './components/Slide32bFlowJobApplicationsUnique';
 import Slide32bFlowProjectsTwo from './components/Slide32bFlowProjectsTwo';
 import Slide52InterviewTypes from './components/Slide52InterviewTypes';
 import Slide52TechnicalRound from './components/Slide52TechnicalRound';
-import SlideProductSet1 from './components/SlideProductSet1';
-import SlideProductSet2 from './components/SlideProductSet2';
-import SlideProductSet3 from './components/SlideProductSet3';
-import SlideProductSet4 from './components/SlideProductSet4';
-import SlideProductAll from './components/SlideProductAll';
-import SlideInstagramStoryShare from './components/SlideInstagramStoryShare';
 import SlideExcelOfferFinal from './components/SlideExcelOfferFinal';
 import Slide181 from './components/Slide181';
 import Slide183 from './components/Slide183';
@@ -241,14 +242,23 @@ const App = () => {
       <SlidePromptQualityScale />
       <SlidePromptTwoPillars />
       <Slide32m />
-      <SlideDataCleaningLearningOutcome />
       <Slide32k visibleSteps={3} />
-      <SlideDataConnectionLearningOutcome />
       <Slide32k visibleSteps={4} />
       <SlideBestWayToLearnFormulas />
+      <SlideAll150Formulas />
+      <SlideWhatYouNeedToLearnJobReady />
+      <SlideAllCoursePrices />
+      <SlideStackCostBenchmark />
+      <SlideCostOfLearningBig />
+      <SlideDiscount75 />
+      <SlidePricingBenchmarkImage />
+      <SlideJobAndFreelanceEcosystem />
+      <SlideSpecialWebinarOffer30Students />
+      <SlideDiscount88 />
+      <SlideOffer2999 />
+      <SlideOffer2999Image />
+      <SlideCountdownTimer />
       <SlideLearnExcelSources />
-      <SlideFinalMagic />
-      <Slide32j />
       <SlidePracticePracticePractice />
       <Slide32sGenAITools />
       <SlideModule22ExcelAI />
@@ -256,18 +266,8 @@ const App = () => {
       <Slide32bPortfolioLookCopy />
       <SlideReadyMadeProjects />
       <SlideFreelanceProjectCategories />
-      <SlideModule23InterviewPreparation />
-      <SlideMicrosoft365Link />
-      <SlideJobAndFreelanceEcosystem />
-      <SlideCompleteAdvancedExcelAI />
-      <SlideBigTextPrice />
-      <SlideExcelOffer />
-      <SlideDiscount90 />
-      <SlideExcelOfferCopy />
-      <SlideCountdownTimer />
       <SlideFAQs />
       <SlideStudentTestimonial />
-      <SlideExcelOfferCopy />
       <Slide32k visibleSteps={4} />
       <Slide32k visibleSteps={5} />
       <Slide32x />
@@ -347,19 +347,20 @@ const App = () => {
       <Slide181 />
       <Slide183 />
       <Slide185 />
-      <Slide52LinkedInGuides />
       <Slide32bFlowJobApplicationsUnique />
       <Slide52InterviewTypes />
       <Slide52TechnicalRound />
-      <SlideProductSet1 />
-      <SlideProductSet2 />
-      <SlideProductSet3 />
-      <SlideProductSet4 />
-      <SlideProductAll />
-      <SlideInstagramStoryShare />
+      <SlideOffer2999Image />
+      <SlideAttendanceRecordingAccess />
+      <SlideThankYou />
       <SlideExcelOffer />
       <SlideExcelOfferFinal />
-      <SlideAttendanceRecordingAccess />
+      <SlideFinalMagic />
+      <SlideBigTextPrice />
+      <SlideExcelOffer />
+      <SlideDiscount90 />
+      <SlideExcelOfferCopy />
+      <SlideModule23InterviewPreparation />
     </div>
     </TimerProvider>
   );

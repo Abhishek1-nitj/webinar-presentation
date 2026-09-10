@@ -6,10 +6,6 @@ const points = [
     text: 'Recordings, datasets, and all webinar files will be shared (BUT only with participants who stay till the end). One random surprise attendance.',
   },
   {
-    title: 'No need to worry about formulas',
-    text: 'Formulas are the easy part. Resources will be shared for formula practice.',
-  },
-  {
     title: 'Focus on the full Excel structure',
     text: 'In the masterclass, just learn the complete structure of how Excel solves data-related business problems.',
   },
@@ -27,7 +23,7 @@ const SlideMasterclassFocus = () => (
         className="text-center"
       >
         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight font-bold text-white">
-          3 Important Instructions Before We Start
+          2 Important Instructions Before We Start
         </h2>
       </motion.div>
 

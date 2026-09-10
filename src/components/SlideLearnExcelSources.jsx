@@ -15,8 +15,8 @@ const SlideLearnExcelSources = () => (
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         className="space-y-7 md:space-y-10 flex flex-col items-center justify-center"
       >
-        <h2 className="font-display font-extrabold tracking-tight text-white leading-tight whitespace-nowrap text-[clamp(1.05rem,2.62vw,3.15rem)]">
-          Learn Fundamentals: <span className="text-premium-gold">Basic to Advanced Excel</span> in a Structured Manner
+        <h2 className="font-display font-extrabold tracking-tight text-white leading-tight whitespace-nowrap text-[clamp(1.2rem,3.2vw,3.75rem)]">
+          Learn <span className="text-premium-gold">all tools</span> in a Structured Manner
         </h2>
 
         <div className="flex items-center justify-center">
