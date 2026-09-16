@@ -25,6 +25,7 @@ import SlideLearningTime from './components/SlideLearningTime';
 import SlideStudentROI from './components/SlideStudentROI';
 import SlideLearnExcelAndMonetize from './components/SlideLearnExcelAndMonetize';
 import SlideBestWayToLearnFormulas from './components/SlideBestWayToLearnFormulas';
+import SlideRozKitnaTime from './components/SlideRozKitnaTime';
 import SlideWhoCanJoin from './components/SlideWhoCanJoin';
 import SlideAudiencePainPoints from './components/SlideAudiencePainPoints';
 import SlideTransformationOutcome from './components/SlideTransformationOutcome';
@@ -280,6 +281,7 @@ const App = () => {
       <SlideCountdownTimer />
       <SlideLearningTime />
       <SlideStudentROI />
+      <SlideRozKitnaTime />
       <SlideWhoCanJoin />
       <SlideAudiencePainPoints />
       <SlideTransformationOutcome />
