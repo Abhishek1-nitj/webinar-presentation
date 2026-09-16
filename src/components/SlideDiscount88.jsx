@@ -33,11 +33,11 @@ const SlideDiscount88 = () => (
         className="space-y-4 sm:space-y-6"
       >
         <h2 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-green-400 drop-shadow-[0_0_45px_rgba(52,211,153,0.5)] leading-tight">
-          Discount of 88%
+          Discount of 90%
         </h2>
         <div className="inline-block rounded-full border border-emerald-400/30 bg-emerald-500/10 px-6 sm:px-8 py-2 sm:py-2.5 backdrop-blur-md">
           <span className="font-display text-xl sm:text-2xl md:text-3xl font-bold text-emerald-300">
-            (22,101 off)
+            (22,587 off)
           </span>
         </div>
       </motion.div>

@@ -16,7 +16,7 @@ const SlideThankYou = () => (
         transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
         className="inline-block"
       >
-        <h1 className="font-display font-black text-6xl sm:text-8xl md:text-9xl lg:text-[11rem] tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400 drop-shadow-[0_10px_60px_rgba(245,158,11,0.55)] select-none">
+        <h1 className="font-display font-black text-6xl sm:text-8xl md:text-9xl lg:text-[11rem] tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400 drop-shadow-[0_10px_60px_rgba(245,158,11,0.55)]">
           THANK YOU
         </h1>
       </motion.div>

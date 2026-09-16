@@ -1,11 +1,16 @@
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 
 const formulaCategories = [
   {
     number: '01',
+    shortName: 'Basic + Math',
     name: 'Basic + Mathematical',
     count: 22,
+    accentColor: '#F59E0B',
     badgeColor: 'border-amber-400/40 bg-amber-500/10 text-amber-300',
+    cardBorder: 'hover:border-amber-500/40 hover:shadow-amber-500/10',
+    headerBg: 'from-amber-500/15 via-amber-500/5 to-transparent',
     items: [
       { id: 1, name: 'SUM' },
       { id: 2, name: 'AVERAGE' },
@@ -33,9 +38,13 @@ const formulaCategories = [
   },
   {
     number: '02',
+    shortName: 'Logical',
     name: 'Logical Functions',
     count: 9,
+    accentColor: '#F43F5E',
     badgeColor: 'border-rose-400/40 bg-rose-500/10 text-rose-300',
+    cardBorder: 'hover:border-rose-500/40 hover:shadow-rose-500/10',
+    headerBg: 'from-rose-500/15 via-rose-500/5 to-transparent',
     items: [
       { id: 23, name: 'IF' },
       { id: 24, name: 'IFS' },
@@ -50,9 +59,13 @@ const formulaCategories = [
   },
   {
     number: '03',
+    shortName: 'Conditional',
     name: 'Conditional Calculation',
     count: 8,
+    accentColor: '#FB923C',
     badgeColor: 'border-orange-400/40 bg-orange-500/10 text-orange-300',
+    cardBorder: 'hover:border-orange-500/40 hover:shadow-orange-500/10',
+    headerBg: 'from-orange-500/15 via-orange-500/5 to-transparent',
     items: [
       { id: 32, name: 'SUMIF' },
       { id: 33, name: 'SUMIFS' },
@@ -66,9 +79,13 @@ const formulaCategories = [
   },
   {
     number: '04',
+    shortName: 'Lookup',
     name: 'Lookup & Reference',
     count: 16,
+    accentColor: '#10B981',
     badgeColor: 'border-emerald-400/40 bg-emerald-500/10 text-emerald-300',
+    cardBorder: 'hover:border-emerald-500/40 hover:shadow-emerald-500/10',
+    headerBg: 'from-emerald-500/15 via-emerald-500/5 to-transparent',
     items: [
       { id: 40, name: 'XLOOKUP' },
       { id: 41, name: 'VLOOKUP' },
@@ -90,9 +107,13 @@ const formulaCategories = [
   },
   {
     number: '05',
+    shortName: 'Text',
     name: 'Text Functions',
     count: 25,
+    accentColor: '#06B6D4',
     badgeColor: 'border-cyan-400/40 bg-cyan-500/10 text-cyan-300',
+    cardBorder: 'hover:border-cyan-500/40 hover:shadow-cyan-500/10',
+    headerBg: 'from-cyan-500/15 via-cyan-500/5 to-transparent',
     items: [
       { id: 56, name: 'LEFT' },
       { id: 57, name: 'RIGHT' },
@@ -123,9 +144,13 @@ const formulaCategories = [
   },
   {
     number: '06',
+    shortName: 'Date & Time',
     name: 'Date & Time',
     count: 21,
+    accentColor: '#3B82F6',
     badgeColor: 'border-blue-400/40 bg-blue-500/10 text-blue-300',
+    cardBorder: 'hover:border-blue-500/40 hover:shadow-blue-500/10',
+    headerBg: 'from-blue-500/15 via-blue-500/5 to-transparent',
     items: [
       { id: 81, name: 'TODAY' },
       { id: 82, name: 'NOW' },
@@ -152,9 +177,13 @@ const formulaCategories = [
   },
   {
     number: '07',
+    shortName: 'Dynamic Array',
     name: 'Dynamic Array / Modern Excel',
     count: 15,
+    accentColor: '#8B5CF6',
     badgeColor: 'border-violet-400/40 bg-violet-500/10 text-violet-300',
+    cardBorder: 'hover:border-violet-500/40 hover:shadow-violet-500/10',
+    headerBg: 'from-violet-500/15 via-violet-500/5 to-transparent',
     items: [
       { id: 102, name: 'FILTER' },
       { id: 103, name: 'SORT' },
@@ -175,9 +204,13 @@ const formulaCategories = [
   },
   {
     number: '08',
+    shortName: 'Validation',
     name: 'Information & Validation',
     count: 11,
+    accentColor: '#94A3B8',
     badgeColor: 'border-slate-400/40 bg-slate-500/10 text-slate-300',
+    cardBorder: 'hover:border-slate-500/40 hover:shadow-slate-500/10',
+    headerBg: 'from-slate-500/15 via-slate-500/5 to-transparent',
     items: [
       { id: 117, name: 'ISBLANK' },
       { id: 118, name: 'ISNUMBER' },
@@ -194,9 +227,13 @@ const formulaCategories = [
   },
   {
     number: '09',
+    shortName: 'Statistical',
     name: 'Statistical Functions',
     count: 13,
+    accentColor: '#14B8A6',
     badgeColor: 'border-teal-400/40 bg-teal-500/10 text-teal-300',
+    cardBorder: 'hover:border-teal-500/40 hover:shadow-teal-500/10',
+    headerBg: 'from-teal-500/15 via-teal-500/5 to-transparent',
     items: [
       { id: 128, name: 'MEDIAN' },
       { id: 129, name: 'MODE.SNGL' },
@@ -215,9 +252,13 @@ const formulaCategories = [
   },
   {
     number: '10',
+    shortName: 'Financial',
     name: 'Financial Functions',
     count: 10,
+    accentColor: '#EAB308',
     badgeColor: 'border-yellow-400/40 bg-yellow-500/10 text-yellow-300',
+    cardBorder: 'hover:border-yellow-500/40 hover:shadow-yellow-500/10',
+    headerBg: 'from-yellow-500/15 via-yellow-500/5 to-transparent',
     items: [
       { id: 141, name: 'PMT' },
       { id: 142, name: 'PV' },
@@ -233,80 +274,202 @@ const formulaCategories = [
   },
 ];
 
-const SlideAll150Formulas = () => (
-  <section className="slide-section min-h-screen w-full flex flex-col items-center justify-start px-4 sm:px-8 md:px-14 lg:px-24 py-16 relative overflow-y-auto bg-[#07080B] scroll-smooth">
-    {/* Atmospheric Background Lighting */}
-    <div className="fixed inset-0 bg-gradient-to-br from-[#07080B] via-[#0B0D13] to-[#12141F] pointer-events-none" />
-    <div className="fixed inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-10%,rgba(218,165,32,0.08),transparent_65%)] pointer-events-none" />
-    <div className="fixed -top-40 right-1/4 h-[30rem] w-[30rem] rounded-full bg-amber-500/[0.05] blur-[180px] pointer-events-none" />
-    <div className="fixed -bottom-40 left-1/4 h-[30rem] w-[30rem] rounded-full bg-emerald-500/[0.04] blur-[180px] pointer-events-none" />
+const SlideAll150Formulas = () => {
+  const scrollRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
-    <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col space-y-12 pb-24">
+  const checkScroll = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const { scrollLeft, scrollWidth, clientWidth } = el;
+    const maxScroll = scrollWidth - clientWidth;
+    if (maxScroll > 0) {
+      const progress = Math.min(100, Math.max(0, (scrollLeft / maxScroll) * 100));
+      setScrollProgress(progress);
       
-      {/* Title & Introduction */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="text-center pt-4 border-b border-white/10 pb-6"
-      >
-        <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
-          150 Essential{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400">
-            MS Excel Formulas
-          </span>
-        </h2>
-      </motion.div>
+      const cardElements = el.querySelectorAll('.category-card');
+      let currentActive = 0;
+      cardElements.forEach((card, idx) => {
+        const offset = card.offsetLeft - el.offsetLeft - scrollLeft;
+        if (offset <= clientWidth * 0.35) {
+          currentActive = idx;
+        }
+      });
+      setActiveIndex(currentActive);
+    }
+  }, []);
 
-      {/* Clean Category-Wise Scrollable List (No bulky boxes) */}
-      <div className="divide-y divide-white/10 space-y-8">
-        {formulaCategories.map((cat) => (
-          <motion.div
-            key={cat.name}
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ duration: 0.5 }}
-            className="pt-8 first:pt-0 space-y-4"
-          >
-            {/* Category Header */}
-            <div className="flex flex-wrap items-center justify-between gap-3 pb-2">
-              <div className="flex items-center gap-3">
-                <span className="font-mono text-sm font-bold text-amber-400 bg-amber-400/10 px-2.5 py-0.5 rounded border border-amber-400/20">
-                  {cat.number}
-                </span>
-                <h3 className="font-display text-lg sm:text-xl font-bold text-white tracking-wide">
-                  {cat.name}
-                </h3>
-              </div>
-              <span className="text-xs font-semibold text-white/40 tracking-wider uppercase">
-                {cat.count} Functions
-              </span>
-            </div>
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
 
-            {/* Clean Numbered List (Fluid multi-column layout without boxes) */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-2">
-              {cat.items.map((item) => (
-                <div
-                  key={item.id}
-                  className="flex items-baseline gap-2.5 py-1.5 px-2 rounded-lg hover:bg-white/[0.05] transition-colors group cursor-default"
-                >
-                  <span className="font-mono text-xs font-semibold text-amber-400/60 group-hover:text-amber-300 w-7 text-right select-none flex-shrink-0">
-                    {item.id}.
-                  </span>
-                  <span className="font-mono text-xs sm:text-sm font-semibold text-white/90 group-hover:text-amber-200 tracking-wide select-all">
-                    {item.name}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        ))}
+    el.addEventListener('scroll', checkScroll, { passive: true });
+    window.addEventListener('resize', checkScroll);
+
+    checkScroll();
+
+    return () => {
+      el.removeEventListener('scroll', checkScroll);
+      window.removeEventListener('resize', checkScroll);
+    };
+  }, [checkScroll]);
+
+  const scrollToCategory = (index) => {
+    if (scrollRef.current) {
+      const cards = scrollRef.current.querySelectorAll('.category-card');
+      if (cards[index]) {
+        cards[index].scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center',
+        });
+      }
+    }
+  };
+
+  return (
+    <section className="slide-section h-screen w-full flex flex-col justify-between px-4 sm:px-6 md:px-10 lg:px-12 py-5 relative overflow-hidden bg-[#07080B]">
+      {/* Atmospheric Background Lighting */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#07080B] via-[#0B0D13] to-[#12141F] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-10%,rgba(218,165,32,0.09),transparent_65%)] pointer-events-none" />
+      <div className="absolute -top-32 right-1/4 h-[25rem] w-[25rem] rounded-full bg-amber-500/[0.06] blur-[160px] pointer-events-none" />
+      <div className="absolute -bottom-32 left-1/4 h-[25rem] w-[25rem] rounded-full bg-emerald-500/[0.05] blur-[160px] pointer-events-none" />
+
+      {/* Top Header */}
+      <div className="relative z-20 w-full max-w-7xl mx-auto flex items-center justify-center pb-2 border-b border-white/10 shrink-0">
+        <motion.div
+          initial={{ opacity: 0, y: -15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center"
+        >
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+            150 Essential{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400">
+              MS Excel Formulas
+            </span>
+          </h2>
+        </motion.div>
       </div>
 
-    </div>
-  </section>
-);
+      {/* Main Sideways Horizontal Scroll Track */}
+      <div className="relative z-10 w-full flex-1 flex items-center min-h-0 py-2">
+        <div
+          ref={scrollRef}
+          className="w-full h-full flex flex-row items-stretch gap-5 overflow-x-auto overflow-y-hidden px-2 sm:px-4 py-2 scroll-smooth cursor-grab active:cursor-grabbing scrollbar-thin scrollbar-thumb-amber-500/30 scrollbar-track-white/5"
+          style={{
+            scrollbarWidth: 'thin',
+            scrollbarColor: 'rgba(245, 158, 11, 0.35) rgba(255, 255, 255, 0.05)',
+          }}
+        >
+          {formulaCategories.map((cat, index) => {
+            const isLongList = cat.items.length > 12;
+            return (
+              <motion.div
+                key={cat.name}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.04 }}
+                className={`category-card group relative flex flex-col justify-between shrink-0 rounded-2xl bg-[#0F111A]/90 backdrop-blur-md border border-white/10 transition-all duration-300 ${cat.cardBorder} p-4 sm:p-5 shadow-xl hover:shadow-2xl ${
+                  isLongList ? 'w-[310px] sm:w-[350px] md:w-[380px]' : 'w-[260px] sm:w-[290px] md:w-[310px]'
+                }`}
+              >
+                {/* Subtle top glow highlight */}
+                <div
+                  className={`absolute top-0 left-0 right-0 h-1 rounded-t-2xl bg-gradient-to-r ${cat.headerBg}`}
+                />
+
+                {/* Card Header */}
+                <div className="space-y-2 pb-3 border-b border-white/[0.08] shrink-0">
+                  <div className="flex items-center justify-between gap-2">
+                    <span
+                      className={`font-mono text-xs font-bold px-2.5 py-0.5 rounded-md border ${cat.badgeColor}`}
+                    >
+                      {cat.number}
+                    </span>
+                    <span className="text-[11px] font-semibold text-white/50 tracking-wider uppercase bg-white/[0.04] px-2 py-0.5 rounded-full border border-white/5">
+                      {cat.count} Functions
+                    </span>
+                  </div>
+                  <h3 className="font-display text-base sm:text-lg font-bold text-white tracking-wide leading-tight group-hover:text-amber-200 transition-colors">
+                    {cat.name}
+                  </h3>
+                </div>
+
+                {/* Formulas List Grid (Fluid 2-col or 1-col to fit neatly inside card) */}
+                <div
+                  className={`flex-1 min-h-0 my-3 overflow-y-auto pr-1 ${
+                    isLongList
+                      ? 'grid grid-cols-2 gap-x-2.5 gap-y-1.5'
+                      : 'grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1.5'
+                  }`}
+                >
+                  {cat.items.map((item) => (
+                    <div
+                      key={item.id}
+                      className="flex items-baseline gap-1.5 py-1 px-1.5 rounded-md hover:bg-white/[0.07] transition-all group/item"
+                    >
+                      <span className="font-mono text-[11px] font-semibold text-white/30 group-hover/item:text-amber-400/80 w-5 text-right shrink-0">
+                        {item.id}.
+                      </span>
+                      <span className="font-mono text-xs font-semibold text-white/90 group-hover/item:text-amber-200 tracking-wide select-all truncate">
+                        {item.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Card Footer Indicator */}
+                <div className="pt-2 border-t border-white/[0.06] flex items-center justify-between text-[10px] text-white/35 font-mono shrink-0">
+                  <span>Module {cat.number} / 10</span>
+                  <span className="group-hover:text-amber-400/70 transition-colors font-sans font-medium">
+                    {cat.shortName}
+                  </span>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Bottom Category Quick-Jump Bar & Progress Bar */}
+      <div className="relative z-20 w-full max-w-7xl mx-auto flex flex-col gap-2 pt-2 border-t border-white/10 shrink-0">
+        {/* Category Pill Buttons */}
+        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5 justify-start md:justify-center">
+          {formulaCategories.map((cat, idx) => {
+            const isActive = activeIndex === idx;
+            return (
+              <button
+                key={cat.number}
+                type="button"
+                onClick={() => scrollToCategory(idx)}
+                className={`px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 border ${
+                  isActive
+                    ? 'bg-amber-400/20 text-amber-300 border-amber-400/40 shadow-sm'
+                    : 'bg-white/[0.03] text-white/50 border-white/5 hover:bg-white/[0.08] hover:text-white/80'
+                }`}
+              >
+                <span className="font-mono text-[10px] opacity-70">{cat.number}</span>
+                <span>{cat.shortName}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Dynamic Scroll Progress Bar */}
+        <div className="w-full h-1 bg-white/10 rounded-full overflow-hidden">
+          <div
+            className="h-full bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 rounded-full transition-all duration-150"
+            style={{ width: `${Math.max(8, scrollProgress)}%` }}
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default SlideAll150Formulas;

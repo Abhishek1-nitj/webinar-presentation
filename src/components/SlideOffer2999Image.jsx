@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const offerImage = new URL(
-  '../assets/3ec1ee17-3fbd-4e14-89a3-b27733e5d1ca.png',
+  '../assets/2499.png',
   import.meta.url
 ).href;
 

@@ -6,6 +6,7 @@ import Slide21 from './components/Slide21';
 import Slide22 from './components/Slide22';
 import Slide23 from './components/Slide23';
 import Slide24 from './components/Slide24';
+import SlideStartTheMasterclass from './components/SlideStartTheMasterclass';
 import Slide32bIntro from './components/Slide32bIntro';
 import SlideWhatYouGet from './components/SlideWhatYouGet';
 import Slide32bIntroFreelance from './components/Slide32bIntroFreelance';
@@ -17,9 +18,31 @@ import SlideAll150Formulas from './components/SlideAll150Formulas';
 import SlideModule22ExcelAI from './components/SlideModule22ExcelAI';
 import SlideModule23InterviewPreparation from './components/SlideModule23InterviewPreparation';
 import SlideReadyMadeProjects from './components/SlideReadyMadeProjects';
-import SlideJobAndFreelanceEcosystem from './components/SlideJobAndFreelanceEcosystem';
+import SlideSkillJobFreelancing from './components/SlideSkillJobFreelancing';
+import SlideCareerTechLadder from './components/SlideCareerTechLadder';
+import SlideUpworkMarketDemand from './components/SlideUpworkMarketDemand';
+import SlideLearningTime from './components/SlideLearningTime';
+import SlideStudentROI from './components/SlideStudentROI';
+import SlideLearnExcelAndMonetize from './components/SlideLearnExcelAndMonetize';
+import SlideBestWayToLearnFormulas from './components/SlideBestWayToLearnFormulas';
+import SlideWhoCanJoin from './components/SlideWhoCanJoin';
+import SlideAudiencePainPoints from './components/SlideAudiencePainPoints';
+import SlideTransformationOutcome from './components/SlideTransformationOutcome';
+import SlideWhat50kReallyMeans from './components/SlideWhat50kReallyMeans';
+import SlideTakeControlOfYourLife from './components/SlideTakeControlOfYourLife';
+import SlideNoShortcutsHardcoreMastery from './components/SlideNoShortcutsHardcoreMastery';
+import SlideActionBeatsEverything from './components/SlideActionBeatsEverything';
+import SlideThreeMonthsGrindMentorPromise from './components/SlideThreeMonthsGrindMentorPromise';
+import SlideJobGuaranteeCondition from './components/SlideJobGuaranteeCondition';
+import SlideMiddleClassVulnerabilities from './components/SlideMiddleClassVulnerabilities';
+import SlideHungerAndRightGuidance from './components/SlideHungerAndRightGuidance';
+import SlidePainOfRejection from './components/SlidePainOfRejection';
+import SlideSpeakingToOneStudent from './components/SlideSpeakingToOneStudent';
+import SlideRescueOpportunityImage from './components/SlideRescueOpportunityImage';
+import SlideSaurabhStory from './components/SlideSaurabhStory';
 import SlideWhatYouNeedToLearnJobReady from './components/SlideWhatYouNeedToLearnJobReady';
-import SlideStackCostBenchmark from './components/SlideStackCostBenchmark';
+import SlideSalaryBenchmarkByRole from './components/SlideSalaryBenchmarkByRole';
+import SlideFreelanceServicesEarningsBenchmark from './components/SlideFreelanceServicesEarningsBenchmark';
 import SlideCostOfLearningBig from './components/SlideCostOfLearningBig';
 import SlideDiscount75 from './components/SlideDiscount75';
 import SlidePricingBenchmarkImage from './components/SlidePricingBenchmarkImage';
@@ -41,11 +64,9 @@ import Slide32kStep1 from './components/Slide32kStep1';
 import Slide32kStep2 from './components/Slide32kStep2';
 import SlideAIHypeReality from './components/SlideAIHypeReality';
 import Slide32sGenAITools from './components/Slide32sGenAITools';
-import Slide32sPromptingIntro from './components/Slide32sPromptingIntro';
+import SlideMasteringGenAIAndPrompts from './components/SlideMasteringGenAIAndPrompts';
 import SlidePromptQualityScale from './components/SlidePromptQualityScale';
-import SlidePromptTwoPillars from './components/SlidePromptTwoPillars';
 import Slide32m from './components/Slide32m';
-import SlideBestWayToLearnFormulas from './components/SlideBestWayToLearnFormulas';
 import SlideLearnExcelSources from './components/SlideLearnExcelSources';
 import SlideExcelOffer from './components/SlideExcelOffer';
 import SlideClaudeInsights from './components/SlideClaudeInsights';
@@ -221,9 +242,9 @@ const App = () => {
       <Slide22 />
       <Slide23 />
       <Slide24 />
-      <Slide32bIntro />
+      <SlideStartTheMasterclass />
+      <SlideLearnExcelAndMonetize />
       <SlideWhatYouGet />
-      <Slide32bHighlightUnique />
       <SlideExcelNotFormulas />
       <Slide32j />
       <Slide32kStep1 />
@@ -238,35 +259,48 @@ const App = () => {
       <SlideAIHypeReality />
       <Slide32sGenAITools />
       <Slide32sGenAITools highlightColumn={0} />
-      <Slide32sPromptingIntro />
+      <SlideMasteringGenAIAndPrompts />
       <SlidePromptQualityScale />
-      <SlidePromptTwoPillars />
       <Slide32m />
       <Slide32k visibleSteps={3} />
       <Slide32k visibleSteps={4} />
       <SlideBestWayToLearnFormulas />
-      <SlideAll150Formulas />
       <SlideWhatYouNeedToLearnJobReady />
+      <SlideCareerTechLadder />
+      <SlideSalaryBenchmarkByRole />
+      <SlideUpworkMarketDemand />
       <SlideAllCoursePrices />
-      <SlideStackCostBenchmark />
-      <SlideCostOfLearningBig />
       <SlideDiscount75 />
       <SlidePricingBenchmarkImage />
-      <SlideJobAndFreelanceEcosystem />
+      <SlideSkillJobFreelancing />
       <SlideSpecialWebinarOffer30Students />
       <SlideDiscount88 />
       <SlideOffer2999 />
       <SlideOffer2999Image />
       <SlideCountdownTimer />
-      <SlideLearnExcelSources />
-      <SlidePracticePracticePractice />
+      <SlideLearningTime />
+      <SlideStudentROI />
+      <SlideWhoCanJoin />
+      <SlideAudiencePainPoints />
+      <SlideTransformationOutcome />
+      <SlideWhat50kReallyMeans />
+      <SlideTakeControlOfYourLife />
+      <SlideNoShortcutsHardcoreMastery />
+      <SlideActionBeatsEverything />
+      <SlideThreeMonthsGrindMentorPromise />
+      <SlideJobGuaranteeCondition />
+      <SlideMiddleClassVulnerabilities />
+      <SlideHungerAndRightGuidance />
+      <SlidePainOfRejection />
+      <SlideSpeakingToOneStudent />
+      <SlideRescueOpportunityImage />
+      <SlideSaurabhStory />
       <Slide32sGenAITools />
       <SlideModule22ExcelAI />
       <SlideDashboardCodex />
       <Slide32bPortfolioLookCopy />
       <SlideReadyMadeProjects />
       <SlideFreelanceProjectCategories />
-      <SlideFAQs />
       <SlideStudentTestimonial />
       <Slide32k visibleSteps={4} />
       <Slide32k visibleSteps={5} />
@@ -361,6 +395,9 @@ const App = () => {
       <SlideDiscount90 />
       <SlideExcelOfferCopy />
       <SlideModule23InterviewPreparation />
+      <SlideLearnExcelSources />
+      <SlidePracticePracticePractice />
+      <SlideFAQs />
     </div>
     </TimerProvider>
   );

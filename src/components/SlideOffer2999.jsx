@@ -46,7 +46,7 @@ const SlideOffer2999 = () => (
         </div>
       </motion.div>
 
-      {/* 2. 88% Discount (22,101 off) Glowing Pill Badge */}
+      {/* 2. 92% Discount (23,074 off) Glowing Pill Badge */}
       <motion.div
         initial={{ opacity: 0, scale: 0.88 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -59,12 +59,12 @@ const SlideOffer2999 = () => (
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
           <span className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide text-emerald-300">
-            88% Discount <span className="text-emerald-400/80 font-semibold text-lg sm:text-2xl">(22,101 off)</span>
+            90% Discount <span className="text-emerald-400/80 font-semibold text-lg sm:text-2xl">(22,587 off)</span>
           </span>
         </div>
       </motion.div>
 
-      {/* 3. Huge Green 2999 Price Hero */}
+      {/* 3. Huge Green 2499 Price Hero */}
       <motion.div
         initial={{ opacity: 0, scale: 0.88, y: 25 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -73,7 +73,7 @@ const SlideOffer2999 = () => (
         className="space-y-2 pt-1"
       >
         <div className="font-display text-8xl sm:text-9xl md:text-[11rem] lg:text-[13rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-green-200 to-teal-300 tracking-tight leading-none drop-shadow-[0_15px_90px_rgba(52,211,153,0.75)]">
-          2999
+          2499
         </div>
       </motion.div>
 
