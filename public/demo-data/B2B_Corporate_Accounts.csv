@@ -1,0 +1,11 @@
+Invoice_ID,Client_Name,Contact_Person,Client_Email,Phone,Amount_Due,Due_Date,Overdue_Days,Past_Payment_Score,Status
+INV-2026-101,Apex Digital Media,Rohan Malhotra,rohan@apexdigital.in,+91 98112 34501,385000,15-Jan-2026,67,38/100,Critical Overdue
+INV-2026-102,Zepter Logistics Ltd,Priya Sundaram,priya@zepterlogistics.com,+91 98201 98765,145000,28-Jan-2026,54,72/100,Escalated Notice
+INV-2026-103,BlueWave FinTech,Vikram Singhal,vikram@bluewave.io,+91 99300 45678,620000,05-Dec-2025,108,25/100,High Risk Default
+INV-2026-104,CloudVibe Software,Neha Kapoor,neha@cloudvibe.tech,+91 97118 76543,95000,10-Feb-2026,41,85/100,Pending Reminder
+INV-2026-105,Horizon Retail India,Anil Deshmukh,anil@horizonretail.in,+91 98450 12345,410000,20-Jan-2026,62,49/100,Critical Overdue
+INV-2026-106,Quantum Cloud Ltd,Dr. Sameer Sen,sameer@quantumcloud.in,+91 98190 23411,280000,02-Feb-2026,49,68/100,Pending Clearance
+INV-2026-107,Crestline Infrastructure,Gaurav Khanna,gaurav@crestline.co.in,+91 98210 67890,540000,28-Dec-2025,84,31/100,Escalated Notice
+INV-2026-108,Stellar Brands & Media,Ananya Joshi,ananya@stellarbrands.com,+91 97690 11223,190000,12-Feb-2026,38,82/100,Courtesy Follow-up
+INV-2026-109,PrimeLogix Supply Chain,Manish Tiwari,manish@primelogix.in,+91 99201 44556,315000,11-Jan-2026,71,44/100,Critical Overdue
+INV-2026-110,Zenith Global Consultancy,Shalini Roy,shalini@zenithconsult.io,+91 98330 99887,450000,18-Dec-2025,95,29/100,High Risk Default

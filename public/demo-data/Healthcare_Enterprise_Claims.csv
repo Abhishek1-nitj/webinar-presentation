@@ -1,0 +1,11 @@
+Invoice_ID,Client_Name,Contact_Person,Client_Email,Phone,Amount_Due,Due_Date,Overdue_Days,Past_Payment_Score,Status
+MED-2026-301,Apollo Diagnostics Network,Dr. Arvind Nambiar,arvind@apollodiag.in,+91 98401 22334,580000,08-Jan-2026,73,52/100,Critical Overdue
+MED-2026-302,Medanta Specialty Care,Suman Chatterjee,suman@medantacare.com,+91 98104 55667,325000,24-Jan-2026,57,69/100,Escalated Notice
+MED-2026-303,Max Healthcare Procurement,Rajiv Bansal,rajiv@maxhealthcare.org,+91 98110 33445,840000,14-Dec-2025,98,34/100,High Risk Default
+MED-2026-304,Fortis Clinical Research,Meera Krishnan,meera@fortisresearch.in,+91 98200 66778,210000,05-Feb-2026,45,80/100,Pending Reminder
+MED-2026-305,Manipal Hospital Systems,Kavita Iyer,kavita@manipalhospitals.com,+91 98450 77889,675000,19-Jan-2026,62,41/100,Critical Overdue
+MED-2026-306,Care Diagnostics Labs,Dr. Sanjay Hegde,sanjay@carediagnostics.co,+91 98212 99001,185000,12-Feb-2026,38,88/100,Courtesy Follow-up
+MED-2026-307,Narayana Surgical Hub,Pankaj Varma,pankaj@narayanasurgical.in,+91 98301 44556,720000,29-Dec-2025,83,28/100,High Risk Default
+MED-2026-308,Global Health Pharma Labs,Aditi Saxena,aditi@globalhealthpharma.com,+91 97110 12349,460000,16-Jan-2026,65,48/100,Escalated Notice
+MED-2026-309,KIMS Healthcare Group,Vikas Reddy,vikas@kimsgroup.in,+91 98490 88990,515000,02-Jan-2026,79,37/100,Critical Overdue
+MED-2026-310,Aster BioTech Diagnostic,Deepak Kulkarni,deepak@asterbiotech.in,+91 98205 33221,380000,28-Jan-2026,53,65/100,Pending Clearance

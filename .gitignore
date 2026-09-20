@@ -28,6 +28,8 @@ dist-ssr
 .chromium-profile-*/
 
 # Secrets and credentials
+.env
+*.env
 *service-account*.json
 Google Sheet jason/
 *.pem
@@ -38,3 +40,5 @@ output/
 outputs/
 tmp/
 screenshots-final/
+.wrangler/
+**/.wrangler/

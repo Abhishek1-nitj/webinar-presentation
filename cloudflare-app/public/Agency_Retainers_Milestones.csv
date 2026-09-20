@@ -1,0 +1,11 @@
+Invoice_ID,Client_Name,Contact_Person,Client_Email,Phone,Amount_Due,Due_Date,Overdue_Days,Past_Payment_Score,Status
+AGN-2026-501,PixelCraft Brand Studio,Tanvi Merchant,tanvi@pixelcraft.studio,+91 98204 11223,275000,10-Jan-2026,71,45/100,Critical Overdue
+AGN-2026-502,BoldWave Performance Media,Karan Sethi,karan@boldwavemedia.com,+91 98118 77665,450000,03-Jan-2026,78,39/100,High Risk Default
+AGN-2026-503,Horizon AI Product Labs,Shruti Nair,shruti@horizonailabs.io,+91 98711 44556,160000,09-Feb-2026,41,84/100,Pending Reminder
+AGN-2026-504,NorthStar Media Collective,Kabir Mehta,kabir@northstarmedia.in,+91 98330 22119,380000,18-Jan-2026,63,55/100,Escalated Notice
+AGN-2026-505,Velox Motion & 3D Studio,Rahul Chawla,rahul@veloxmotion.com,+91 98199 66770,195000,01-Feb-2026,50,71/100,Pending Clearance
+AGN-2026-506,OmniGrowth Digital D2C,Ritika Bajaj,ritika@omnigrowth.in,+91 97690 88991,520000,22-Dec-2025,90,26/100,Severe High Risk
+AGN-2026-507,Catalyst Interactive UI/UX,Sameer Deshpande,sameer@catalystui.com,+91 98210 33442,140000,14-Feb-2026,36,89/100,Courtesy Follow-up
+AGN-2026-508,Zenith Video Production,Simran Kaul,simran@zenithvideo.in,+91 98450 55661,235000,27-Jan-2026,54,63/100,Escalated Notice
+AGN-2026-509,Aura Social & Influencers,Varun Grover,varun@aurasocial.co,+91 98101 99882,110000,11-Feb-2026,39,81/100,Courtesy Follow-up
+AGN-2026-510,Vanguard Enterprise Dev,Naveen Murthy,naveen@vanguarddev.io,+91 99200 44331,390000,15-Dec-2025,97,32/100,High Risk Default

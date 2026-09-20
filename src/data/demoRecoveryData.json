@@ -1,0 +1,209 @@
+{
+  "adminWhatsAppAlert": {
+    "recipient": "Admin / Host WhatsApp (+91 72899 77264)",
+    "timestamp": "Just Now",
+    "message": "🟢 SYSTEM ALERT | Autonomous Recovery Brain\nExecution Status: Complete (2.4s)\nAccounts Scanned: 10 Corporate Clients\nTotal Outstanding Analyzed: ₹34,40,000\n━━━━━━━━━━━━━━━━━━━━\n⚠️ High-Risk Flagged: 4 Accounts (INV-103 ₹6.20L · INV-107 ₹5.40L · INV-110 ₹4.60L · INV-101 ₹3.85L)\n✉️ Client Emails Dispatched: 10 Tailored Notice Emails Sent\n📊 Full Audit Ledger: Delivered to your primary inbox (abhishek.nitj.002@gmail.com)\n━━━━━━━━━━━━━━━━━━━━\nNext scheduled automated re-check: Tomorrow, 09:00 AM IST."
+  },
+  "records": [
+    {
+      "invoiceId": "INV-2026-101",
+      "clientName": "Apex Digital Media",
+      "contactPerson": "Rohan Malhotra",
+      "clientEmail": "rohan@apexdigital.in",
+      "phone": "+91 98112 34501",
+      "amount": "₹3,85,000",
+      "dueDate": "15-Jan-2026",
+      "overdueDays": 67,
+      "score": 38,
+      "status": "Critical Overdue",
+      "manager": "Pooja Verma",
+      "riskTier": "High Risk",
+      "aiStrategy": "Firm corporate reminder with 3-day grace window before service pause.",
+      "emailDraft": {
+        "subject": "ACTION REQUIRED: Account Overdue Notice #INV-2026-101 — Apex Digital Media",
+        "tone": "Firm & Direct (Grace Window)",
+        "body": "Dear Mr. Malhotra,\n\nWe are writing to draw your urgent attention to Invoice #INV-2026-101 for ₹3,85,000, which is now 67 days overdue.\n\nTo prevent any disruption to your company's active marketing integrations, we have initiated a 3-day grace window ending on March 23, 2026.\n\nPlease process the payment via the secure invoice link below or reply with the transaction UTR number.\n\nBest regards,\nPooja Verma | Finance & Operations"
+      }
+    },
+    {
+      "invoiceId": "INV-2026-102",
+      "clientName": "Zepter Logistics Ltd",
+      "contactPerson": "Priya Sundaram",
+      "clientEmail": "priya@zepterlogistics.com",
+      "phone": "+91 98201 98765",
+      "amount": "₹1,45,000",
+      "dueDate": "28-Jan-2026",
+      "overdueDays": 54,
+      "score": 72,
+      "status": "Escalated",
+      "manager": "Amit Saxena",
+      "riskTier": "Moderate Risk",
+      "aiStrategy": "Offer split payment schedule (50% upfront + 50% in 15 days).",
+      "emailDraft": {
+        "subject": "Follow-up on Invoice #INV-2026-102 — Flexible Payment Schedule for Zepter Logistics",
+        "tone": "Collaborative (Split Payment Offer)",
+        "body": "Hi Priya,\n\nWe value our long-standing partnership with Zepter Logistics. Invoice #INV-2026-102 (₹1,45,000) remains unbilled past its January due date.\n\nTo help your finance team manage quarter-end cash flows smoothly, our system has approved a structured two-part payment schedule:\n• Part 1 (50% - ₹72,500): Within 3 days\n• Part 2 (50% - ₹72,500): By April 15, 2026\n\nSimply reply 'CONFIRMED' to lock this schedule.\n\nBest regards,\nAmit Saxena | Commercial Accounts"
+      }
+    },
+    {
+      "invoiceId": "INV-2026-103",
+      "clientName": "BlueWave FinTech",
+      "contactPerson": "Vikram Singhal",
+      "clientEmail": "vikram@bluewave.io",
+      "phone": "+91 99300 45678",
+      "amount": "₹6,20,000",
+      "dueDate": "05-Dec-2025",
+      "overdueDays": 108,
+      "score": 25,
+      "status": "High Risk Default",
+      "manager": "Pooja Verma",
+      "riskTier": "Severe Critical",
+      "aiStrategy": "Immediate executive escalation to Director level with automated statement of account.",
+      "emailDraft": {
+        "subject": "URGENT: Formal Notice Regarding Overdue Account #INV-2026-103 — BlueWave FinTech",
+        "tone": "Formal Executive Escalation",
+        "body": "Dear Mr. Singhal,\n\nWe are writing regarding Invoice #INV-2026-103 for ₹6,20,000, which matured on 05-Dec-2025 and is now 108 days overdue.\n\nTo avoid disruption to your active enterprise services and subsequent legal reconciliation escalation, we request settlement within 48 business hours.\n\nThe complete Statement of Accounts has been attached for your review.\n\nSincerely,\nPooja Verma | Head of Accounts & Finance"
+      }
+    },
+    {
+      "invoiceId": "INV-2026-104",
+      "clientName": "CloudVibe Software",
+      "contactPerson": "Neha Kapoor",
+      "clientEmail": "neha@cloudvibe.tech",
+      "phone": "+91 97118 76543",
+      "amount": "₹95,000",
+      "dueDate": "10-Feb-2026",
+      "overdueDays": 41,
+      "score": 85,
+      "status": "Pending Reminder",
+      "manager": "Kunal Mehta",
+      "riskTier": "Low Risk",
+      "aiStrategy": "Polite courtesy reminder via email + direct invoice download link.",
+      "emailDraft": {
+        "subject": "Courtesy Follow-up: Invoice #INV-2026-104 (CloudVibe Software)",
+        "tone": "Friendly Courtesy",
+        "body": "Hi Neha,\n\nHope you are having a wonderful week!\n\nThis is a quick courtesy reminder regarding Invoice #INV-2026-104 for ₹95,000. Just checking in to see if you needed any updated tax or purchase order details from our side to process it.\n\nA duplicate copy of the invoice is attached for your quick reference.\n\nWarm regards,\nKunal Mehta | Client Operations"
+      }
+    },
+    {
+      "invoiceId": "INV-2026-105",
+      "clientName": "Horizon Retail India",
+      "contactPerson": "Anil Deshmukh",
+      "clientEmail": "anil@horizonretail.in",
+      "phone": "+91 98450 12345",
+      "amount": "₹4,10,000",
+      "dueDate": "20-Jan-2026",
+      "overdueDays": 62,
+      "score": 49,
+      "status": "Critical Overdue",
+      "manager": "Amit Saxena",
+      "riskTier": "High Risk",
+      "aiStrategy": "Trigger automated settlement discount (3% deduction if cleared within 48 hours).",
+      "emailDraft": {
+        "subject": "Special Early-Clearance Incentive for Invoice #INV-2026-105 — Horizon Retail",
+        "tone": "Commercial Incentive (Discount Offer)",
+        "body": "Dear Mr. Deshmukh,\n\nRegarding outstanding Invoice #INV-2026-105 (₹4,10,000), our corporate finance committee has approved a 3% early-settlement incentive (deduction of ₹12,300) if cleared within the next 48 hours.\n\n• Net Payable: ₹3,97,700\n• Valid until: March 22, 2026\n\nBank transfer details are attached in the updated statement.\n\nWarm regards,\nAmit Saxena | Accounts Division"
+      }
+    },
+    {
+      "invoiceId": "INV-2026-106",
+      "clientName": "Quantum Healthcare Ltd",
+      "contactPerson": "Dr. Sameer Sen",
+      "clientEmail": "sameer@quantumhealth.in",
+      "phone": "+91 98190 23411",
+      "amount": "₹2,80,000",
+      "dueDate": "02-Feb-2026",
+      "overdueDays": 49,
+      "score": 68,
+      "status": "Pending Clearance",
+      "manager": "Pooja Verma",
+      "riskTier": "Moderate Risk",
+      "aiStrategy": "Account statement reconciliation with direct hospital procurement desk.",
+      "emailDraft": {
+        "subject": "Statement Reconciliation: Invoice #INV-2026-106 — Quantum Healthcare",
+        "tone": "Professional Corporate Clearance",
+        "body": "Dear Dr. Sen,\n\nWe are following up regarding Invoice #INV-2026-106 for ₹2,80,000, matured on 02-Feb-2026.\n\nWe understand hospital procurement and disbursement workflows can take multi-department approvals. Please find the verified work order and timesheets attached to expedite sign-off.\n\nKindly advise if you require any additional vendor documentation.\n\nWarm regards,\nPooja Verma | Healthcare Accounts"
+      }
+    },
+    {
+      "invoiceId": "INV-2026-107",
+      "clientName": "Crestline Infrastructure",
+      "contactPerson": "Gaurav Khanna",
+      "clientEmail": "gaurav@crestline.co.in",
+      "phone": "+91 98210 67890",
+      "amount": "₹5,40,000",
+      "dueDate": "28-Dec-2025",
+      "overdueDays": 84,
+      "score": 31,
+      "status": "Escalated Notice",
+      "manager": "Amit Saxena",
+      "riskTier": "Severe Critical",
+      "aiStrategy": "Formal notice of contract review with 5-day resolution window.",
+      "emailDraft": {
+        "subject": "FINAL ESCALATION NOTICE: Overdue Invoice #INV-2026-107 — Crestline Infra",
+        "tone": "Formal Corporate Demand",
+        "body": "Dear Mr. Khanna,\n\nDespite repeated reminders, Invoice #INV-2026-107 for ₹5,40,000 remains unpaid since 28-Dec-2025 (84 days overdue).\n\nPlease be advised that our automated finance system will hold future site deliveries if the balance is not cleared or scheduled by Friday.\n\nPlease find the final demand note and direct banking details attached.\n\nSincerely,\nAmit Saxena | Head of Commercial Accounts"
+      }
+    },
+    {
+      "invoiceId": "INV-2026-108",
+      "clientName": "Stellar Brands & Media",
+      "contactPerson": "Ananya Joshi",
+      "clientEmail": "ananya@stellarbrands.com",
+      "phone": "+91 97690 11223",
+      "amount": "₹1,90,000",
+      "dueDate": "12-Feb-2026",
+      "overdueDays": 38,
+      "score": 82,
+      "status": "Courtesy Follow-up",
+      "manager": "Kunal Mehta",
+      "riskTier": "Low Risk",
+      "aiStrategy": "Relationship courtesy follow-up for creative services monthly retainer.",
+      "emailDraft": {
+        "subject": "Follow-up: February Retainer Invoice #INV-2026-108 — Stellar Brands",
+        "tone": "Friendly Courtesy",
+        "body": "Hi Ananya,\n\nHope your recent campaign launch was a grand success!\n\nThis is a quick courtesy note regarding the monthly retainer invoice #INV-2026-108 for ₹1,90,000. Whenever your team processes this week's batch, kindly share the remittance advice.\n\nThank you for your ongoing partnership!\n\nBest,\nKunal Mehta | Creative Accounts"
+      }
+    },
+    {
+      "invoiceId": "INV-2026-109",
+      "clientName": "PrimeLogix Supply Chain",
+      "contactPerson": "Manish Tiwari",
+      "clientEmail": "manish@primelogix.in",
+      "phone": "+91 99201 44556",
+      "amount": "₹3,15,000",
+      "dueDate": "11-Jan-2026",
+      "overdueDays": 71,
+      "score": 44,
+      "status": "Critical Overdue",
+      "manager": "Pooja Verma",
+      "riskTier": "High Risk",
+      "aiStrategy": "Direct vendor reconciliation note with credit hold warning.",
+      "emailDraft": {
+        "subject": "URGENT OVERDUE: Invoice #INV-2026-109 — PrimeLogix Supply Chain",
+        "tone": "Firm & Direct",
+        "body": "Dear Mr. Tiwari,\n\nOur accounts ledger reflects that Invoice #INV-2026-109 for ₹3,15,000 is now 71 days overdue.\n\nTo ensure unbroken logistical support across your northern distribution hubs, please arrange settlement of this invoice by tomorrow.\n\nThe complete itemized reconciliation statement is attached.\n\nBest regards,\nPooja Verma | Logistics & Accounts"
+      }
+    },
+    {
+      "invoiceId": "INV-2026-110",
+      "clientName": "Zenith Global Consultancy",
+      "contactPerson": "Shalini Roy",
+      "clientEmail": "shalini@zenithconsult.io",
+      "phone": "+91 98330 99887",
+      "amount": "₹4,60,000",
+      "dueDate": "18-Dec-2025",
+      "overdueDays": 95,
+      "score": 29,
+      "status": "High Risk Default",
+      "manager": "Amit Saxena",
+      "riskTier": "Severe Critical",
+      "aiStrategy": "Executive escalation to Managing Partner with auto-generated clearance terms.",
+      "emailDraft": {
+        "subject": "OVERDUE NOTICE: Account #INV-2026-110 — Zenith Global Consultancy",
+        "tone": "Executive Formal Notice",
+        "body": "Dear Ms. Roy,\n\nWe are reaching out directly regarding overdue Invoice #INV-2026-110 (₹4,60,000), which crossed its maturity date 95 days ago on 18-Dec-2025.\n\nWe request your urgent intervention to authorize this payment to prevent formal legal handover.\n\nPlease find the legal notice of dues and direct wire transfer instructions attached.\n\nRespectfully,\nAmit Saxena | Senior Partner Accounts"
+      }
+    }
+  ]
+}

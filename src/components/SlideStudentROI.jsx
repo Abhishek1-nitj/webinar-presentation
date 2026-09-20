@@ -20,7 +20,7 @@ const SlideStudentROI = () => {
           className="w-full flex items-center justify-center"
         >
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.2rem] font-black text-white tracking-tight whitespace-nowrap">
-            Invest <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">₹2,500 Once</span> Today, Earn <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-green-400">20X Every Month</span>.
+            Invest <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">₹2,499 Once</span> Today, Earn <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-green-400">20X Every Month</span>.
           </h2>
         </motion.div>
 
@@ -41,7 +41,7 @@ const SlideStudentROI = () => {
 
             <div className="my-6 sm:my-8">
               <span className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-[6.5rem] font-black text-white tracking-tight leading-none drop-shadow-[0_4px_25px_rgba(255,255,255,0.2)]">
-                ₹2,500
+                ₹2,499
               </span>
             </div>
 
@@ -119,7 +119,7 @@ const SlideStudentROI = () => {
         >
           <div className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-4 md:gap-8 px-6 sm:px-8 py-3 rounded-2xl bg-zinc-900/80 border border-emerald-500/30 backdrop-blur-md shadow-xl">
             <span className="text-amber-400 font-bold text-sm sm:text-base flex items-center gap-1.5">
-              <span>⚡</span> Investment: <span className="text-white font-black">₹2,500 (Today)</span>
+              <span>⚡</span> Investment: <span className="text-white font-black">₹2,499 (Today)</span>
             </span>
             <span className="text-zinc-600 hidden sm:inline">•</span>
             <span className="text-sky-400 font-bold text-sm sm:text-base flex items-center gap-1.5">

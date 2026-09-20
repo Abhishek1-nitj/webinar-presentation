@@ -56,6 +56,9 @@ import SlideThankYou from './components/SlideThankYou';
 import SlideBigTextPrice from './components/SlideBigTextPrice';
 import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
 import SlideStudentTestimonial from './components/SlideStudentTestimonial';
+import SlideHowToMakeDashboard from './components/SlideHowToMakeDashboard';
+import SlideAutomationOutsideExcel from './components/SlideAutomationOutsideExcel';
+import SlideAutonomousPipelineDemo from './components/SlideAutonomousPipelineDemo';
 import SlideCountdownTimer from './components/SlideCountdownTimer';
 import SlideDiscount90 from './components/SlideDiscount90';
 import Slide32bRecap from './components/Slide32bRecap';
@@ -264,8 +267,8 @@ const App = () => {
       <SlidePromptQualityScale />
       <Slide32m />
       <Slide32k visibleSteps={3} />
-      <Slide32k visibleSteps={4} />
       <SlideBestWayToLearnFormulas />
+      <Slide32k visibleSteps={4} />
       <SlideWhatYouNeedToLearnJobReady />
       <SlideCareerTechLadder />
       <SlideSalaryBenchmarkByRole />
@@ -304,17 +307,17 @@ const App = () => {
       <SlideReadyMadeProjects />
       <SlideFreelanceProjectCategories />
       <SlideStudentTestimonial />
-      <Slide32k visibleSteps={4} />
-      <Slide32k visibleSteps={5} />
+      <SlideHowToMakeDashboard />
+      <Slide32DashboardTools />
+      <SlideDashboardCodex />
+      <SlideAutomationOutsideExcel />
+      <SlideAutonomousPipelineDemo />
       <Slide32x />
       <Slide32z />
       <SlideClaudeInsights />
       <Slide32ab />
       <SlideGoogleAntiGravity />
-      <Slide32k visibleSteps={7} highlightStep={6} />
-      <Slide32DashboardTools />
-      <SlideDashboardCodex />
-      <Slide32k visibleSteps={7} />
+      <SlideThankYou />
       <Slide32bRecap />
       <Slide32bFlowFreelance />
       <Slide32bFlowFreelanceHighlight />
