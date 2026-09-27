@@ -88,6 +88,9 @@ const SlideLearnExcelAndMonetize = () => {
                   <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-zinc-300 block">
                     💼 Full-Time Job
                   </span>
+                  <span className="text-xs sm:text-sm font-semibold text-emerald-400 block mt-0.5">
+                    (Work from Home)
+                  </span>
                 </div>
                 <div className="text-right">
                   <span className="font-display text-2xl sm:text-3xl font-black text-white">
