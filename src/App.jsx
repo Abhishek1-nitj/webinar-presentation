@@ -57,6 +57,7 @@ import SlideDiscount75 from './components/SlideDiscount75';
 import SlidePricingBenchmarkImage from './components/SlidePricingBenchmarkImage';
 import SlideAllCoursePrices from './components/SlideAllCoursePrices';
 import SlideSpecialWebinarOffer30Students from './components/SlideSpecialWebinarOffer30Students';
+import SlideSkillJobFreelancingOverview from './components/SlideSkillJobFreelancingOverview';
 import SlideDiscount88 from './components/SlideDiscount88';
 import SlideOffer2999 from './components/SlideOffer2999';
 import SlideOffer2999Image from './components/SlideOffer2999Image';
@@ -292,6 +293,7 @@ const App = () => {
       <SlideAllCoursePrices />
       <SlideDiscount75 />
       <SlidePricingBenchmarkImage />
+      <SlideSkillJobFreelancingOverview />
       <SlideSpecialWebinarOffer30Students />
       <SlideDiscount88 />
       <SlideOffer2999 />
