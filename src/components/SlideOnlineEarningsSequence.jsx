@@ -1,20 +1,22 @@
 import { motion } from 'framer-motion';
-import { assetPath } from '../utils/assetPath';
+import earn1 from '../../Jobs and FR images/Screenshot 2026-09-27 at 4.31.53 PM.png';
+import earn2 from '../../Jobs and FR images/Screenshot 2026-09-27 at 4.32.47 PM.png';
+import earn3 from '../../Jobs and FR images/Screenshot 2026-09-27 at 4.33.04 PM.png';
 
 const earningProofs = [
   {
     id: 1,
-    src: assetPath('images/online-earnings/earn1.png'),
+    src: earn1,
     alt: 'Online Earning Proof 1',
   },
   {
     id: 5,
-    src: assetPath('images/online-earnings/earn5.png'),
+    src: earn2,
     alt: 'Online Earning Proof 2',
   },
   {
     id: 6,
-    src: assetPath('images/online-earnings/earn6.png'),
+    src: earn3,
     alt: 'Online Earning Proof 3',
   },
 ];

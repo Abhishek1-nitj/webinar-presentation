@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
-import { assetPath } from '../utils/assetPath';
+import job1 from '../../Jobs and FR images/Screenshot 2026-09-27 at 4.10.15 PM.png';
+import job2 from '../../Jobs and FR images/Screenshot 2026-09-27 at 4.10.55 PM.png';
+import job3 from '../../Jobs and FR images/Screenshot 2026-09-27 at 4.11.17 PM.png';
+import job4 from '../../Jobs and FR images/Screenshot 2026-09-27 at 4.11.12 PM.png';
 
 const jobSlidePairs = [
   {
@@ -7,12 +10,12 @@ const jobSlidePairs = [
     jobs: [
       {
         id: 1,
-        src: assetPath('images/linkedin-jobs/job1.png'),
+        src: job1,
         alt: 'LinkedIn Data Job Posting 1',
       },
       {
         id: 2,
-        src: assetPath('images/linkedin-jobs/job2.png'),
+        src: job2,
         alt: 'LinkedIn Data Job Posting 2',
       },
     ],
@@ -22,12 +25,12 @@ const jobSlidePairs = [
     jobs: [
       {
         id: 3,
-        src: assetPath('images/linkedin-jobs/job3.png'),
+        src: job3,
         alt: 'LinkedIn Data Job Posting 3',
       },
       {
         id: 4,
-        src: assetPath('images/linkedin-jobs/job4.png'),
+        src: job4,
         alt: 'LinkedIn Data Job Posting 4',
       },
     ],

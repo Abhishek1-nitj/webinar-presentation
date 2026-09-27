@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
-import { assetPath } from '../utils/assetPath';
+import catalog1 from '../../Jobs and FR images/Screenshot 2026-09-27 at 4.32.07 PM.png';
+import catalog2 from '../../Jobs and FR images/Screenshot 2026-09-27 at 4.32.23 PM.png';
 
 const catalogProofs = [
   {
     id: 2,
-    src: assetPath('images/online-earnings/earn2.png'),
+    src: catalog1,
     alt: 'Upwork Project Catalog Proof 1',
   },
   {
     id: 3,
-    src: assetPath('images/online-earnings/earn3.png'),
+    src: catalog2,
     alt: 'Upwork Project Catalog Proof 2',
   },
 ];
