@@ -37,6 +37,7 @@ const steps = [
   {
     number: '04',
     title: 'Portfolio',
+    link: 'https://delightful-unicorn-f0f695.netlify.app/',
     color: 'border-purple-500/40 bg-purple-950/20 text-purple-300',
     numberBg: 'border-purple-400/40 bg-purple-500/10 text-purple-300',
     icon: (
@@ -129,11 +130,25 @@ const SlideRemoteDataCareerRoadmap = () => {
                   </div>
                 </div>
 
-                {/* Center: Title Only */}
+                {/* Center: Title */}
                 <div className="my-auto py-2">
-                  <h3 className="font-display text-base sm:text-lg font-black text-white leading-snug">
-                    {step.title}
-                  </h3>
+                  {step.link ? (
+                    <a
+                      href={step.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-display text-base sm:text-lg font-black text-purple-300 hover:text-purple-100 underline decoration-purple-400/80 decoration-2 underline-offset-4 transition-all inline-flex items-center gap-1.5 hover:scale-105"
+                    >
+                      <span>{step.title}</span>
+                      <svg className="w-3.5 h-3.5 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <h3 className="font-display text-base sm:text-lg font-black text-white leading-snug">
+                      {step.title}
+                    </h3>
+                  )}
                 </div>
               </motion.div>
             ))}
