@@ -7,6 +7,14 @@ import Slide22 from './components/Slide22';
 import Slide23 from './components/Slide23';
 import Slide24 from './components/Slide24';
 import SlideStartTheMasterclass from './components/SlideStartTheMasterclass';
+import SlidePartATitle from './components/SlidePartATitle';
+import SlideRemoteDataWorkflow from './components/SlideRemoteDataWorkflow';
+import SlideDataExpertAffordability from './components/SlideDataExpertAffordability';
+import SlideGlobalCompaniesIndiaGCC from './components/SlideGlobalCompaniesIndiaGCC';
+import SlideRemoteDataCareerRoadmap from './components/SlideRemoteDataCareerRoadmap';
+import SlideLinkedInJobsProof from './components/SlideLinkedInJobsProof';
+import SlideOnlineEarningsSequence from './components/SlideOnlineEarningsSequence';
+import SlideUpworkProjectCatalogProof from './components/SlideUpworkProjectCatalogProof';
 import Slide32bIntro from './components/Slide32bIntro';
 import SlideWhatYouGet from './components/SlideWhatYouGet';
 import Slide32bIntroFreelance from './components/Slide32bIntroFreelance';
@@ -272,7 +280,15 @@ const App = () => {
       <SlideWhatYouNeedToLearnJobReady />
       <SlideCareerTechLadder />
       <SlideSalaryBenchmarkByRole />
+      <SlidePartATitle />
+      <SlideRemoteDataWorkflow />
+      <SlideDataExpertAffordability />
+      <SlideGlobalCompaniesIndiaGCC />
+      <SlideRemoteDataCareerRoadmap />
+      <SlideLinkedInJobsProof />
       <SlideUpworkMarketDemand />
+      <SlideUpworkProjectCatalogProof />
+      <SlideOnlineEarningsSequence />
       <SlideAllCoursePrices />
       <SlideDiscount75 />
       <SlidePricingBenchmarkImage />
