@@ -292,13 +292,13 @@ const App = () => {
       <SlideAllCoursePrices />
       <SlideDiscount75 />
       <SlidePricingBenchmarkImage />
-      <SlideSkillJobFreelancing />
       <SlideSpecialWebinarOffer30Students />
       <SlideDiscount88 />
       <SlideOffer2999 />
       <SlideOffer2999Image />
       <SlideCountdownTimer />
       <SlideLearningTime />
+      <SlideSkillJobFreelancing />
       <SlideStudentROI />
       <SlideRozKitnaTime />
       <SlideWhoCanJoin />
