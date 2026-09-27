@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 
 const points = [
   {
-    label: 'Vague Prompt',
-    response: 'Vague Response',
+    label: 'Bad Prompt',
+    response: 'Bad Response',
     tone: 'from-red-500/20 to-red-900/10 border-red-400/40 text-red-300',
   },
   {
