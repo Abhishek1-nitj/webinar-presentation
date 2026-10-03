@@ -48,7 +48,7 @@ const SlideDiscount75 = () => (
         </div>
       </motion.div>
 
-      {/* Massive 25,706 Slashed Value */}
+      {/* Massive 25,000 Slashed Value */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 25 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -57,7 +57,7 @@ const SlideDiscount75 = () => (
         className="space-y-2"
       >
         <div className="font-display text-6xl sm:text-8xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-100 to-green-400 tracking-tight drop-shadow-[0_10px_60px_rgba(52,211,153,0.55)]">
-          25,706
+          25,000
         </div>
       </motion.div>
 

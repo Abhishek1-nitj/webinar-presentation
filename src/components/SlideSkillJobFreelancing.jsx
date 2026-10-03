@@ -195,14 +195,40 @@ const ClientReachOutIcon = () => (
 );
 
 const SlideSkillJobFreelancing = () => {
-  // 1. Full Tool Mastery Items (6 items)
+  // 1. Core Stack / Step Items (3 items)
   const toolItems = [
-    { name: 'Excel + AI', logo: <ExcelAiLogo />, tag: 'Spreadsheet Automation' },
-    { name: 'Power Query', logo: <PowerQueryLogo />, tag: 'ETL & Data Cleaning' },
-    { name: 'Power Pivot', logo: <PowerPivotLogo />, tag: 'Data Modeling & DAX' },
-    { name: 'Power BI', logo: <PowerBiLogo />, tag: 'Interactive Dashboards' },
-    { name: 'SQL', logo: <SqlLogo />, tag: 'Relational Database Queries' },
-    { name: 'Python', logo: <PythonLogo />, tag: 'Automation & Analytics' },
+    {
+      step: 'STEP 1',
+      name: 'Excel Mastery',
+      logo: <ExcelAiLogo />,
+      tag: 'Basic to Advance Excel',
+      stepColor: 'text-emerald-400',
+      borderGlow: 'hover:border-emerald-500/40',
+    },
+    {
+      step: 'STEP 2',
+      name: 'Excel + AI',
+      logo: (
+        <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-amber-500/15 border border-amber-400/30 flex items-center justify-center text-sm shrink-0 shadow-md">
+          ⚡
+        </div>
+      ),
+      tag: '10x Speed',
+      stepColor: 'text-amber-400',
+      borderGlow: 'hover:border-amber-500/40',
+    },
+    {
+      step: 'STEP 3',
+      name: 'Workflow Automation',
+      logo: (
+        <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-sky-500/15 border border-sky-400/30 flex items-center justify-center text-sm shrink-0 shadow-md">
+          🤖
+        </div>
+      ),
+      tag: '100% Hands-Off',
+      stepColor: 'text-sky-400',
+      borderGlow: 'hover:border-sky-500/40',
+    },
   ];
 
   // 2. Job Items (4 items)
@@ -411,23 +437,26 @@ const SlideSkillJobFreelancing = () => {
                 </h4>
               </div>
               <span className="text-[9.5px] font-medium px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300/90 border border-emerald-500/20">
-                6 Core Tools
+                3 Core Steps
               </span>
             </div>
 
             {/* Tools List */}
-            <div className="flex flex-col gap-1.5 flex-grow justify-between">
+            <div className="flex flex-col gap-2 flex-grow justify-between">
               {toolItems.map((tool, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center gap-2.5 px-2.5 py-1.5 rounded-xl bg-zinc-900/60 border border-zinc-800/60 hover:bg-zinc-850/80 hover:border-emerald-500/30 transition-all duration-200"
+                  className={`flex items-center gap-2.5 px-2.5 py-2 rounded-xl bg-zinc-900/60 border border-zinc-800/60 hover:bg-zinc-850/80 ${tool.borderGlow} transition-all duration-200`}
                 >
                   {tool.logo}
                   <div className="flex flex-col min-w-0">
-                    <span className="text-xs sm:text-[12.5px] font-semibold text-white tracking-tight leading-tight truncate">
+                    <span className={`text-[9.5px] font-mono font-bold uppercase tracking-widest block leading-tight ${tool.stepColor}`}>
+                      {tool.step}
+                    </span>
+                    <span className="text-xs sm:text-[12.5px] font-bold text-white tracking-tight leading-tight truncate mt-0.5">
                       {tool.name}
                     </span>
-                    <span className="text-[10px] text-zinc-400 font-normal leading-tight truncate">
+                    <span className="text-[10px] text-zinc-400 font-normal leading-tight truncate mt-0.5">
                       {tool.tag}
                     </span>
                   </div>

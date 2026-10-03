@@ -10,11 +10,7 @@ import SlideStartTheMasterclass from './components/SlideStartTheMasterclass';
 import SlidePartATitle from './components/SlidePartATitle';
 import SlideRemoteDataWorkflow from './components/SlideRemoteDataWorkflow';
 import SlideDataExpertAffordability from './components/SlideDataExpertAffordability';
-import SlideGlobalCompaniesIndiaGCC from './components/SlideGlobalCompaniesIndiaGCC';
-import SlideRemoteDataCareerRoadmap from './components/SlideRemoteDataCareerRoadmap';
 import SlideLinkedInJobsProof from './components/SlideLinkedInJobsProof';
-import SlideOnlineEarningsSequence from './components/SlideOnlineEarningsSequence';
-import SlideUpworkProjectCatalogProof from './components/SlideUpworkProjectCatalogProof';
 import Slide32bIntro from './components/Slide32bIntro';
 import SlideWhatYouGet from './components/SlideWhatYouGet';
 import Slide32bIntroFreelance from './components/Slide32bIntroFreelance';
@@ -27,8 +23,6 @@ import SlideModule22ExcelAI from './components/SlideModule22ExcelAI';
 import SlideModule23InterviewPreparation from './components/SlideModule23InterviewPreparation';
 import SlideReadyMadeProjects from './components/SlideReadyMadeProjects';
 import SlideSkillJobFreelancing from './components/SlideSkillJobFreelancing';
-import SlideCareerTechLadder from './components/SlideCareerTechLadder';
-import SlideUpworkMarketDemand from './components/SlideUpworkMarketDemand';
 import SlideLearningTime from './components/SlideLearningTime';
 import SlideStudentROI from './components/SlideStudentROI';
 import SlideLearnExcelAndMonetize from './components/SlideLearnExcelAndMonetize';
@@ -49,18 +43,19 @@ import SlidePainOfRejection from './components/SlidePainOfRejection';
 import SlideSpeakingToOneStudent from './components/SlideSpeakingToOneStudent';
 import SlideRescueOpportunityImage from './components/SlideRescueOpportunityImage';
 import SlideSaurabhStory from './components/SlideSaurabhStory';
-import SlideWhatYouNeedToLearnJobReady from './components/SlideWhatYouNeedToLearnJobReady';
-import SlideSalaryBenchmarkByRole from './components/SlideSalaryBenchmarkByRole';
+import SlideHowToMonetize from './components/SlideHowToMonetize';
+import SlideHowToMonetizeCopy from './components/SlideHowToMonetizeCopy';
+import SlideExcelThreeStepsCombined from './components/SlideExcelThreeStepsCombined';
+import SlideJobThreePillars from './components/SlideJobThreePillars';
+import SlideFreelancingFourPillars from './components/SlideFreelancingFourPillars';
+import SlideFreelancingEarningsMath from './components/SlideFreelancingEarningsMath';
 import SlideFreelanceServicesEarningsBenchmark from './components/SlideFreelanceServicesEarningsBenchmark';
 import SlideCostOfLearningBig from './components/SlideCostOfLearningBig';
-import SlideDiscount75 from './components/SlideDiscount75';
-import SlidePricingBenchmarkImage from './components/SlidePricingBenchmarkImage';
-import SlideAllCoursePrices from './components/SlideAllCoursePrices';
-import SlideSpecialWebinarOffer30Students from './components/SlideSpecialWebinarOffer30Students';
 import SlideSkillJobFreelancingOverview from './components/SlideSkillJobFreelancingOverview';
+import SlideSkillJobFreelancingOverviewPrice from './components/SlideSkillJobFreelancingOverviewPrice';
+import SlideSpecialWebinarOffer30Students from './components/SlideSpecialWebinarOffer30Students';
 import SlideDiscount88 from './components/SlideDiscount88';
 import SlideOffer2999 from './components/SlideOffer2999';
-import SlideOffer2999Image from './components/SlideOffer2999Image';
 import SlideThankYou from './components/SlideThankYou';
 import SlideBigTextPrice from './components/SlideBigTextPrice';
 import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
@@ -278,26 +273,26 @@ const App = () => {
       <Slide32k visibleSteps={3} />
       <SlideBestWayToLearnFormulas />
       <Slide32k visibleSteps={4} />
-      <SlideWhatYouNeedToLearnJobReady />
-      <SlideCareerTechLadder />
-      <SlideSalaryBenchmarkByRole />
+      <SlideHowToMonetize />
+      <SlideExcelThreeStepsCombined />
+      <SlideExcelThreeStepsCombined highlightStep={1} />
+      <SlideExcelThreeStepsCombined highlightStep={2} />
+      <SlideExcelThreeStepsCombined highlightStep={3} />
+      <SlideAutomationOutsideExcel />
+      <SlideAutonomousPipelineDemo />
+      <SlideHowToMonetizeCopy />
+      <SlideJobThreePillars />
       <SlidePartATitle />
       <SlideRemoteDataWorkflow />
       <SlideDataExpertAffordability />
-      <SlideGlobalCompaniesIndiaGCC />
-      <SlideRemoteDataCareerRoadmap />
       <SlideLinkedInJobsProof />
-      <SlideUpworkMarketDemand />
-      <SlideUpworkProjectCatalogProof />
-      <SlideOnlineEarningsSequence />
-      <SlideAllCoursePrices />
-      <SlideDiscount75 />
-      <SlidePricingBenchmarkImage />
+      <SlideFreelancingFourPillars />
+      <SlideFreelancingEarningsMath />
       <SlideSkillJobFreelancingOverview />
+      <SlideSkillJobFreelancingOverviewPrice />
       <SlideSpecialWebinarOffer30Students />
       <SlideDiscount88 />
       <SlideOffer2999 />
-      <SlideOffer2999Image />
       <SlideCountdownTimer />
       <SlideLearningTime />
       <SlideSkillJobFreelancing />
@@ -328,8 +323,6 @@ const App = () => {
       <SlideHowToMakeDashboard />
       <Slide32DashboardTools />
       <SlideDashboardCodex />
-      <SlideAutomationOutsideExcel />
-      <SlideAutonomousPipelineDemo />
       <Slide32x />
       <Slide32z />
       <SlideClaudeInsights />
@@ -407,7 +400,6 @@ const App = () => {
       <Slide32bFlowJobApplicationsUnique />
       <Slide52InterviewTypes />
       <Slide52TechnicalRound />
-      <SlideOffer2999Image />
       <SlideAttendanceRecordingAccess />
       <SlideThankYou />
       <SlideExcelOffer />

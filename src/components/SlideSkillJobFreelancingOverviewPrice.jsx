@@ -29,71 +29,6 @@ const ExcelAiLogo = () => (
   </div>
 );
 
-// 2. Official Microsoft Power Query (ETL Pipeline / Transformation)
-const PowerQueryLogo = () => (
-  <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-[#006651] border border-teal-400/40 flex items-center justify-center shadow-md shrink-0 overflow-hidden">
-    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
-      <rect x="3" y="4" width="7" height="16" rx="1.2" fill="#A3E6CD" opacity="0.9" />
-      <path d="M5 8h3M5 12h3M5 16h3" stroke="#004D3C" strokeWidth="1.2" strokeLinecap="round" />
-      <path d="M12 9l2.5 3L12 15" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      <rect x="16" y="4" width="5" height="16" rx="1.2" fill="#34D399" />
-      <path d="M17.5 7h2M17.5 10h2M17.5 13h2M17.5 16h2" stroke="#004D3C" strokeWidth="1" strokeLinecap="round" />
-    </svg>
-  </div>
-);
-
-// 3. Official Microsoft Power Pivot (3D Relational Data Cube)
-const PowerPivotLogo = () => (
-  <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-[#0C592E] border border-emerald-400/40 flex items-center justify-center shadow-md shrink-0 overflow-hidden">
-    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
-      <path d="M12 3l7 3.5-7 3.5-7-3.5L12 3z" fill="#34D399" />
-      <path d="M5 6.5v8l7 4v-8.5L5 6.5z" fill="#107C41" />
-      <path d="M19 6.5v8l-7 4v-8.5l7-3.5z" fill="#095C3E" />
-      <path d="M12 10v8.5M8.5 4.75l7 8.5M15.5 4.75l-7 8.5" stroke="#A7F3D0" strokeWidth="0.8" opacity="0.6" />
-    </svg>
-  </div>
-);
-
-// 4. Official Microsoft Power BI (3 Ascending Bars)
-const PowerBiLogo = () => (
-  <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-[#18181B] border border-amber-400/40 flex items-center justify-center shadow-md shrink-0">
-    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
-      <rect x="5" y="12" width="3.2" height="8" rx="0.8" fill="#F2C811" />
-      <rect x="10.4" y="8" width="3.2" height="12" rx="0.8" fill="#E8B007" />
-      <rect x="15.8" y="4" width="3.2" height="16" rx="0.8" fill="#D39600" />
-    </svg>
-  </div>
-);
-
-// 5. Relational SQL Database
-const SqlLogo = () => (
-  <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-zinc-900 border border-sky-500/40 flex items-center justify-center shadow-md shrink-0">
-    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
-      <ellipse cx="12" cy="5" rx="7" ry="2.2" fill="#38BDF8" />
-      <path d="M19 5v5c0 1.2-3.13 2.2-7 2.2s-7-1-7-2.2V5" stroke="#38BDF8" strokeWidth="1.4" />
-      <path d="M19 10v5c0 1.2-3.13 2.2-7 2.2s-7-1-7-2.2v-5" stroke="#38BDF8" strokeWidth="1.4" />
-      <ellipse cx="12" cy="10" rx="7" ry="2.2" fill="#0284C7" fillOpacity="0.3" />
-      <ellipse cx="12" cy="15" rx="7" ry="2.2" fill="#0369A1" fillOpacity="0.5" />
-    </svg>
-  </div>
-);
-
-// 6. Official Python
-const PythonLogo = () => (
-  <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-zinc-900 border border-zinc-700/80 flex items-center justify-center shadow-md shrink-0">
-    <svg className="w-3.5 h-3.5" viewBox="0 0 128 128" fill="none">
-      <path
-        d="M63.5 13c-27.2 0-25.5 11.8-25.5 11.8l.03 12.2h26v3.7H27.5C10.8 40.7 11 58.7 11 58.7s-.2 10.6 6.8 17.5c6.8 6.7 15.8 7 15.8 7v-10.7s-.9-12.7 12.5-12.7h23.8s11.5.2 11.5-11.2V24.5S83 13 63.5 13zm-13.8 7.3a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4z"
-        fill="#387EB8"
-      />
-      <path
-        d="M64.5 115c27.2 0 25.5-11.8 25.5-11.8l-.03-12.2h-26v-3.7h36.5c16.7 0 16.5-18 16.5-18s.2-10.6-6.8-17.5c-6.8-6.7-15.8-7-15.8-7v10.7s.9 12.7-12.5 12.7H58s-11.5-.2-11.5 11.2v23.4S45 115 64.5 115zm13.8-7.3a4.2 4.2 0 1 1 0-8.4 4.2 4.2 0 0 1 0 8.4z"
-        fill="#FFD43B"
-      />
-    </svg>
-  </div>
-);
-
 // --- Custom Sleek Icons for Job Pillar ---
 
 const ResumeIcon = () => (
@@ -194,7 +129,7 @@ const ClientReachOutIcon = () => (
   </div>
 );
 
-const SlideSkillJobFreelancingOverview = () => {
+const SlideSkillJobFreelancingOverviewPrice = () => {
   // 1. Core Stack / Step Items (3 items)
   const toolItems = [
     {
@@ -250,27 +185,27 @@ const SlideSkillJobFreelancingOverview = () => {
   ];
 
   return (
-    <section className="slide-section h-screen max-h-screen w-full flex flex-col justify-center px-4 sm:px-8 md:px-10 lg:px-12 py-5 relative overflow-hidden bg-[#090A0D]">
+    <section className="slide-section h-screen max-h-screen w-full flex flex-col justify-center px-4 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-5 relative overflow-hidden bg-[#090A0D]">
       {/* Subtle Executive Matte Vignette & Ambient Radial Glows */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_15%,rgba(255,255,255,0.03),transparent_75%)] pointer-events-none" />
       <div className="absolute top-1/4 left-1/4 w-96 h-80 bg-emerald-500/[0.08] rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/4 right-1/4 w-96 h-80 bg-purple-500/[0.08] rounded-full blur-3xl pointer-events-none" />
 
       {/* Main Container */}
-      <div className="relative z-10 w-full max-w-[1360px] mx-auto flex flex-col justify-center space-y-6 sm:space-y-8 my-auto">
+      <div className="relative z-10 w-full max-w-[1360px] mx-auto flex flex-col justify-center space-y-3.5 sm:space-y-4 my-auto">
         
         {/* Section Title Equation: Full Tool Mastery ➔ Job + Freelancing */}
         <div className="w-full flex flex-nowrap items-center justify-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 whitespace-nowrap">
           
           {/* 1. Full Tool Mastery */}
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -8 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.45, delay: 0.1 }}
+            transition={{ duration: 0.4, delay: 0.05 }}
             className="flex-shrink-0"
           >
-            <span className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-zinc-100 to-zinc-300 whitespace-nowrap">
+            <span className="font-display text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-zinc-100 to-zinc-300 whitespace-nowrap">
               Full Tool Mastery
             </span>
           </motion.div>
@@ -278,7 +213,7 @@ const SlideSkillJobFreelancingOverview = () => {
           {/* Minimalist Executive Arrow: ➔ */}
           <div className="flex items-center justify-center flex-shrink-0">
             <svg
-              className="w-5 h-5 sm:w-6 sm:h-6 text-zinc-400 flex-shrink-0"
+              className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-400 flex-shrink-0"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -294,48 +229,63 @@ const SlideSkillJobFreelancingOverview = () => {
 
           {/* 2. Job */}
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -8 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.45, delay: 0.15 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="flex-shrink-0"
           >
-            <span className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-zinc-100 to-zinc-300 whitespace-nowrap">
+            <span className="font-display text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-zinc-100 to-zinc-300 whitespace-nowrap">
               Job
             </span>
           </motion.div>
 
           {/* Plus: + */}
           <div className="flex items-center justify-center flex-shrink-0">
-            <span className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-zinc-500 whitespace-nowrap">
+            <span className="font-display text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-zinc-500 whitespace-nowrap">
               +
             </span>
           </div>
 
           {/* 3. Freelancing */}
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -8 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.45, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.15 }}
             className="flex-shrink-0"
           >
-            <span className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-zinc-100 to-zinc-300 whitespace-nowrap">
+            <span className="font-display text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-zinc-100 to-zinc-300 whitespace-nowrap">
               Freelancing
             </span>
           </motion.div>
 
         </div>
 
+        {/* ⭐ TOP VALUE HERO PILL: ₹25,000 AT THE TOP OF ALL THREE BOXES ⭐ */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, y: -6 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.45, delay: 0.15 }}
+          className="w-full flex items-center justify-center pt-0.5 pb-1"
+        >
+          <div className="inline-flex items-center justify-center gap-3 px-8 py-1.5 sm:py-2 rounded-2xl border-2 border-amber-500/40 bg-gradient-to-r from-amber-950/45 via-[#18140C] to-zinc-950/95 shadow-[0_0_35px_rgba(245,158,11,0.25)] text-center">
+            <span className="font-display text-2xl sm:text-3xl lg:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-500 drop-shadow-[0_2px_20px_rgba(245,158,11,0.5)]">
+              ₹25,000
+            </span>
+          </div>
+        </motion.div>
+
         {/* 3-Column Pillars Layout */}
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-4 lg:gap-5 items-stretch">
 
           {/* ================= PILLAR 1: FULL TOOL MASTERY ================= */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.15 }}
+            transition={{ duration: 0.45, delay: 0.15 }}
             className="flex flex-col rounded-3xl bg-gradient-to-b from-[#11161B]/95 via-[#0D1015]/90 to-[#0A0D11]/95 border border-emerald-500/30 p-4 sm:p-5 shadow-[0_12px_36px_rgba(0,0,0,0.55)] backdrop-blur-xl relative overflow-hidden group hover:border-emerald-400/50 transition-all duration-300"
           >
             <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-emerald-500/10 via-emerald-400 to-teal-500/10" />
@@ -381,10 +331,10 @@ const SlideSkillJobFreelancingOverview = () => {
 
           {/* ================= PILLAR 2: JOB ================= */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.45, delay: 0.2 }}
             className="flex flex-col rounded-3xl bg-gradient-to-b from-[#101420]/95 via-[#0D1018]/90 to-[#0A0D14]/95 border border-blue-500/30 p-4 sm:p-5 shadow-[0_12px_36px_rgba(0,0,0,0.55)] backdrop-blur-xl relative overflow-hidden group hover:border-blue-400/50 transition-all duration-300"
           >
             <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-blue-500/10 via-blue-400 to-indigo-500/10" />
@@ -434,10 +384,10 @@ const SlideSkillJobFreelancingOverview = () => {
 
           {/* ================= PILLAR 3: FREELANCING ================= */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.25 }}
+            transition={{ duration: 0.45, delay: 0.25 }}
             className="flex flex-col rounded-3xl bg-gradient-to-b from-[#181122]/95 via-[#120D1A]/90 to-[#0C0A12]/95 border border-purple-500/30 p-4 sm:p-5 shadow-[0_12px_36px_rgba(0,0,0,0.55)] backdrop-blur-xl relative overflow-hidden group hover:border-purple-400/50 transition-all duration-300"
           >
             <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-purple-500/10 via-purple-400 to-fuchsia-500/10" />
@@ -485,4 +435,4 @@ const SlideSkillJobFreelancingOverview = () => {
   );
 };
 
-export default SlideSkillJobFreelancingOverview;
+export default SlideSkillJobFreelancingOverviewPrice;

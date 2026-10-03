@@ -30,7 +30,7 @@ const SlideLearningTime = () => {
           className="relative inline-block py-1 sm:py-3"
         >
           <div className="font-display text-7xl sm:text-9xl md:text-[10rem] lg:text-[11.5rem] font-black tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-b from-white via-zinc-100 to-zinc-400 drop-shadow-[0_10px_35px_rgba(0,0,0,0.9)]">
-            3–6 Months
+            3 Months
           </div>
 
           {/* Understated Executive Horizon Line */}

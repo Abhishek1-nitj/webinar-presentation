@@ -17,7 +17,7 @@ const SlideTransformationOutcome = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-            Where You Can Be in 3 to 6 Months
+            Where You Can Be in 3 Months
           </h2>
         </motion.div>
 
@@ -51,7 +51,7 @@ const SlideTransformationOutcome = () => {
                   Dedicated Work
                 </span>
                 <div className="font-display text-lg sm:text-xl font-black text-amber-400">
-                  3 to 6 Months
+                  3 Months
                 </div>
                 <svg className="w-6 h-6 text-zinc-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.4} d="M13 7l5 5m0 0l-5 5m5-5H6" />

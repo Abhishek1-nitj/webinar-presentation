@@ -26,7 +26,7 @@ const SlideOffer2999 = () => (
         </div>
       </motion.div>
 
-      {/* 1. Evil Red Crossed-out 25,706 Big Box */}
+      {/* 1. Evil Red Crossed-out 25,000 Big Box */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9, y: -15 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -36,7 +36,7 @@ const SlideOffer2999 = () => (
       >
         <div className="relative inline-block rounded-3xl sm:rounded-[2.5rem] border-2 border-red-600/70 bg-gradient-to-b from-red-950/90 via-[#260306] to-black px-10 sm:px-16 md:px-20 py-4 sm:py-6 shadow-[0_0_70px_rgba(239,68,68,0.65)] backdrop-blur-xl">
           <div className="font-display text-5xl sm:text-6xl md:text-7xl font-black text-red-500 tracking-tight drop-shadow-[0_0_35px_rgba(239,68,68,0.95)]">
-            25,706
+            25,000
           </div>
           {/* Intense Neon Red Slash Cross */}
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
@@ -59,7 +59,7 @@ const SlideOffer2999 = () => (
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
           <span className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide text-emerald-300">
-            90% Discount <span className="text-emerald-400/80 font-semibold text-lg sm:text-2xl">(22,587 off)</span>
+            90% Discount
           </span>
         </div>
       </motion.div>

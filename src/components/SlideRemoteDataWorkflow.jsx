@@ -94,22 +94,18 @@ const SlideRemoteDataWorkflow = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-2 pt-2 border-t border-zinc-800/80">
-              <div className="p-2.5 rounded-xl bg-zinc-900/90 border border-zinc-800 flex items-center gap-2">
-                <span className="text-emerald-400 font-black text-sm">X</span>
-                <span className="text-xs sm:text-sm font-bold text-zinc-200">Excel + AI</span>
-              </div>
-              <div className="p-2.5 rounded-xl bg-zinc-900/90 border border-zinc-800 flex items-center gap-2">
-                <span className="text-amber-400 font-black text-sm">📊</span>
-                <span className="text-xs sm:text-sm font-bold text-zinc-200">Power BI</span>
-              </div>
-              <div className="p-2.5 rounded-xl bg-zinc-900/90 border border-zinc-800 flex items-center gap-2">
-                <span className="text-sky-400 font-black text-sm">🗄️</span>
-                <span className="text-xs sm:text-sm font-bold text-zinc-200">SQL Queries</span>
-              </div>
-              <div className="p-2.5 rounded-xl bg-zinc-900/90 border border-zinc-800 flex items-center gap-2">
-                <span className="text-yellow-400 font-black text-sm">🐍</span>
-                <span className="text-xs sm:text-sm font-bold text-zinc-200">Python Scripts</span>
+            <div className="pt-2 border-t border-zinc-800/80">
+              <div className="p-3.5 rounded-2xl bg-zinc-900/90 border border-emerald-500/30 flex items-center justify-between gap-3 shadow-md">
+                <div className="flex items-center gap-3">
+                  <span className="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-400 font-black text-sm">
+                    X
+                  </span>
+                  <div>
+                    <span className="text-sm font-bold text-white block">Excel + AI</span>
+                    <span className="text-[11px] text-zinc-400 font-medium">Analysis & Automations</span>
+                  </div>
+                </div>
+                <span className="text-amber-400 text-lg">⚡</span>
               </div>
             </div>
           </motion.div>
