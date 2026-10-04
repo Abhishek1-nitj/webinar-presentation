@@ -58,6 +58,7 @@ const SlideFreelancingFourPillars = () => {
       border: 'border-purple-500/40 hover:border-purple-400/70',
       glow: 'shadow-[0_0_35px_rgba(168,85,247,0.18)]',
       titleGradient: 'from-purple-300 via-fuchsia-200 to-pink-400',
+      link: 'https://delightful-unicorn-f0f695.netlify.app/',
     },
     {
       badge: 'STEP 4',
@@ -118,38 +119,59 @@ const SlideFreelancingFourPillars = () => {
       {/* Main 4 Pillars Grid */}
       <div className="relative z-10 w-full max-w-7xl mx-auto flex-1 min-h-0 py-4 sm:py-6 flex flex-col justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 items-stretch w-full">
-          {pillars.map((pillar, idx) => (
-            <motion.div
-              key={pillar.title}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 + idx * 0.08 }}
-              className={`rounded-3xl border-2 bg-gradient-to-b ${pillar.gradient} p-6 sm:p-7 flex flex-col justify-between items-center text-center relative overflow-hidden transition-all duration-300 ${pillar.border} ${pillar.glow} group hover:scale-[1.02]`}
-            >
-              <div className="w-full flex items-center justify-start mb-4">
-                <span className={`text-[10px] sm:text-xs font-mono font-extrabold uppercase tracking-widest px-3 py-0.5 rounded-full border ${pillar.badgeColor}`}>
-                  {pillar.badge}
-                </span>
-              </div>
+          {pillars.map((pillar, idx) => {
+            const CardWrapper = pillar.link ? 'a' : 'div';
+            const cardProps = pillar.link
+              ? {
+                  href: pillar.link,
+                  target: '_blank',
+                  rel: 'noopener noreferrer',
+                  className: `rounded-3xl border-2 bg-gradient-to-b ${pillar.gradient} p-6 sm:p-7 flex flex-col justify-between items-center text-center relative overflow-hidden transition-all duration-300 ${pillar.border} ${pillar.glow} group hover:scale-[1.04] cursor-pointer block h-full`,
+                }
+              : {
+                  className: `rounded-3xl border-2 bg-gradient-to-b ${pillar.gradient} p-6 sm:p-7 flex flex-col justify-between items-center text-center relative overflow-hidden transition-all duration-300 ${pillar.border} ${pillar.glow} group hover:scale-[1.02] h-full`,
+                };
 
-              {/* Centered Large Icon */}
-              <div className="my-auto py-4 sm:py-6 flex flex-col items-center">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-3xl bg-zinc-950/80 border border-zinc-800/80 flex items-center justify-center shadow-xl mb-5 group-hover:border-zinc-700 transition-colors">
-                  {pillar.icon}
-                </div>
+            return (
+              <motion.div
+                key={pillar.title}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 + idx * 0.08 }}
+                className="h-full"
+              >
+                <CardWrapper {...cardProps}>
+                  <div className="w-full flex items-center justify-between mb-4">
+                    <span className={`text-[10px] sm:text-xs font-mono font-extrabold uppercase tracking-widest px-3 py-0.5 rounded-full border ${pillar.badgeColor}`}>
+                      {pillar.badge}
+                    </span>
+                    {pillar.link && (
+                      <span className="text-purple-300 text-[10px] sm:text-xs font-bold group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform flex items-center gap-1 bg-purple-500/20 border border-purple-400/40 px-2.5 py-0.5 rounded-full">
+                        Live ↗
+                      </span>
+                    )}
+                  </div>
 
-                {/* Pillar Title */}
-                <h2 className="font-display text-xl sm:text-2xl font-black text-white leading-tight">
-                  <span className={`text-transparent bg-clip-text bg-gradient-to-r ${pillar.titleGradient}`}>
-                    {pillar.title}
-                  </span>
-                </h2>
-              </div>
+                  {/* Centered Large Icon */}
+                  <div className="my-auto py-4 sm:py-6 flex flex-col items-center">
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-3xl bg-zinc-950/80 border border-zinc-800/80 flex items-center justify-center shadow-xl mb-5 group-hover:border-zinc-700 transition-colors">
+                      {pillar.icon}
+                    </div>
 
-              <div className="w-full h-1 bg-gradient-to-r from-transparent via-white/10 to-transparent mt-3" />
-            </motion.div>
-          ))}
+                    {/* Pillar Title */}
+                    <h2 className="font-display text-xl sm:text-2xl font-black text-white leading-tight">
+                      <span className={`text-transparent bg-clip-text bg-gradient-to-r ${pillar.titleGradient}`}>
+                        {pillar.title}
+                      </span>
+                    </h2>
+                  </div>
+
+                  <div className="w-full h-1 bg-gradient-to-r from-transparent via-white/10 to-transparent mt-3" />
+                </CardWrapper>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
 
