@@ -257,8 +257,27 @@ const SlideSkillJobFreelancingOverview = () => {
       <div className="absolute top-1/4 right-1/4 w-96 h-80 bg-purple-500/[0.08] rounded-full blur-3xl pointer-events-none" />
 
       {/* Main Container */}
-      <div className="relative z-10 w-full max-w-[1360px] mx-auto flex flex-col justify-center space-y-6 sm:space-y-8 my-auto">
+      <div className="relative z-10 w-full max-w-[1360px] mx-auto flex flex-col justify-center space-y-4 sm:space-y-6 my-auto">
         
+        {/* Top Header Badge: Earning Potential */}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.45 }}
+          className="w-full flex items-center justify-center -mb-1 sm:-mb-2"
+        >
+          <div className="inline-flex items-center gap-2.5 sm:gap-3 px-5 sm:px-7 py-1.5 sm:py-2 rounded-full border border-emerald-400/40 bg-gradient-to-r from-emerald-500/20 via-teal-500/15 to-emerald-500/20 shadow-[0_0_30px_rgba(16,185,129,0.3)] backdrop-blur-md">
+            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-ping" />
+            <span className="font-display text-xs sm:text-sm md:text-base font-bold tracking-wider uppercase text-emerald-200">
+              Earning Potential:{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 font-black text-base sm:text-lg md:text-xl tracking-normal normal-case ml-1 drop-shadow-[0_2px_15px_rgba(245,158,11,0.5)]">
+                ₹50,000 / month
+              </span>
+            </span>
+          </div>
+        </motion.div>
+
         {/* Section Title Equation: Full Tool Mastery ➔ Job + Freelancing */}
         <div className="w-full flex flex-nowrap items-center justify-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 whitespace-nowrap">
           
