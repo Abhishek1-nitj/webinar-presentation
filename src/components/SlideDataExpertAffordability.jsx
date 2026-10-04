@@ -11,7 +11,7 @@ const SlideDataExpertAffordability = () => {
       {/* Main Container */}
       <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center justify-center my-auto space-y-10 sm:space-y-12">
         
-        {/* Title Only */}
+        {/* Title: USA vs India */}
         <motion.div
           initial={{ opacity: 0, y: -15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,10 +19,9 @@ const SlideDataExpertAffordability = () => {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="font-display text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[2.5rem] font-black text-white tracking-tight leading-tight whitespace-nowrap">
-            Har Company Full-Time Data Expert{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-300 via-amber-200 to-amber-400">
-              Afford Nahi Kar Sakti
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-amber-300 to-emerald-400 drop-shadow-[0_4px_30px_rgba(245,158,11,0.35)]">
+              USA vs India
             </span>
           </h2>
         </motion.div>

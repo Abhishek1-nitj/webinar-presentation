@@ -29,14 +29,14 @@ const SlideDataExpertAffordabilityComparison = () => {
             <div className="space-y-1">
               <div className="flex items-baseline justify-center gap-2">
                 <span className="font-display text-5xl sm:text-6xl lg:text-7xl font-black text-red-200 tracking-tight">
-                  ₹94 Lakh
+                  ₹50,000
                 </span>
                 <span className="text-base sm:text-lg font-semibold text-zinc-400">
-                  / saal
+                  / month
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-zinc-400 font-medium">
-                ($1,12,590 / saal · US Govt, BLS 2024)
+                per month
               </p>
             </div>
           </motion.div>
@@ -69,14 +69,14 @@ const SlideDataExpertAffordabilityComparison = () => {
             <div className="space-y-1">
               <div className="flex items-baseline justify-center gap-2">
                 <span className="font-display text-5xl sm:text-6xl lg:text-7xl font-black text-emerald-300 tracking-tight">
-                  ₹14 Lakh
+                  ₹10,000
                 </span>
                 <span className="text-base sm:text-lg font-semibold text-zinc-400">
-                  / saal
+                  / project
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-zinc-400 font-medium">
-                (₹12–16 Lakh / saal · AmbitionBox, Indeed)
+                per project
               </p>
             </div>
           </motion.div>
