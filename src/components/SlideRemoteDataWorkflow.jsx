@@ -61,10 +61,6 @@ const SlideRemoteDataWorkflow = () => {
               </div>
               <div className="flex items-center gap-2.5 text-zinc-300 text-sm font-medium">
                 <div className="w-1.5 h-1.5 rounded-full bg-sky-400" />
-                <span>Cloud SQL databases & APIs</span>
-              </div>
-              <div className="flex items-center gap-2.5 text-zinc-300 text-sm font-medium">
-                <div className="w-1.5 h-1.5 rounded-full bg-sky-400" />
                 <span>Raw operational data dumps</span>
               </div>
             </div>

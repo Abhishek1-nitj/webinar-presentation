@@ -27,9 +27,9 @@ const SlidePartATitle = () => {
           transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
           className="w-full flex items-center justify-center"
         >
-          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tight text-white">
-            Ghar Baithe Data Ka Kaam:{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-500 drop-shadow-[0_4px_30px_rgba(245,158,11,0.35)]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight text-white space-y-2">
+            <span className="block">Ghar Baithe Data Ka Kaam:</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-500 drop-shadow-[0_4px_30px_rgba(245,158,11,0.35)]">
               Ek Real Market
             </span>
           </h1>
