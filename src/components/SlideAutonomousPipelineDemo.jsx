@@ -27,8 +27,8 @@ const SlideAutonomousPipelineDemo = () => {
             rel="noopener noreferrer"
             className="group block cursor-pointer select-none"
           >
-            <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-[7.5rem] xl:text-[9rem] font-black tracking-tight leading-[1.05] text-transparent bg-clip-text bg-gradient-to-r from-white via-emerald-200 to-teal-400 drop-shadow-[0_15px_45px_rgba(16,185,129,0.35)] group-hover:brightness-110 group-hover:scale-[1.02] transition-all duration-300">
-              AI Automation
+            <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[6.5rem] xl:text-[8rem] font-black tracking-tight leading-[1.08] text-transparent bg-clip-text bg-gradient-to-r from-white via-emerald-200 to-teal-400 drop-shadow-[0_15px_45px_rgba(16,185,129,0.35)] group-hover:brightness-110 group-hover:scale-[1.02] transition-all duration-300">
+              AI Workflow Automation
             </h1>
           </a>
 
