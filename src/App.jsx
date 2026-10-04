@@ -63,6 +63,7 @@ import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
 import SlideStudentTestimonial from './components/SlideStudentTestimonial';
 import SlideHowToMakeDashboard from './components/SlideHowToMakeDashboard';
 import SlideAutomationOutsideExcel from './components/SlideAutomationOutsideExcel';
+import SlideDashboardMadeUsingAI from './components/SlideDashboardMadeUsingAI';
 import SlideAutonomousPipelineDemo from './components/SlideAutonomousPipelineDemo';
 import SlideCountdownTimer from './components/SlideCountdownTimer';
 import SlideDiscount90 from './components/SlideDiscount90';
@@ -276,6 +277,7 @@ const App = () => {
       <Slide32k visibleSteps={4} />
       <SlideHowToMonetize />
       <SlideExcelThreeStepsCombined />
+      <SlideDashboardMadeUsingAI />
       <SlideAutomationOutsideExcel />
       <SlideAutonomousPipelineDemo />
       <SlideHowToMonetizeCopy />
