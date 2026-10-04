@@ -9,6 +9,7 @@ import Slide24 from './components/Slide24';
 import SlideStartTheMasterclass from './components/SlideStartTheMasterclass';
 import SlidePartATitle from './components/SlidePartATitle';
 import SlideRemoteDataWorkflow from './components/SlideRemoteDataWorkflow';
+import SlideDataExpertAffordabilityComparison from './components/SlideDataExpertAffordabilityComparison';
 import SlideDataExpertAffordability from './components/SlideDataExpertAffordability';
 import SlideLinkedInJobsProof from './components/SlideLinkedInJobsProof';
 import Slide32bIntro from './components/Slide32bIntro';
@@ -281,6 +282,7 @@ const App = () => {
       <SlideJobThreePillars />
       <SlidePartATitle />
       <SlideRemoteDataWorkflow />
+      <SlideDataExpertAffordabilityComparison />
       <SlideDataExpertAffordability />
       <SlideLinkedInJobsProof />
       <SlideFreelancingFourPillars />
