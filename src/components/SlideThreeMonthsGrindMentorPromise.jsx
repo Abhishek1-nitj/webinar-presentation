@@ -9,7 +9,6 @@ const SlideThreeMonthsGrindMentorPromise = () => {
       subtitle: 'Your Commitment',
       points: [
         'Complete every single module & dataset',
-        'Build production-grade live portfolio projects',
         'Put in your 100% — khoon, paseena aur dedication',
       ],
       accent: 'from-amber-500/15 via-zinc-900/60 to-zinc-950/80',
@@ -24,8 +23,6 @@ const SlideThreeMonthsGrindMentorPromise = () => {
       subtitle: 'My Commitment as Mentor',
       points: [
         'Chus lo poora jitna corporate experience mujhe hai',
-        'Live doubt-solving, code reviews & guidance',
-        'Steal my battle-tested templates & frameworks',
       ],
       accent: 'from-yellow-500/15 via-zinc-900/60 to-zinc-950/80',
       border: 'border-yellow-500/30 hover:border-yellow-400/60',
