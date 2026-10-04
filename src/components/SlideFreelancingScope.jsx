@@ -21,20 +21,7 @@ const SlideFreelancingScope = () => {
       {/* Central Content Box */}
       <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center justify-center text-center space-y-6 sm:space-y-8 my-auto">
         
-        {/* Top Scarcity / Hook Pill Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: -15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <div className="inline-flex items-center gap-2.5 rounded-full border border-emerald-400/40 bg-gradient-to-r from-emerald-500/15 via-teal-500/10 to-emerald-500/15 px-5 sm:px-7 py-2 shadow-[0_0_30px_rgba(16,185,129,0.25)] backdrop-blur-md">
-            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-ping" />
-            <span className="font-display text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-emerald-200">
-              Market Potential & Reality
-            </span>
-          </div>
-        </motion.div>
+
 
         {/* Big Hero Headline */}
         <motion.div
