@@ -9,21 +9,44 @@ const SlideDataExpertAffordabilityComparison = () => {
       <div className="absolute bottom-1/3 -right-28 w-96 h-96 bg-emerald-500/[0.05] rounded-full blur-[160px] pointer-events-none" />
 
       {/* Main Container */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center justify-center my-auto space-y-10 sm:space-y-12">
+      <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center justify-center my-auto space-y-8 sm:space-y-10">
         
-        {/* 2 Focused Comparison Boxes with Direct Same Currency & Unit */}
+        {/* Header Section */}
+        <motion.div
+          initial={{ opacity: 0, y: -15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center space-y-2 sm:space-y-3"
+        >
+          {/* Overline Context */}
+          <p className="font-display text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-zinc-400">
+            Har Company Full-Time Data Expert Afford Nahi Kar Sakti
+          </p>
+          
+          {/* Main Title: Permanent Staff vs Hire by Project */}
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+            <span className="text-red-400">Permanent Staff</span>{' '}
+            <span className="text-zinc-500 font-light">vs</span>{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-green-400">
+              Hire by Project
+            </span>
+          </h2>
+        </motion.div>
+
+        {/* 2 Focused Comparison Boxes */}
         <div className="w-full grid grid-cols-1 md:grid-cols-11 gap-6 sm:gap-8 items-center">
           
-          {/* USA Salary Box */}
+          {/* Permanent Staff Box */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="md:col-span-5 rounded-3xl border border-red-500/30 bg-gradient-to-b from-red-950/20 via-[#140C0E] to-zinc-950/95 p-8 sm:p-10 backdrop-blur-xl shadow-2xl flex flex-col items-center justify-center text-center space-y-3 min-h-[240px] sm:min-h-[260px]"
+            className="md:col-span-5 rounded-3xl border border-red-500/30 bg-gradient-to-b from-red-950/20 via-[#140C0E] to-zinc-950/95 p-8 sm:p-10 backdrop-blur-xl shadow-2xl flex flex-col items-center justify-center text-center space-y-4 min-h-[240px] sm:min-h-[260px]"
           >
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-500/15 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider">
-              <span>🇺🇸</span> USA
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/15 border border-red-500/30 text-red-300 text-xs sm:text-sm font-bold uppercase tracking-wider">
+              Permanent Staff
             </div>
 
             <div className="space-y-1">
@@ -35,8 +58,8 @@ const SlideDataExpertAffordabilityComparison = () => {
                   / month
                 </span>
               </div>
-              <p className="text-xs sm:text-sm text-zinc-400 font-medium">
-                per month
+              <p className="text-xs sm:text-sm text-zinc-500 font-medium">
+                Fixed monthly overhead
               </p>
             </div>
           </motion.div>
@@ -54,16 +77,16 @@ const SlideDataExpertAffordabilityComparison = () => {
             </div>
           </motion.div>
 
-          {/* India Salary Box */}
+          {/* Hire by Project Box */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="md:col-span-5 rounded-3xl border-2 border-emerald-500/40 bg-gradient-to-b from-emerald-950/25 via-[#0C1612] to-zinc-950/95 p-8 sm:p-10 backdrop-blur-xl shadow-[0_15px_50px_rgba(16,185,129,0.15)] flex flex-col items-center justify-center text-center space-y-3 min-h-[240px] sm:min-h-[260px]"
+            className="md:col-span-5 rounded-3xl border-2 border-emerald-500/40 bg-gradient-to-b from-emerald-950/25 via-[#0C1612] to-zinc-950/95 p-8 sm:p-10 backdrop-blur-xl shadow-[0_15px_50px_rgba(16,185,129,0.15)] flex flex-col items-center justify-center text-center space-y-4 min-h-[240px] sm:min-h-[260px]"
           >
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-wider">
-              <span>🇮🇳</span> India
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider">
+              Hire by Project
             </div>
 
             <div className="space-y-1">
@@ -75,8 +98,8 @@ const SlideDataExpertAffordabilityComparison = () => {
                   / project
                 </span>
               </div>
-              <p className="text-xs sm:text-sm text-zinc-400 font-medium">
-                per project
+              <p className="text-xs sm:text-sm text-emerald-400/80 font-medium">
+                Flexible & affordable for clients
               </p>
             </div>
           </motion.div>
