@@ -282,9 +282,9 @@ const App = () => {
       <SlideJobThreePillars />
       <SlidePartATitle />
       <SlideRemoteDataWorkflow />
-      <SlideDataExpertAffordabilityComparison />
       <SlideDataExpertAffordability />
       <SlideLinkedInJobsProof />
+      <SlideDataExpertAffordabilityComparison />
       <SlideFreelancingFourPillars />
       <SlideFreelancingEarningsMath />
       <SlideSkillJobFreelancingOverview />
