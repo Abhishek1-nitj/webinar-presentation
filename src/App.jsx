@@ -275,9 +275,6 @@ const App = () => {
       <Slide32k visibleSteps={4} />
       <SlideHowToMonetize />
       <SlideExcelThreeStepsCombined />
-      <SlideExcelThreeStepsCombined highlightStep={1} />
-      <SlideExcelThreeStepsCombined highlightStep={2} />
-      <SlideExcelThreeStepsCombined highlightStep={3} />
       <SlideAutomationOutsideExcel />
       <SlideAutonomousPipelineDemo />
       <SlideHowToMonetizeCopy />
