@@ -61,6 +61,7 @@ import SlideThankYou from './components/SlideThankYou';
 import SlideBigTextPrice from './components/SlideBigTextPrice';
 import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
 import SlideStudentTestimonial from './components/SlideStudentTestimonial';
+import SlideAccessHighEndTools from './components/SlideAccessHighEndTools';
 import SlideHowToMakeDashboard from './components/SlideHowToMakeDashboard';
 import SlideAutomationOutsideExcel from './components/SlideAutomationOutsideExcel';
 import SlideDashboardMadeUsingAI from './components/SlideDashboardMadeUsingAI';
@@ -321,6 +322,7 @@ const App = () => {
       <SlideReadyMadeProjects />
       <SlideFreelanceProjectCategories />
       <SlideStudentTestimonial />
+      <SlideAccessHighEndTools />
       <SlideHowToMakeDashboard />
       <Slide32DashboardTools />
       <SlideDashboardCodex />
