@@ -125,16 +125,9 @@ const SlideAccessHighEndTools = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center space-y-3 max-w-4xl"
+          className="text-center w-full"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 shadow-[0_0_20px_rgba(16,185,129,0.2)]">
-            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="font-mono text-xs uppercase tracking-widest text-emerald-300 font-bold">
-              Complete Tech Ecosystem
-            </span>
-          </div>
-
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-tight">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight whitespace-nowrap">
             Access to Other{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-300 drop-shadow-[0_4px_30px_rgba(16,185,129,0.4)]">
               High-End Tools
