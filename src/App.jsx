@@ -35,7 +35,6 @@ import SlideAudiencePainPoints from './components/SlideAudiencePainPoints';
 import SlideTransformationOutcome from './components/SlideTransformationOutcome';
 import SlideWhat50kReallyMeans from './components/SlideWhat50kReallyMeans';
 import SlideTakeControlOfYourLife from './components/SlideTakeControlOfYourLife';
-import SlideNoShortcutsHardcoreMastery from './components/SlideNoShortcutsHardcoreMastery';
 import SlideActionBeatsEverything from './components/SlideActionBeatsEverything';
 import SlideThreeMonthsGrindMentorPromise from './components/SlideThreeMonthsGrindMentorPromise';
 import SlideJobGuaranteeCondition from './components/SlideJobGuaranteeCondition';
@@ -304,7 +303,6 @@ const App = () => {
       <SlideTransformationOutcome />
       <SlideWhat50kReallyMeans />
       <SlideTakeControlOfYourLife />
-      <SlideNoShortcutsHardcoreMastery />
       <SlideActionBeatsEverything />
       <SlideThreeMonthsGrindMentorPromise />
       <SlideJobGuaranteeCondition />
