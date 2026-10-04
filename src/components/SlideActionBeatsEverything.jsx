@@ -142,7 +142,7 @@ const SlideActionBeatsEverything = () => {
                 <div className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-emerald-500/10 border border-emerald-500/25">
                   <span className="text-emerald-400 font-bold text-base shrink-0">✓</span>
                   <span className="font-display text-sm sm:text-base font-bold text-emerald-200">
-                    Executes Daily & Builds Real Proof-of-Work
+                    Just do hard work but in right direction
                   </span>
                 </div>
               </div>
